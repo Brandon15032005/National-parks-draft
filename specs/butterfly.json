@@ -1,0 +1,348 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Butterfly chart: each state's share of Australia's protected land (left) against its share of the population (right). Sources: CAPAD 2024 and ABS, March 2026.",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": 600,
+      "symbolType": "square",
+      "symbolSize": 260,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/states.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.code == 'ACT' ? 'ACT' : datum.name",
+      "as": "state"
+    },
+    {
+      "calculate": "format(datum.share_of_protected_land_pct, '.1f') + '%'",
+      "as": "land_label"
+    },
+    {
+      "calculate": "format(datum.population_share_pct, '.1f') + '%'",
+      "as": "pop_label"
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 300,
+      "height": {
+        "step": 34
+      },
+      "title": {
+        "text": [
+          "Share of Australia's",
+          "protected land"
+        ],
+        "anchor": "start",
+        "offset": 10
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "color": "#0E7C7B",
+            "height": {
+              "band": 0.72
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "share_of_protected_land_pct",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  55
+                ],
+                "reverse": true
+              },
+              "axis": {
+                "title": null,
+                "values": [
+                  0,
+                  10,
+                  20,
+                  30,
+                  40,
+                  50
+                ],
+                "labelExpr": "datum.label + '%'"
+              }
+            },
+            "y": {
+              "field": "state",
+              "type": "nominal",
+              "sort": {
+                "field": "share_of_protected_land_pct",
+                "order": "descending"
+              },
+              "axis": null
+            },
+            "tooltip": [
+              {
+                "field": "name",
+                "title": "State"
+              },
+              {
+                "field": "share_of_protected_land_pct",
+                "title": "Share of protected land (%)",
+                "format": ".1f"
+              },
+              {
+                "field": "population_share_pct",
+                "title": "Share of population (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -5,
+            "fontWeight": 700,
+            "fontSize": 13,
+            "color": "#15271F"
+          },
+          "encoding": {
+            "x": {
+              "field": "share_of_protected_land_pct",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  55
+                ],
+                "reverse": true
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "state",
+              "type": "nominal",
+              "sort": {
+                "field": "share_of_protected_land_pct",
+                "order": "descending"
+              },
+              "axis": null
+            },
+            "text": {
+              "field": "land_label"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 170,
+      "height": {
+        "step": 34
+      },
+      "title": {
+        "text": [
+          " ",
+          " "
+        ],
+        "anchor": "start",
+        "offset": 10
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 14,
+        "color": "#15271F"
+      },
+      "encoding": {
+        "x": {
+          "value": 8
+        },
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": {
+            "field": "share_of_protected_land_pct",
+            "order": "descending"
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "state"
+        }
+      }
+    },
+    {
+      "width": 300,
+      "height": {
+        "step": 34
+      },
+      "title": {
+        "text": [
+          "Share of Australia's",
+          "population"
+        ],
+        "anchor": "start",
+        "offset": 10
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "color": "#6A4C93",
+            "height": {
+              "band": 0.72
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "population_share_pct",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  55
+                ]
+              },
+              "axis": {
+                "title": null,
+                "values": [
+                  0,
+                  10,
+                  20,
+                  30,
+                  40,
+                  50
+                ],
+                "labelExpr": "datum.label + '%'"
+              }
+            },
+            "y": {
+              "field": "state",
+              "type": "nominal",
+              "sort": {
+                "field": "share_of_protected_land_pct",
+                "order": "descending"
+              },
+              "axis": null
+            },
+            "tooltip": [
+              {
+                "field": "name",
+                "title": "State"
+              },
+              {
+                "field": "share_of_protected_land_pct",
+                "title": "Share of protected land (%)",
+                "format": ".1f"
+              },
+              {
+                "field": "population_share_pct",
+                "title": "Share of population (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 5,
+            "fontWeight": 700,
+            "fontSize": 13,
+            "color": "#15271F"
+          },
+          "encoding": {
+            "x": {
+              "field": "population_share_pct",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  55
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "state",
+              "type": "nominal",
+              "sort": {
+                "field": "share_of_protected_land_pct",
+                "order": "descending"
+              },
+              "axis": null
+            },
+            "text": {
+              "field": "pop_label"
+            }
+          }
+        },
+        {
+          "description": "Note: NSW and Victoria",
+          "transform": [
+            {
+              "filter": "datum.code == 'TAS'"
+            }
+          ],
+          "mark": {
+            "fontSize": 12.5,
+            "fontStyle": "italic",
+            "color": "#51625A",
+            "lineHeight": 16,
+            "type": "text",
+            "align": "left"
+          },
+          "encoding": {
+            "x": {
+              "value": 70
+            },
+            "y": {
+              "value": 238
+            },
+            "text": {
+              "value": [
+                "NSW and Victoria: 57% of people,",
+                "but only 7% of protected land"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "spacing": 0,
+  "resolve": {
+    "scale": {
+      "y": "shared"
+    }
+  }
+}

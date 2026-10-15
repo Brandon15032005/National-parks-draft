@@ -1,0 +1,797 @@
+name,state,type_group,area_ha,area_km2,lat,lon,parts,joint_management
+Munga-Thirri—Simpson Desert,SA,National Park,3605436,36054.4,-26.7931,137.2918,2,no
+Kakadu,NT,Commonwealth National Park,1911122,19111.2,-12.9788,132.4391,1,yes
+Kati Thanda-Lake Eyre,SA,National Park,1350741,13507.4,-28.5365,137.5104,1,no
+Judbarra / Gregory,NT,National Park,1300574,13005.7,-16.3747,130.3543,11,yes
+Karlamilyi,WA,National Park,1283729,12837.3,-22.3325,122.7373,1,no
+Munga-Thirri,QLD,National Park,1014432,10144.3,-25.5675,138.3541,1,no
+Limmen,NT,National Park,958118,9581.2,-15.4694,135.2347,18,no
+Witjira,SA,National Park,768161,7681.6,-26.3697,135.9023,2,no
+Kosciuszko,NSW,National Park,688945,6889.4,-36.0146,148.376,1,yes
+Murray - Sunset,VIC,National Park,665847,6658.5,-34.8155,141.6277,1,no
+Alpine,VIC,National Park,662437,6624.4,-37.0298,147.0612,1,no
+Southwest,TAS,National Park,641743,6417.4,-43.1822,146.1938,217,no
+Karijini,WA,National Park,624428,6244.3,-22.9683,118.2744,1,no
+Matuwa Kurrara Kurrara,WA,National Park,609321,6093.2,-25.7065,121.7051,1,no
+Prince Regent,WA,National Park,584817,5848.2,-15.5431,125.2563,1,no
+Lake Torrens,SA,National Park,568759,5687.6,-30.6372,137.6485,1,no
+Lake Gairdner,SA,National Park,556894,5568.9,-31.4977,135.8549,1,no
+Rinyirru (Lakefield),QLD,Aboriginal-owned National Park,543931,5439.3,-15.012,144.0197,1,yes
+Diamantina,QLD,National Park,511216,5112.2,-23.7994,141.423,1,no
+Wollemi,NSW,National Park,505562,5055.6,-32.975,150.5467,1,no
+Burringurrah,WA,National Park,482606,4826.1,-24.6201,116.6863,2,no
+Staaten River,QLD,National Park,468791,4687.9,-16.6002,142.7365,1,no
+Franklin-Gordon Wild Rivers,TAS,National Park,463566,4635.7,-42.4608,145.9608,1,no
+Drysdale River,WA,National Park,447673,4476.7,-14.9247,127.0462,1,no
+Oyala Thumotang,QLD,Aboriginal-owned National Park,381284,3812.8,-13.5784,142.7994,1,yes
+Olkola,QLD,Aboriginal-owned National Park,373589,3735.9,-15.5569,143.118,1,yes
+Wyperfeld,VIC,National Park,359855,3598.6,-35.6011,141.8016,1,no
+Sturt,NSW,National Park,345566,3455.7,-29.2162,141.8244,1,no
+Currawinya,QLD,National Park,343867,3438.7,-28.5056,144.4911,1,no
+Apudthama,QLD,Aboriginal-owned National Park,319258,3192.6,-11.3736,142.6329,1,yes
+Kennedy Range,WA,National Park,316825,3168.3,-24.7648,114.876,3,no
+Carnarvon,QLD,National Park,301340,3013.4,-25.0364,148.0863,1,no
+Girringun,QLD,National Park,300460,3004.6,-18.3483,145.7558,1,no
+Fitzgerald River,WA,National Park,295706,2957.1,-33.9447,119.556,3,no
+Nitmiluk,NT,National Park,294663,2946.6,-13.9035,132.5581,10,yes
+Cape Arid,WA,National Park,277673,2776.7,-33.5687,123.4344,1,no
+Blue Mountains,NSW,National Park,269339,2693.4,-34.0061,150.3672,1,yes
+Lake Frome,SA,National Park,259361,2593.6,-30.7591,139.7804,1,no
+Tjoritja / West MacDonnell,NT,National Park,256685,2566.8,-23.6059,132.6399,29,yes
+Purnululu,WA,National Park,243831,2438.3,-17.4619,128.5337,1,no
+Millstream Chichester,WA,National Park,238344,2383.4,-21.4576,117.4802,1,no
+Collier Range,WA,National Park,235223,2352.2,-24.6536,119.072,1,no
+Garig Gunak Barlu,NT,National Park,226004,2260.0,-11.3526,132.3921,14,yes
+Great Sandy,QLD,National Park,224467,2244.7,-25.2473,153.1453,1,no
+Boodjamulla (Lawn Hill),QLD,National Park,203162,2031.6,-18.6891,138.2781,1,no
+Morton,NSW,National Park,199584,1995.8,-34.9262,150.232,1,no
+Muggon,WA,National Park,191689,1916.9,-26.7694,115.6517,1,no
+Paroo-Darling,NSW,National Park,183176,1831.8,-30.8119,143.5454,1,yes
+Kalbarri,WA,National Park,183162,1831.6,-27.6116,114.4636,1,no
+Gawler Ranges,SA,National Park,179479,1794.8,-32.5541,135.4459,1,no
+Astrebla Downs,QLD,National Park,170509,1705.1,-24.2474,140.5851,1,no
+Cape Melville,QLD,Aboriginal-owned National Park,169987,1699.9,-14.4,144.4641,1,yes
+Grampians,VIC,National Park,168277,1682.8,-37.2267,142.3748,1,no
+Yengo,NSW,National Park,168008,1680.1,-33.0194,150.8644,1,no
+Muundhi (Jack River),QLD,Aboriginal-owned National Park,164794,1647.9,-14.8833,144.5883,1,yes
+Cradle Mountain-Lake St Clair,TAS,National Park,161676,1616.8,-41.8063,145.9609,1,no
+Bunuba,WA,National Park,160246,1602.5,-17.6821,125.9768,1,no
+KULLA (McIlwraith Range),QLD,Aboriginal-owned National Park,158787,1587.9,-13.9006,143.3423,1,yes
+Narriearra Caryapundy Swamp,NSW,National Park,153741,1537.4,-29.2067,142.5246,1,no
+Oxley Wild Rivers,NSW,National Park,153675,1536.7,-31.0694,152.0525,1,no
+Helena and Aurora Ranges,WA,National Park,149157,1491.6,-30.0845,119.7418,1,no
+Litchfield,NT,National Park,145845,1458.5,-13.1541,130.7723,6,no
+Idalia,QLD,National Park,141131,1411.3,-24.9541,144.6819,1,no
+Dalgaranga,WA,National Park,135682,1356.8,-27.9055,117.049,1,no
+Uluru-Kata Tjuta,NT,Commonwealth National Park,133302,1333.0,-25.3417,131.0195,1,yes
+Little Desert,VIC,National Park,131607,1316.1,-36.5328,141.8347,1,no
+Mungo,NSW,National Park,129912,1299.1,-33.6804,143.1255,1,no
+Mount Roe,WA,National Park,128048,1280.5,-34.7074,117.0077,2,no
+Iytwelepenty / Davenport Ranges,NT,National Park,127838,1278.4,-20.7674,135.1633,4,yes
+Vulkathunha-Gammon Ranges,SA,National Park,126246,1262.5,-30.4097,139.152,1,no
+Welford,QLD,National Park,123542,1235.4,-24.967,143.4805,1,no
+Mary River,NT,National Park,121525,1215.2,-13.1281,131.7616,18,yes
+Deua,NSW,National Park,121221,1212.2,-35.9237,149.8048,1,no
+Rungulla,QLD,National Park,120773,1207.7,-19.1358,143.4185,1,no
+D'Entrecasteaux,WA,National Park,119004,1190.0,-34.8565,116.2321,1,no
+Daintree,QLD,Aboriginal-owned National Park,116243,1162.4,-16.3669,145.2479,2,yes
+Wooroonooran,QLD,National Park,115259,1152.6,-17.3624,145.8054,1,no
+Mitchell River,WA,National Park,115052,1150.5,-15.0039,125.5523,1,no
+Snowy River,VIC,National Park,114729,1147.3,-37.2527,148.4847,1,no
+Stirling Range,WA,National Park,113605,1136.0,-34.3916,117.8986,2,no
+White Mountains,QLD,National Park,112569,1125.7,-20.5143,145.003,1,no
+South East Forest,NSW,National Park,111345,1113.5,-37.0085,149.4826,1,no
+Great Otway,VIC,National Park,110265,1102.7,-38.604,143.855,1,no
+Expedition (Limited Depth),QLD,National Park,109135,1091.4,-25.2753,149.0482,1,no
+Guy Fawkes River,NSW,National Park,108236,1082.4,-29.9595,152.2025,1,no
+Watarrka,NT,National Park,105189,1051.9,-24.2661,131.4478,2,yes
+Jilgu,WA,National Park,101977,1019.8,-24.7435,117.541,1,no
+Ikara-Flinders Ranges,SA,National Park,95572,955.7,-31.5107,138.5685,1,no
+Wadbilliga,NSW,National Park,95461,954.6,-36.4139,149.635,1,no
+Pimbee,WA,National Park,93748,937.5,-25.4312,114.8329,1,no
+Croajingolong,VIC,National Park,88517,885.2,-37.7137,149.3517,1,no
+Bladensburg,QLD,National Park,84253,842.5,-22.6423,143.0659,1,no
+Paluma Range,QLD,National Park,80009,800.1,-19.1059,146.3077,1,no
+Boodjamulla,QLD,Aboriginal-owned National Park,79687,796.9,-19.1458,138.6052,1,yes
+Tagalaka,QLD,National Park,78441,784.4,-18.3448,142.6611,1,no
+Namadgi,ACT,National Park,77872,778.7,-35.5834,148.9361,13,no
+Yarra Ranges,VIC,National Park,77254,772.5,-37.61,145.5881,1,no
+Barrington Tops,NSW,National Park,76915,769.1,-32.0713,151.511,1,no
+Goulburn River,NSW,National Park,74518,745.2,-32.3192,150.1857,1,no
+Kanangra-Boyd,NSW,National Park,71804,718.0,-33.8841,150.1025,1,yes
+New England,NSW,National Park,71643,716.4,-30.5274,152.4722,1,no
+Cape Range,WA,National Park,69488,694.9,-22.2076,113.9227,1,no
+Washpool,NSW,National Park,68879,688.8,-29.3496,152.3394,1,yes
+Frank Hann,WA,National Park,68708,687.1,-32.8772,120.3165,1,no
+Mutawintji,NSW,National Park,67827,678.3,-31.0707,142.4168,1,yes
+Undara Volcanic,QLD,National Park,66348,663.5,-18.3103,144.6145,1,no
+Goldfields Woodlands,WA,National Park,66146,661.5,-31.2669,120.5447,1,no
+Nilpena Ediacara,SA,National Park,64909,649.1,-30.9721,138.1077,1,no
+Gundabooka,NSW,National Park,64026,640.3,-30.5842,145.7463,1,yes
+Dirk Hartog Island,WA,National Park,62664,626.6,-25.8665,113.0795,1,no
+Eungella,QLD,National Park,62211,622.1,-21.0042,148.5761,1,no
+Culgoa Floodplain,QLD,National Park,61784,617.8,-28.9007,146.9659,1,no
+Tully Gorge,QLD,National Park,60597,606.0,-17.8267,145.8531,1,no
+Goongarrie,WA,National Park,60008,600.1,-29.9532,121.5561,1,no
+Mallee Cliffs,NSW,National Park,58118,581.2,-34.2143,142.6408,1,no
+Bowling Green Bay,QLD,National Park,57427,574.3,-19.5071,146.9603,1,no
+Keep River,NT,National Park,57226,572.3,-15.8172,129.1904,3,no
+Batavia,QLD,Aboriginal-owned National Park,56014,560.1,-12.3388,142.6846,1,yes
+Djukbinj,NT,National Park,55442,554.4,-12.2614,131.3283,9,yes
+Bulleringa,QLD,National Park,53784,537.8,-17.5552,143.7807,1,no
+Francois Peron,WA,National Park,53145,531.5,-25.761,113.5532,1,no
+Kutini-Payamu (Iron Range),QLD,Aboriginal-owned National Park,53136,531.4,-12.6332,143.2791,1,yes
+Shannon,WA,National Park,52622,526.2,-34.7083,116.3902,1,no
+Walls of Jerusalem,TAS,National Park,51807,518.1,-41.9282,146.2473,1,no
+Homevale,QLD,National Park,51558,515.6,-21.3973,148.6517,1,no
+Mount Kaputar,NSW,National Park,51304,513.0,-30.287,150.1504,1,no
+Blackbraes,QLD,National Park,51287,512.9,-19.4844,144.0566,1,no
+Nattai,NSW,National Park,50995,510.0,-34.2337,150.3996,1,yes
+Hattah - Kulkyne,VIC,National Park,49983,499.8,-34.6747,142.3666,1,no
+Mount Windsor,QLD,National Park,48941,489.4,-16.2484,145.0043,1,no
+Coorong,SA,National Park,48695,486.9,-35.9935,139.5085,1,no
+Wilsons Promontory,VIC,National Park,48202,482.0,-38.9573,146.3515,1,no
+Myall Lakes,NSW,National Park,48043,480.4,-32.5091,152.3012,1,no
+Blackdown Tableland,QLD,National Park,47826,478.3,-23.8132,149.1012,1,no
+Wandoo,WA,National Park,46368,463.7,-32.1004,116.557,1,no
+Koonaburra,NSW,National Park,46029,460.3,-32.1937,144.7581,1,no
+Finke Gorge,NT,National Park,45294,452.9,-24.1686,132.7533,12,yes
+Watheroo,WA,National Park,44482,444.8,-30.2124,115.8389,3,no
+Kinchega,NSW,National Park,44475,444.7,-32.5078,142.3015,1,yes
+Kroombit Tops,QLD,National Park,43217,432.2,-24.4243,150.9432,1,no
+Errinundra,VIC,National Park,43144,431.4,-37.3746,148.7899,1,no
+The Lakes,QLD,National Park,43141,431.4,-19.8627,144.3307,1,no
+Alwal,QLD,Aboriginal-owned National Park,42527,425.3,-15.2043,143.5842,1,yes
+Goobang,NSW,National Park,42438,424.4,-33.0002,148.473,1,yes
+Ngalba-bulal,QLD,Aboriginal-owned National Park,42398,424.0,-15.9146,145.1747,1,yes
+Mount Frankland South,WA,National Park,42299,423.0,-34.8536,116.6117,1,no
+Culgoa,NSW,National Park,41236,412.4,-29.0685,146.9472,1,yes
+Kalyarr,NSW,National Park,40779,407.8,-34.2977,144.3527,1,yes
+Nymboida,NSW,National Park,40646,406.5,-29.6536,152.4482,1,no
+Bromley (Ampulin),QLD,Aboriginal-owned National Park,40346,403.5,-12.1359,142.9748,1,yes
+Peak Charles,WA,National Park,39953,399.5,-32.9086,121.1083,1,no
+Hinchinbrook Island,QLD,National Park,39769,397.7,-18.3709,146.2139,1,no
+Mount Lindesay,WA,National Park,39573,395.7,-34.8277,117.3394,1,no
+Murray Valley,NSW,National Park,39521,395.2,-35.8145,145.1069,1,no
+Timmallallie,NSW,NSW CCA Zone 1 National Park,39343,393.4,-30.775,149.2731,1,yes
+D'Aguilar,QLD,National Park,39228,392.3,-27.3771,152.7596,1,no
+Coopracambra,VIC,National Park,38514,385.1,-37.3517,149.3416,1,no
+Yuraygir,NSW,National Park,38402,384.0,-29.6422,153.2878,1,no
+Main Range,QLD,National Park,38305,383.1,-27.9301,152.2913,1,no
+Errk Oykangand,QLD,Aboriginal-owned National Park,38238,382.4,-15.4869,142.0895,1,yes
+Wuthathi (Shelburne Bay),QLD,Aboriginal-owned National Park,37271,372.7,-11.9844,143.007,1,yes
+Mount Frankland,WA,National Park,37122,371.2,-34.7475,116.6695,1,no
+Conondale,QLD,National Park,35835,358.3,-26.7189,152.5591,1,no
+Toorale,NSW,National Park,35695,356.9,-30.3401,145.4428,1,yes
+Lama Lama,QLD,Aboriginal-owned National Park,35551,355.5,-14.4263,143.7462,1,yes
+Yanga,NSW,National Park,35383,353.8,-34.6122,143.6722,1,no
+Flinders Chase,SA,National Park,35347,353.5,-35.9756,136.7229,1,no
+Great Basalt Wall,QLD,National Park,35131,351.3,-20.009,145.241,1,no
+Werrikimbe,NSW,National Park,35054,350.5,-31.2072,152.2565,1,no
+Bulburin,QLD,National Park,34299,343.0,-24.5498,151.5127,1,no
+Brindingabba,NSW,National Park,33942,339.4,-29.0836,144.9038,1,no
+Bania,QLD,National Park,32867,328.7,-24.9807,151.4824,1,no
+Conway,QLD,National Park,32666,326.7,-20.3844,148.7911,1,no
+Willi Willi,NSW,National Park,32607,326.1,-31.1644,152.4256,1,no
+Moorrinya,QLD,National Park,32594,325.9,-21.3998,144.9563,1,no
+Nullarbor,SA,National Park,32527,325.3,-31.3411,129.4706,1,no
+Border Ranges,NSW,National Park,31863,318.6,-28.4075,153.0677,1,yes
+Cape Le Grand,WA,National Park,31199,312.0,-33.9313,122.254,2,no
+Kuranda,QLD,National Park,31172,311.7,-16.7367,145.4377,1,no
+Chesterton Range,QLD,National Park,31005,310.1,-26.1922,147.3561,1,no
+Coffin Bay,SA,National Park,30886,308.9,-34.5803,135.3202,1,no
+Cottan-Bimbang,NSW,National Park,30577,305.8,-31.3439,152.0941,1,no
+Eurimbula,QLD,National Park,29534,295.3,-24.1905,151.7251,1,no
+Biniirr,QLD,Aboriginal-owned National Park,29308,293.1,-15.1341,144.9556,1,yes
+Koombooloomba,QLD,National Park,29225,292.2,-17.968,145.6028,1,no
+Girramay,QLD,National Park,29023,290.2,-18.1595,145.8399,1,no
+Mount Lewis,QLD,National Park,28825,288.2,-16.5154,145.2705,1,no
+Barmah,VIC,National Park,28490,284.9,-35.9069,145.0663,1,no
+Boorabbin,WA,National Park,28168,281.7,-31.2579,120.149,1,no
+Lake Eildon,VIC,National Park,27822,278.2,-37.3056,145.9785,1,no
+Dthinna Dthinnawan,NSW,NSW CCA Zone 1 National Park,27695,277.0,-28.8169,150.8566,1,no
+Mount Buffalo,VIC,National Park,27484,274.8,-36.6975,146.7726,1,no
+Lesueur,WA,National Park,27231,272.3,-30.1323,115.1929,1,no
+Cape Range (South),WA,National Park,27083,270.8,-22.5886,113.7251,1,no
+Mariala,QLD,National Park,27044,270.4,-26.0617,145.0411,1,no
+Monga,NSW,National Park,26989,269.9,-35.6408,149.9387,1,no
+Malkumba-Coongie Lakes,SA,National Park,26617,266.2,-27.2482,140.159,1,no
+Lower Glenelg,VIC,National Park,26451,264.5,-38.0288,141.1121,1,no
+Goneaway,QLD,National Park,26082,260.8,-23.7681,142.2332,1,no
+Burrum Coast,QLD,National Park,25923,259.2,-25.0464,152.463,1,no
+Goodedulla,QLD,National Park,25764,257.6,-23.2485,149.7393,1,no
+Thrushton,QLD,National Park,25661,256.6,-27.7872,147.6807,1,no
+Gibraltar Range,NSW,National Park,25400,254.0,-29.5237,152.3599,1,yes
+Palmgrove,QLD,Scientific National Park,25010,250.1,-24.9912,149.2703,1,no
+Wrattens,QLD,National Park,24832,248.3,-26.3021,152.3695,1,no
+Japoon,QLD,National Park,24820,248.2,-17.7779,145.8954,1,no
+Wellington,WA,National Park,24799,248.0,-33.3802,115.9589,1,no
+Lochern,QLD,National Park,24787,247.9,-24.0572,143.2902,1,no
+Fitzroy River,WA,National Park,24543,245.4,-17.5071,126.3502,1,no
+Woomargama,NSW,National Park,24219,242.2,-35.8758,147.4761,1,no
+Budawang,NSW,National Park,24000,240.0,-35.4132,150.065,1,no
+Warrumbungle,NSW,National Park,23868,238.7,-31.249,148.9702,1,no
+Kinglake,VIC,National Park,23127,231.3,-37.4127,145.1997,1,no
+Lachlan Valley,NSW,National Park,22944,229.4,-33.3135,145.6805,1,no
+Grongah,QLD,National Park,22905,229.1,-25.9229,152.1387,1,no
+Expedition,QLD,National Park,22554,225.5,-24.9185,148.9347,1,no
+Mount Field,TAS,National Park,22531,225.3,-42.6371,146.5884,2,no
+Oolambeyan,NSW,National Park,22200,222.0,-34.7658,145.2725,1,yes
+Mount Frankland North,WA,National Park,22069,220.7,-34.6645,116.6864,1,no
+Bundjalung,NSW,National Park,21964,219.6,-29.2489,153.3475,1,no
+Chiltern-Mt Pilot,VIC,National Park,21665,216.6,-36.2457,146.7232,1,no
+Leeuwin-Naturaliste,WA,National Park,21599,216.0,-34.1742,115.0475,4,no
+Lincoln,SA,National Park,21437,214.4,-34.8388,135.8604,1,no
+Lamington,QLD,National Park,21377,213.8,-28.2442,153.1573,1,no
+Brindabella,NSW,National Park,21288,212.9,-35.2676,148.7933,1,yes
+Cudmore (Limited Depth),QLD,National Park,21218,212.2,-22.9409,146.2939,1,no
+Greater Kingston,WA,National Park,21114,211.1,-34.051,116.3846,1,no
+Dinden,QLD,National Park,21073,210.7,-16.9945,145.639,1,no
+Blackwood River,WA,National Park,20475,204.8,-34.0711,115.3567,1,no
+Nambung,WA,National Park,19390,193.9,-30.5902,115.1583,2,no
+Nairana,QLD,National Park,19380,193.8,-21.6926,146.9095,1,no
+Bunya Mountains,QLD,National Park,19373,193.7,-26.8194,151.5348,1,no
+Abercrombie River,NSW,National Park,19340,193.4,-34.1127,149.7014,1,no
+Greater Beedelup,WA,National Park,19287,192.9,-34.3732,115.8644,1,no
+Chaelundi,NSW,National Park,19122,191.2,-30.0098,152.5248,1,no
+Burrowa - Pine Mountain,VIC,National Park,18965,189.6,-36.1022,147.7472,1,no
+Willandra,NSW,National Park,18855,188.6,-33.2113,144.9369,1,no
+Dulcie Range,NT,National Park,18779,187.8,-22.5263,135.5314,1,yes
+Milyeannup,WA,National Park,18698,187.0,-34.1597,115.6385,1,no
+Mount William,TAS,National Park,18591,185.9,-40.9576,148.2495,2,no
+Cobboboonee,VIC,National Park,18553,185.5,-38.1391,141.4594,2,no
+Walpole-Nornalup,WA,National Park,18546,185.5,-35.0271,116.6044,5,no
+Mount Barney,QLD,National Park,18316,183.2,-28.2852,152.6726,1,no
+Ben Lomond,TAS,National Park,18190,181.9,-41.561,147.6521,1,no
+Savage River,TAS,National Park,17988,179.9,-41.3144,145.4136,1,no
+Greater Bendigo,VIC,National Park,17509,175.1,-36.5194,144.4444,1,no
+Whitsunday Islands,QLD,National Park,17465,174.7,-20.2532,148.9878,1,no
+Kirrama,QLD,National Park,17463,174.6,-18.1654,145.7207,1,no
+Nowendoc,NSW,National Park,17344,173.4,-31.5532,151.5972,1,no
+Lawley River,WA,National Park,17319,173.2,-14.6968,125.9136,1,no
+Moore River,WA,National Park,17235,172.3,-31.0938,115.6937,1,no
+Nymboi-Binderay,NSW,National Park,17209,172.1,-30.1095,152.7241,1,no
+Gheebulum Kunungai (Moreton Island),QLD,National Park,17071,170.7,-27.2414,153.4151,1,yes
+Tully Falls,QLD,National Park,17043,170.4,-17.67,145.5921,1,no
+Hilliger,WA,National Park,16986,169.9,-34.2314,115.6958,1,no
+Freycinet,TAS,National Park,16864,168.6,-42.2305,148.2893,58,no
+Byfield,QLD,National Park,16847,168.5,-22.8205,150.7479,1,no
+Tallaganda,NSW,National Park,16684,166.8,-35.7638,149.475,1,no
+Mount Remarkable,SA,National Park,16651,166.5,-32.7786,138.0663,1,no
+Dryandra,WA,National Park,16536,165.4,-32.7878,116.9279,1,no
+Ngaynggarr,QLD,Aboriginal-owned National Park,16494,164.9,-15.1476,144.7397,1,yes
+Coolah Tops,NSW,National Park,16246,162.5,-31.7658,150.0965,1,no
+Cunnawarra,NSW,National Park,16221,162.2,-30.736,152.133,1,no
+Warlibirri,WA,National Park,15872,158.7,-18.2572,126.3598,1,no
+Douglas-Apsley,TAS,National Park,15832,158.3,-41.7579,148.1922,1,no
+Richmond Range,NSW,National Park,15715,157.2,-28.7879,152.7468,1,yes
+Curracabundi,NSW,National Park,15676,156.8,-31.6528,151.6188,1,no
+Gardens of Stone,NSW,National Park,15634,156.3,-33.1846,150.078,1,no
+Ku-ring-gai Chase,NSW,National Park,15533,155.3,-33.6042,151.2156,1,no
+Kumbatine,NSW,National Park,15389,153.9,-31.1479,152.6073,1,no
+Dharug,NSW,National Park,15324,153.2,-33.3798,151.0647,1,no
+Royal,NSW,National Park,15324,153.2,-34.1129,151.0372,1,no
+Murray River,SA,National Park,15046,150.5,-34.3854,140.5411,1,no
+Toonumbar,NSW,National Park,14939,149.4,-28.4951,152.7367,1,yes
+Adelaide International Bird Sanctuary -Winaityinaityi Pangkara,SA,National Park,14851,148.5,-34.5487,138.3258,1,no
+Warby-Ovens,VIC,National Park,14708,147.1,-36.2742,146.1849,1,no
+Wondul Range,QLD,National Park,14613,146.1,-28.2557,150.992,1,no
+Mitchell River,VIC,National Park,14402,144.0,-37.6497,147.349,1,no
+Yalgorup,WA,National Park,14247,142.5,-32.8029,115.647,2,no
+Mount Walsh,QLD,National Park,14180,141.8,-25.6386,152.026,1,no
+Narkoola,QLD,National Park,14059,140.6,-28.0606,147.0799,1,no
+Mummel Gulf,NSW,National Park,14057,140.6,-31.3222,151.856,1,no
+Greater Hawke,WA,National Park,14009,140.1,-34.5068,115.8727,1,no
+Kara Kara,VIC,National Park,13982,139.8,-36.8587,143.275,1,no
+Elsey,NT,National Park,13899,139.0,-14.9588,133.1926,6,no
+Wiliyan-ngurru,QLD,National Park,13758,137.6,-20.0185,138.1841,1,no
+Biamanga,NSW,National Park,13569,135.7,-36.4551,149.9502,1,yes
+Binya,QLD,National Park,13379,133.8,-28.8468,145.612,1,no
+Dryander,QLD,National Park,13338,133.4,-20.2328,148.5828,1,no
+Naree Budjong Djara,QLD,National Park,13218,132.2,-27.671,153.4471,1,yes
+Badgingarra,WA,National Park,13105,131.1,-30.4394,115.4116,1,no
+Murrumbidgee Valley,NSW,National Park,13027,130.3,-34.6199,146.3033,1,yes
+Baw Baw,VIC,National Park,12781,127.8,-37.8407,146.3077,1,no
+Hell Hole Gorge,QLD,National Park,12735,127.4,-25.545,144.1535,1,no
+Heathcote-Graytown,VIC,National Park,12693,126.9,-36.7818,144.9853,1,no
+Greater Preston,WA,National Park,12672,126.7,-33.5868,116.093,1,no
+Sundown,QLD,National Park,12633,126.3,-28.853,151.7197,1,no
+Lake Bindegolly,QLD,National Park,12526,125.3,-28.0113,144.197,1,no
+Murramarang,NSW,National Park,12350,123.5,-35.5828,150.2978,1,no
+Helena,WA,National Park,12269,122.7,-32.155,116.3208,1,no
+Hartz Mountains,TAS,National Park,12151,121.5,-43.2087,146.7638,1,no
+Brisbane Water,NSW,National Park,12102,121.0,-33.4717,151.2452,1,no
+Dorrigo,NSW,National Park,11769,117.7,-30.354,152.8236,1,no
+Lockyer,QLD,National Park,11765,117.7,-27.468,152.258,1,no
+Girraween,QLD,National Park,11762,117.6,-28.8558,151.9489,1,no
+Carrai,NSW,National Park,11708,117.1,-30.8949,152.2151,1,no
+Marramarra,NSW,National Park,11668,116.7,-33.494,151.1121,1,no
+Wiltshire-Butler,WA,National Park,11649,116.5,-34.0135,115.4752,1,no
+Taunton,QLD,Scientific National Park,11625,116.3,-23.5391,149.2166,1,no
+Maria Island,TAS,National Park,11576,115.8,-42.6498,148.0992,49,no
+Conjola,NSW,National Park,11549,115.5,-35.1782,150.491,1,no
+Kooraban,NSW,National Park,11460,114.6,-36.3137,149.9106,1,no
+Danbulla,QLD,National Park,11425,114.3,-17.1212,145.5809,1,no
+Dipperu,QLD,Scientific National Park,11206,112.1,-21.9482,148.7195,1,no
+Tapin Tops,NSW,National Park,11157,111.6,-31.6549,152.1943,1,no
+Barool,NSW,National Park,11156,111.6,-29.6688,152.23,1,no
+Cathedral Rock,NSW,National Park,11071,110.7,-30.4367,152.2056,1,no
+Boorara-Gardner,WA,National Park,11017,110.2,-34.7493,116.2175,1,no
+Little Mulgrave,QLD,National Park,10972,109.7,-17.1036,145.7031,1,no
+Wongi,QLD,National Park,10937,109.4,-25.5063,152.2451,1,no
+Tasman,TAS,National Park,10911,109.1,-43.1848,147.9501,84,no
+Dhilba Guuranda-Innes,SA,National Park,10847,108.5,-35.241,136.8959,1,no
+Hann Tableland,QLD,National Park,10798,108.0,-16.875,145.2209,1,no
+Beowa,NSW,National Park,10759,107.6,-37.1908,149.9916,1,no
+Crowdy Bay,NSW,National Park,10707,107.1,-31.815,152.724,1,no
+Bromley (Kungkaychi),QLD,Aboriginal-owned National Park,10681,106.8,-12.5358,142.928,1,yes
+Pilliga,NSW,NSW CCA Zone 1 National Park,10523,105.2,-30.5368,148.9891,1,no
+Precipice,QLD,National Park,10504,105.0,-25.3071,150.1006,1,no
+Curtis Island,QLD,National Park,10331,103.3,-23.5939,151.2169,1,no
+French Island,VIC,National Park,10318,103.2,-38.3371,145.4198,1,no
+Limeburners Creek,NSW,National Park,10168,101.7,-31.3145,152.9192,1,no
+Mapleton,QLD,National Park,10077,100.8,-26.5731,152.8156,1,no
+Stokes,WA,National Park,10027,100.3,-33.8342,121.0748,1,no
+Canunda,SA,National Park,9982,99.8,-37.6489,140.2469,1,no
+Kemendok,NSW,National Park,9917,99.2,-34.476,142.4329,1,no
+Lake Muir,WA,National Park,9636,96.4,-34.5595,116.727,1,no
+Nangar,NSW,National Park,9413,94.1,-33.433,148.5202,1,no
+Lower Goulburn,VIC,National Park,9321,93.2,-36.252,145.3123,1,no
+Gunbower,VIC,National Park,9317,93.2,-35.8306,144.3242,1,no
+Castle Tower,QLD,National Park,9307,93.1,-24.1801,151.323,1,no
+Mount Grenfell,NSW,National Park,9201,92.0,-31.2707,145.3312,1,yes
+Mount Augustus,WA,National Park,9163,91.6,-24.3348,116.8504,1,no
+Goonoo,NSW,NSW CCA Zone 1 National Park,9024,90.2,-32.0461,148.7358,1,yes
+Yabbra,NSW,National Park,8980,89.8,-28.6221,152.5075,1,yes
+Dawes,QLD,National Park,8912,89.1,-24.5353,151.2644,1,no
+Bald Rock,NSW,National Park,8905,89.0,-28.8695,152.0586,1,yes
+Brisbane Ranges,VIC,National Park,8881,88.8,-37.8358,144.2684,1,no
+Conimbla,NSW,National Park,8847,88.5,-33.8437,148.337,1,no
+Mowbray,QLD,National Park,8799,88.0,-16.6064,145.4521,1,no
+Christmas Island,EXT,Commonwealth National Park,8777,87.8,-10.5059,105.6117,1,no
+Weddin Mountains,NSW,National Park,8718,87.2,-33.945,147.9859,1,no
+Wapma Thura-Southern Flinders Ranges,SA,National Park,8696,87.0,-33.0559,138.1379,1,no
+Annan River (Yuku Baja-Muliku),QLD,National Park,8686,86.9,-15.5583,145.2095,1,no
+Tarlo River,NSW,National Park,8650,86.5,-34.4984,149.9161,1,yes
+Melsonby (Gaarraay),QLD,Aboriginal-owned National Park,8640,86.4,-15.2033,144.8564,1,yes
+Bribie Island,QLD,National Park,8612,86.1,-26.8995,153.1239,1,no
+Cape Upstart,QLD,National Park,8576,85.8,-19.7494,147.804,1,no
+Budj Bim,VIC,National Park,8571,85.7,-38.0916,141.8951,1,no
+Alexander Morrison,WA,National Park,8498,85.0,-30.0509,115.5803,3,no
+Lakeside,WA,National Park,8471,84.7,-27.6467,117.5152,1,no
+Kwiambal,NSW,National Park,8463,84.6,-29.172,150.9671,2,no
+Littabella,QLD,National Park,8383,83.8,-24.7079,151.9649,1,no
+Cocoparra,NSW,National Park,8299,83.0,-34.0887,146.2362,1,no
+Woko,NSW,National Park,8227,82.3,-31.7584,151.7853,1,no
+Kings Plains,NSW,National Park,8210,82.1,-29.5977,151.3696,1,no
+Nightcap,NSW,National Park,8109,81.1,-28.56,153.3212,1,yes
+Gadgarra,QLD,National Park,8074,80.7,-17.2779,145.7028,1,no
+Juunju Daarrba Nhirrpan,QLD,Aboriginal-owned National Park,8042,80.4,-14.9422,145.0619,1,yes
+Pilliga West,NSW,NSW CCA Zone 1 National Park,7955,79.6,-30.4527,148.7511,1,no
+Fortis Creek,NSW,National Park,7909,79.1,-29.4416,152.8694,1,yes
+Isla Gorge,QLD,National Park,7890,78.9,-25.1412,149.9296,1,no
+Gourock,NSW,National Park,7849,78.5,-35.9295,149.5151,1,no
+Watagans,NSW,National Park,7792,77.9,-33.0094,151.3772,1,no
+Humboldt,QLD,National Park,7701,77.0,-24.2077,148.9563,1,no
+Strzelecki,TAS,National Park,7664,76.6,-40.2233,148.1092,5,no
+Kinrara,QLD,National Park,7609,76.1,-18.455,144.9509,1,no
+Bellthorpe,QLD,National Park,7599,76.0,-26.8738,152.7122,1,no
+Tregole,QLD,National Park,7576,75.8,-26.4834,147.0686,1,no
+Finucane Island,QLD,National Park,7493,74.9,-17.6307,139.7813,1,no
+Narrien Range,QLD,National Park,7455,74.6,-22.9104,146.9675,1,no
+Pinnacles,QLD,National Park,7409,74.1,-19.4266,146.634,1,no
+Hat Head,NSW,National Park,7405,74.1,-31.0662,153.0173,1,no
+Budderoo,NSW,National Park,7382,73.8,-34.6677,150.6572,1,no
+Albinia,QLD,National Park,7363,73.6,-24.4748,148.4923,1,no
+Cape Palmerston,QLD,National Park,7192,71.9,-21.5912,149.4284,1,no
+Southwood,QLD,National Park,7120,71.2,-27.8135,150.1376,1,no
+Beeron,QLD,National Park,7046,70.5,-26.0054,151.3155,1,no
+Mount Royal,NSW,National Park,6975,69.7,-32.2043,151.3035,1,no
+Breelong,NSW,NSW CCA Zone 1 National Park,6951,69.5,-31.8595,148.7379,1,no
+Dharawal,NSW,National Park,6929,69.3,-34.1981,150.8581,1,no
+Jane,WA,National Park,6868,68.7,-34.5904,116.2266,1,no
+Capertee,NSW,National Park,6776,67.8,-33.0377,150.0368,1,no
+Good Night Scrub,QLD,National Park,6672,66.7,-25.3072,151.8888,1,no
+Towarri,NSW,National Park,6669,66.7,-31.8393,150.7425,1,no
+Springbrook,QLD,National Park,6542,65.4,-28.1993,153.2881,1,no
+Herberton Range,QLD,National Park,6536,65.4,-17.3615,145.4724,1,no
+Biriwal Bulga,NSW,National Park,6490,64.9,-31.5058,152.2983,1,no
+Wallingat,NSW,National Park,6484,64.8,-32.2955,152.4197,1,no
+Greater Dordagup,WA,National Park,6410,64.1,-34.517,116.2662,1,no
+Terrick Terrick,VIC,National Park,6388,63.9,-36.1404,144.2491,1,no
+Whicher,WA,National Park,6354,63.5,-33.7841,115.4815,1,no
+Korung,WA,National Park,6354,63.5,-32.0695,116.1335,1,no
+Forty Mile Scrub,QLD,National Park,6307,63.1,-18.0968,144.8557,1,no
+Russell River,QLD,National Park,6200,62.0,-17.2807,145.9782,1,no
+Warro,QLD,National Park,6080,60.8,-24.6477,151.7162,1,no
+Forest Den,QLD,National Park,5892,58.9,-22.1197,145.2197,1,no
+Bullala,NSW,NSW CCA Zone 1 National Park,5838,58.4,-29.3702,150.3563,1,no
+Mimosa Rocks,NSW,National Park,5836,58.4,-36.6689,149.9381,1,no
+Macalister Range,QLD,National Park,5628,56.3,-16.6498,145.5278,1,no
+Bindarri,NSW,National Park,5576,55.8,-30.2978,152.9346,1,no
+Walyunga,WA,National Park,5566,55.7,-31.7277,116.065,2,no
+Booderee,JBT,Commonwealth National Park,5530,55.3,-35.1623,150.7312,1,yes
+Gumbaynggirr,NSW,National Park,5484,54.8,-30.5363,152.5669,1,no
+Boyndaminup,WA,National Park,5443,54.4,-34.5187,116.5744,1,no
+Bingera,QLD,National Park,5440,54.4,-25.0278,152.3156,1,no
+Junee,QLD,National Park,5411,54.1,-22.7564,148.9931,1,no
+Barranyi (North Island),NT,National Park,5381,53.8,-15.5623,136.8679,1,yes
+Poona,QLD,National Park,5350,53.5,-25.5894,152.8208,1,no
+Koreelah,NSW,National Park,5243,52.4,-28.3189,152.4363,1,yes
+Warrabah,NSW,National Park,5214,52.1,-30.5496,150.9546,1,no
+Porcupine Gorge,QLD,National Park,5198,52.0,-20.3589,144.4557,1,no
+Jervis Bay,NSW,National Park,5191,51.9,-34.9571,150.7428,1,no
+South Bruny,TAS,National Park,5181,51.8,-43.494,147.2921,92,no
+Murujuga,WA,National Park,5138,51.4,-20.5532,116.8201,4,yes
+Mount Jerusalem,NSW,National Park,5097,51.0,-28.4892,153.3638,1,yes
+Hunter Wetlands,NSW,National Park,5011,50.1,-32.849,151.7768,1,no
+Barakee,NSW,National Park,4992,49.9,-31.6252,151.8439,1,no
+Gulaga,NSW,National Park,4959,49.6,-36.3127,150.0302,1,yes
+Halifax Bay Wetlands,QLD,National Park,4945,49.4,-18.8739,146.2653,1,no
+Nour Nour,QLD,National Park,4943,49.4,-25.2993,151.4274,1,no
+Deepwater,QLD,National Park,4860,48.6,-24.3082,151.9379,1,no
+Gulngay,QLD,National Park,4850,48.5,-18.0348,146.018,1,no
+Boonoo Boonoo,NSW,National Park,4803,48.0,-28.8506,152.1585,1,yes
+Ghin-Doo-Ee,NSW,National Park,4796,48.0,-32.2286,152.1101,1,no
+Mount Imlay,NSW,National Park,4717,47.2,-37.1593,149.7327,1,no
+Gwydir River,NSW,NSW CCA Zone 1 National Park,4699,47.0,-29.9226,150.7547,1,no
+Mole Creek Karst,TAS,National Park,4652,46.5,-41.5786,146.2642,7,no
+Beelu,WA,National Park,4650,46.5,-31.9414,116.1433,1,no
+Narawntapu,TAS,National Park,4501,45.0,-41.1316,146.6466,19,no
+Deep Creek,SA,National Park,4469,44.7,-35.6328,138.2518,1,no
+Avon Valley,WA,National Park,4459,44.6,-31.6103,116.2207,1,no
+Cataract,NSW,National Park,4377,43.8,-28.7305,152.3313,1,yes
+Tooloom,NSW,National Park,4373,43.7,-28.4528,152.4433,1,yes
+Ella Bay,QLD,National Park,4355,43.6,-17.4318,146.0382,1,no
+Oakview,QLD,National Park,4349,43.5,-26.1664,152.3271,1,no
+Tathra,WA,National Park,4322,43.2,-29.7758,115.5275,2,no
+Bimberamala,NSW,National Park,4320,43.2,-35.4796,150.1132,1,no
+Bongil Bongil,NSW,National Park,4288,42.9,-30.3977,153.0701,1,no
+Serpentine,WA,National Park,4285,42.9,-32.3859,116.057,2,no
+Capoompeta,NSW,National Park,4279,42.8,-29.3868,152.0091,1,no
+Mount Archer,QLD,National Park,4262,42.6,-23.3307,150.5913,1,no
+Wollumbin,NSW,National Park,4248,42.5,-28.3889,153.2581,1,no
+Tewantin,QLD,National Park,4184,41.8,-26.3845,152.8973,1,no
+Djiru,QLD,National Park,4178,41.8,-17.8919,146.0627,1,no
+Mazeppa,QLD,National Park,4126,41.3,-22.2287,147.2878,1,no
+Broadwater,NSW,National Park,4099,41.0,-29.0623,153.4123,1,no
+Woondum,QLD,National Park,4050,40.5,-26.2778,152.8147,1,no
+Popran,NSW,National Park,4032,40.3,-33.3771,151.1868,1,no
+Torndirrup,WA,National Park,4022,40.2,-35.0961,117.8793,2,no
+Jerrawangala,NSW,National Park,4018,40.2,-35.0563,150.4728,1,no
+Bago Bluff,NSW,National Park,3978,39.8,-31.5253,152.6364,1,no
+Waychinicup,WA,National Park,3975,39.7,-34.8943,118.3798,2,no
+Magnetic Island,QLD,National Park,3949,39.5,-19.1393,146.832,1,no
+Bramley,WA,National Park,3892,38.9,-33.9324,115.1233,1,no
+Warra,NSW,National Park,3890,38.9,-30.0113,151.9373,1,no
+Meroo,NSW,National Park,3839,38.4,-35.4728,150.3701,1,no
+Kelvin,QLD,National Park,3827,38.3,-21.5866,149.185,1,no
+Eucla,WA,National Park,3793,37.9,-31.6792,128.9672,1,no
+Mebbin,NSW,National Park,3779,37.8,-28.4548,153.1618,1,yes
+Bungawalbin,NSW,National Park,3711,37.1,-29.1154,153.1441,1,no
+Mount Mackay,QLD,National Park,3688,36.9,-17.9429,145.9744,1,no
+West Cape Howe,WA,National Park,3671,36.7,-35.0956,117.605,1,no
+Hull River,QLD,National Park,3653,36.5,-17.9819,146.0541,1,no
+Cascade,NSW,National Park,3602,36.0,-30.2596,152.8118,1,no
+Berowra Valley,NSW,National Park,3595,35.9,-33.6406,151.1041,1,no
+Dandenong Ranges,VIC,National Park,3534,35.3,-37.8768,145.3137,1,no
+Karuah,NSW,National Park,3520,35.2,-32.5885,151.9379,1,no
+Percy Isles,QLD,National Park,3507,35.1,-21.6503,150.2678,1,no
+Yanununbeyan,NSW,National Park,3487,34.9,-35.5164,149.4098,1,no
+Chillagoe-Mungana Caves,QLD,National Park,3483,34.8,-17.2013,144.508,1,no
+Guula Ngurra,NSW,National Park,3401,34.0,-34.3987,150.1267,1,yes
+South Cumberland Islands,QLD,National Park,3365,33.7,-20.8664,149.6159,1,no
+Niiwalarra Islands,WA,National Park,3352,33.5,-13.89,126.5461,1,no
+Grey Peaks,QLD,National Park,3348,33.5,-16.921,145.838,1,no
+Werakata,NSW,National Park,3335,33.4,-32.8487,151.4252,1,no
+Scott,WA,National Park,3322,33.2,-34.2101,115.2167,1,no
+Ramornie,NSW,National Park,3272,32.7,-29.7206,152.6684,1,no
+Deer Reserve,QLD,National Park,3226,32.3,-27.0856,152.5269,1,no
+Yarrigan,NSW,NSW CCA Zone 1 National Park,3122,31.2,-31.067,149.0726,1,yes
+Gloucester Island,QLD,National Park,3113,31.1,-20.0133,148.4577,1,no
+Turon,NSW,National Park,3099,31.0,-33.1996,149.9378,1,no
+Rocky Cape,TAS,National Park,3098,31.0,-40.8992,145.5194,3,no
+Eurobodalla,NSW,National Park,3031,30.3,-36.1311,150.1156,1,no
+Alfred,VIC,National Park,3022,30.2,-37.5652,149.3696,1,no
+Glass House Mountains,QLD,National Park,3018,30.2,-26.9498,152.9431,1,no
+Butterleaf,NSW,National Park,3005,30.0,-29.522,152.0194,1,no
+Warren,WA,National Park,2991,29.9,-34.4892,115.9034,2,no
+Nuga Nuga,QLD,National Park,2982,29.8,-24.9629,148.687,1,no
+Glenbar,QLD,National Park,2979,29.8,-25.8376,152.344,1,no
+Easter,WA,National Park,2977,29.8,-34.2067,115.7951,1,no
+Barron Gorge,QLD,National Park,2970,29.7,-16.8769,145.6422,1,no
+Mount Aberdeen,QLD,National Park,2943,29.4,-20.2004,147.9304,1,no
+Cania Gorge,QLD,National Park,2924,29.2,-24.6835,150.9853,1,no
+Yanchep,WA,National Park,2913,29.1,-31.5286,115.6697,1,no
+Noosa,QLD,National Park,2895,28.9,-26.4405,153.0918,1,no
+Heathcote,NSW,National Park,2875,28.8,-34.1231,150.9654,1,no
+Bellinger River,NSW,National Park,2837,28.4,-30.4105,152.6981,1,no
+Lindeman Islands,QLD,National Park,2826,28.3,-20.4812,149.0864,1,no
+Minerva Hills,QLD,National Park,2824,28.2,-24.0764,148.0572,1,no
+Flinders Group,QLD,Aboriginal-owned National Park,2809,28.1,-14.1787,144.255,1,yes
+Basket Swamp,NSW,National Park,2800,28.0,-28.9341,152.1691,1,yes
+Danggu,WA,National Park,2795,28.0,-18.0605,125.7334,1,no
+Wallaroo,NSW,National Park,2784,27.8,-32.6114,151.803,1,no
+Broad Sound Islands,QLD,National Park,2748,27.5,-22.2094,149.8932,1,no
+John Forrest,WA,National Park,2700,27.0,-31.8697,116.0863,1,no
+Epping Forest,QLD,Scientific National Park,2693,26.9,-22.3573,146.7059,1,no
+Snake Range,QLD,National Park,2689,26.9,-24.0387,147.5834,1,no
+Porongurup,WA,National Park,2686,26.9,-34.6926,117.9124,1,no
+Mornington Peninsula,VIC,National Park,2682,26.8,-38.4446,144.8584,1,no
+Bournda,NSW,National Park,2661,26.6,-36.8126,149.9209,1,no
+Mares Forest,NSW,National Park,2645,26.5,-34.2964,149.9192,1,yes
+Woowoonga,QLD,National Park,2642,26.4,-25.4557,152.1197,1,no
+Mount Pikapene,NSW,National Park,2610,26.1,-29.0493,152.7021,1,yes
+Beninbi,QLD,National Park,2596,26.0,-25.8802,151.738,1,no
+Dunggir,NSW,National Park,2583,25.8,-30.6691,152.6833,1,no
+Bandilngan  (Windjana Gorge),WA,National Park,2573,25.7,-17.4242,124.9802,1,no
+Drovers Cave,WA,National Park,2564,25.6,-30.233,115.0893,1,no
+Single,NSW,National Park,2563,25.6,-29.9981,151.4119,1,no
+Peak Range,QLD,National Park,2517,25.2,-22.7521,148.1203,1,no
+Midgegooroo,WA,National Park,2493,24.9,-32.1291,116.1498,1,no
+Cordalba,QLD,National Park,2477,24.8,-25.1199,152.1014,1,no
+Eubenangee Swamp,QLD,National Park,2473,24.7,-17.4243,145.9558,1,no
+Maalan,QLD,National Park,2471,24.7,-17.5602,145.5565,1,no
+Port Campbell,VIC,National Park,2424,24.2,-38.6466,143.0748,1,no
+Maria,NSW,National Park,2419,24.2,-31.1521,152.8776,1,no
+The Lakes,VIC,National Park,2407,24.1,-37.9919,147.6661,1,no
+Dalgarup,WA,National Park,2379,23.8,-33.9788,115.9861,1,no
+Tomaree,NSW,National Park,2324,23.2,-32.7534,152.1421,1,no
+Maryland,NSW,National Park,2288,22.9,-28.4995,152.0752,1,no
+Mount Martin,QLD,National Park,2272,22.7,-21.092,148.8974,1,no
+Garigal,NSW,National Park,2263,22.6,-33.7234,151.1924,1,no
+Basilisk Range,QLD,National Park,2221,22.2,-17.7075,145.9639,1,no
+Mudlo,QLD,National Park,2188,21.9,-26.0264,152.2111,1,no
+Yarriabini,NSW,National Park,2180,21.8,-30.7913,152.9537,1,yes
+Mount Nothofagus,NSW,National Park,2154,21.5,-28.3033,152.6145,1,yes
+Rundle Range,QLD,National Park,2154,21.5,-23.6462,150.9745,1,no
+Endeavour River,QLD,National Park,2131,21.3,-15.4361,145.2182,1,no
+Everlasting Swamp,NSW,National Park,2110,21.1,-29.5443,153.0473,1,no
+Gull Rock,WA,National Park,2107,21.1,-35.0034,118.0361,1,no
+Tamborine,QLD,National Park,2092,20.9,-27.8843,153.1846,1,no
+Tuart Forest,WA,National Park,2086,20.9,-33.5715,115.501,4,no
+Mirima,WA,National Park,2066,20.7,-15.7745,128.7721,1,no
+Tarra-Bulga,VIC,National Park,2028,20.3,-38.4359,146.5874,1,no
+Moema,NSW,NSW CCA Zone 1 National Park,2021,20.2,-30.0425,149.9502,1,no
+Khappinghat,NSW,National Park,2008,20.1,-31.964,152.4825,1,no
+Ban Ban,QLD,National Park,1958,19.6,-25.8325,151.9656,1,no
+Pioneer Peaks,QLD,National Park,1945,19.4,-21.0278,148.9389,1,no
+Livingstone,NSW,National Park,1920,19.2,-35.3706,147.3546,1,no
+Maleny,QLD,National Park,1882,18.8,-26.6628,152.7164,1,no
+Worimi,NSW,National Park,1877,18.8,-32.7939,151.9655,1,yes
+Tumoulin,QLD,National Park,1872,18.7,-17.5787,145.4927,1,no
+Bendick Murrell,NSW,National Park,1861,18.6,-34.07,148.4512,1,no
+Keverstone,NSW,National Park,1855,18.5,-34.1181,149.2654,1,no
+Wietalaba,QLD,National Park,1831,18.3,-24.2955,151.2086,1,no
+Middle Brother,NSW,National Park,1828,18.3,-31.6888,152.7154,1,no
+Yarrobil,NSW,NSW CCA Zone 1 National Park,1823,18.2,-32.3085,149.3737,1,no
+Goomboorian,QLD,National Park,1816,18.2,-26.1222,152.7708,1,no
+Nangur,QLD,National Park,1812,18.1,-26.1195,151.9838,1,no
+Bluff Hill,QLD,National Park,1811,18.1,-21.055,148.7774,1,no
+Coorabakh,NSW,National Park,1807,18.1,-31.7132,152.5236,1,no
+Crows Nest,QLD,National Park,1796,18.0,-27.2692,152.1185,1,no
+Molle Islands,QLD,National Park,1780,17.8,-20.3724,148.8606,1,no
+Timbarra,NSW,National Park,1773,17.7,-29.0325,152.3067,1,yes
+Northumberland Islands,QLD,National Park,1769,17.7,-21.6021,149.8,1,no
+Gympie,QLD,National Park,1769,17.7,-26.055,152.7095,1,no
+Dalrymple,QLD,National Park,1755,17.6,-19.7973,146.109,1,no
+William Bay,WA,National Park,1746,17.5,-35.0153,117.252,2,no
+Mount Richmond,VIC,National Park,1738,17.4,-38.2727,141.4182,1,no
+Mooloolah River,QLD,National Park,1676,16.8,-26.7231,153.0956,1,no
+Marrangaroo,NSW,National Park,1672,16.7,-33.4595,150.091,1,no
+Nerang,QLD,National Park,1659,16.6,-27.9684,153.2981,1,no
+Southern Moreton Bay Islands,QLD,National Park,1656,16.6,-27.8003,153.3945,1,no
+Blackwood,QLD,National Park,1647,16.5,-21.4567,146.7171,1,no
+Dan Dan,QLD,National Park,1646,16.5,-24.1622,151.0628,1,no
+Bouddi,NSW,National Park,1618,16.2,-33.5184,151.4024,1,no
+Warialda,NSW,NSW CCA Zone 1 National Park,1599,16.0,-29.7142,150.5942,1,no
+Unnamed WA46400,WA,National Park,1571,15.7,-34.1017,115.1807,1,no
+Kondalilla,QLD,National Park,1568,15.7,-26.6819,152.8343,1,no
+Houtman Abrolhos Islands,WA,National Park,1564,15.6,-28.4635,113.6975,1,no
+Onkaparinga River,SA,National Park,1545,15.4,-35.1591,138.5595,1,no
+Booti Booti,NSW,National Park,1536,15.4,-32.2407,152.546,1,no
+Tarong,QLD,National Park,1518,15.2,-26.8375,151.846,1,no
+Minjary,NSW,National Park,1460,14.6,-35.2519,148.1411,1,yes
+Wolfe Creek Meteorite Crater,WA,National Park,1455,14.5,-19.1723,127.7956,1,no
+Mount Clunie,NSW,National Park,1414,14.1,-28.3107,152.5199,1,yes
+Benambra,NSW,National Park,1400,14.0,-35.7737,147.0988,1,no
+Mount Abbot,QLD,Scientific National Park,1380,13.8,-20.1164,147.7174,1,no
+Forest Grove,WA,National Park,1379,13.8,-34.0987,115.1328,1,no
+Lind,VIC,National Park,1360,13.6,-37.5756,148.9539,1,no
+Yarrahapinni Wetlands,NSW,National Park,1345,13.5,-30.8807,152.9716,1,no
+Bangadilly,NSW,National Park,1324,13.2,-34.4498,150.1935,1,yes
+Charles Darwin,NT,National Park,1303,13.0,-12.4514,130.8764,1,no
+Columbey,NSW,National Park,1285,12.9,-32.5868,151.7407,1,no
+Clyde River,NSW,National Park,1264,12.6,-35.6769,150.1498,1,no
+Mount Chinghee,QLD,National Park,1259,12.6,-28.3035,152.9473,1,no
+Orpheus Island,QLD,National Park,1242,12.4,-18.6141,146.4943,1,no
+Mount Spurgeon,QLD,National Park,1217,12.2,-16.4355,145.205,1,no
+Jimberoo,NSW,National Park,1172,11.7,-33.7612,146.2778,1,no
+Smith Islands,QLD,National Park,1153,11.5,-20.6806,149.1512,1,no
+Mooball,NSW,National Park,1151,11.5,-28.3865,153.4697,1,no
+Hassell,WA,National Park,1138,11.4,-34.6766,118.329,1,no
+Mallanganee,NSW,National Park,1135,11.4,-28.9279,152.7654,1,yes
+Dooragan,NSW,National Park,1096,11.0,-31.6635,152.775,1,no
+Drillwarrina,NSW,NSW CCA Zone 1 National Park,1078,10.8,-31.8802,148.5461,1,no
+Cape Hillsborough,QLD,National Park,1074,10.7,-20.9117,149.0276,1,no
+Mount Binga,QLD,National Park,1070,10.7,-27.0365,151.9483,1,no
+West Hill,QLD,National Park,1066,10.7,-21.8523,149.4609,1,no
+Macquarie Pass,NSW,National Park,1047,10.5,-34.5577,150.6689,1,no
+Jindalee,NSW,National Park,1037,10.4,-34.5125,148.0391,1,no
+Cleland,SA,National Park,1035,10.3,-34.9685,138.6937,1,no
+Mungada Ridge,WA,National Park,1031,10.3,-29.1434,116.9098,1,no
+Burral Yurrul,NSW,NSW CCA Zone 1 National Park,1029,10.3,-29.0866,150.8253,1,no
+Pumicestone,QLD,National Park,1015,10.1,-26.9928,153.0606,1,no
+Bugong,NSW,National Park,1003,10.0,-34.8295,150.4365,1,no
+Cherbourg,QLD,National Park,998,10.0,-26.4114,151.9918,1,no
+Brampton Islands,QLD,National Park,974,9.7,-20.7882,149.2892,1,no
+Neerabup,WA,National Park,973,9.7,-31.6437,115.7255,1,no
+Tinkrameanah,NSW,NSW CCA Zone 1 National Park,968,9.7,-31.3454,149.7065,1,no
+Crater Lakes,QLD,National Park,964,9.6,-17.2511,145.6385,1,no
+Seven Mile Beach,NSW,National Park,962,9.6,-34.8104,150.7603,1,no
+Junuy Juluum,NSW,National Park,945,9.4,-30.291,152.7205,1,no
+Moogerah Peaks,QLD,National Park,944,9.4,-28.0215,152.5443,1,no
+Lizard Island,QLD,National Park,937,9.4,-14.6646,145.46,1,no
+Garrawilla,NSW,NSW CCA Zone 1 National Park,933,9.3,-31.1068,149.6309,1,no
+Scheyville,NSW,National Park,932,9.3,-33.5967,150.896,1,no
+Indwarra,NSW,National Park,931,9.3,-30.0791,151.2527,1,no
+Bendidee,QLD,National Park,928,9.3,-28.2984,150.5193,1,no
+Kalkajaka,QLD,Aboriginal-owned National Park,895,8.9,-15.6655,145.2344,1,yes
+Kurrimine Beach,QLD,National Park,894,8.9,-17.7307,146.0966,1,no
+Erringibba,QLD,National Park,876,8.8,-27.2889,149.7058,1,no
+Gloucester,WA,National Park,875,8.7,-34.4429,116.0758,1,no
+Mount Ossa,QLD,National Park,867,8.7,-20.9746,148.8227,1,no
+Belair,SA,National Park,837,8.4,-35.0116,138.6441,1,no
+Mount Colosseum,QLD,National Park,827,8.3,-24.4071,151.5886,1,no
+Hobden Hill,NSW,NSW CCA Zone 1 National Park,826,8.3,-30.5431,150.5358,1,no
+Keppel Bay Islands,QLD,National Park,821,8.2,-23.0704,150.895,2,no
+Goold Island,QLD,National Park,817,8.2,-18.1657,146.1727,1,no
+Bungonia,NSW,National Park,769,7.7,-34.7993,150.0226,1,no
+Mount O'Connell,QLD,National Park,756,7.6,-22.7467,150.0416,1,no
+Somerton,NSW,NSW CCA Zone 1 National Park,753,7.5,-31.0025,150.527,1,no
+Maria Creek,QLD,National Park,748,7.5,-17.7783,146.0703,1,no
+Yelverton,WA,National Park,728,7.3,-33.7343,115.09,1,no
+Crooked Creek,NSW,NSW CCA Zone 1 National Park,728,7.3,-29.2416,151.2611,1,no
+Lane Cove,NSW,National Park,719,7.2,-33.7489,151.0918,1,no
+Ravensbourne,QLD,National Park,688,6.9,-27.3559,152.1975,1,no
+Ulidarra,NSW,National Park,684,6.8,-30.2507,153.0851,1,no
+Gaagal Wanggaan (South Beach),NSW,National Park,665,6.7,-30.6787,152.9948,1,yes
+Thirlmere Lakes,NSW,National Park,663,6.6,-34.2237,150.5393,1,no
+Naracoorte Caves,SA,National Park,658,6.6,-37.0647,140.8125,1,no
+Moresby Range,QLD,National Park,648,6.5,-17.5341,146.0773,1,no
+Malbon Thompson Range,QLD,National Park,625,6.2,-17.1917,145.9566,1,no
+Family Islands,QLD,National Park,623,6.2,-17.9477,146.1639,1,no
+Gir-um-bit,NSW,National Park,609,6.1,-32.7184,151.9419,1,no
+Wild Cattle Island,QLD,National Park,591,5.9,-23.9801,151.4117,1,no
+Mount Cook,QLD,National Park,586,5.9,-15.4913,145.2586,1,no
+Wyrrabalong,NSW,National Park,581,5.8,-33.2973,151.5323,1,no
+Mount Etna Caves,QLD,National Park,580,5.8,-23.1604,150.4744,1,no
+Goolawah,NSW,National Park,573,5.7,-31.2131,152.965,1,no
+Morwell,VIC,National Park,565,5.7,-38.3663,146.3907,1,no
+Alton,QLD,National Park,558,5.6,-27.997,149.3313,1,no
+Woroon,QLD,National Park,551,5.5,-26.0698,151.7649,1,no
+Unnamed WA53843,WA,National Park,548,5.5,-34.3998,115.6528,1,no
+Glenthorne -Ityamaiitpinna Yarta,SA,National Park,548,5.5,-35.0444,138.5463,1,no
+Point Nepean,VIC,National Park,540,5.4,-38.3154,144.6856,1,no
+Mount Bauple,QLD,Scientific National Park,539,5.4,-25.8106,152.5768,1,no
+Yiraaldiya,NSW,National Park,539,5.4,-33.7131,150.7994,1,no
+Georges River,NSW,National Park,534,5.3,-33.9891,151.0134,1,no
+Goonengerry,NSW,National Park,530,5.3,-28.579,153.4064,1,no
+Glastonbury,QLD,National Park,527,5.3,-26.2894,152.5076,1,no
+Ben Halls Gap,NSW,National Park,516,5.2,-31.5829,151.2293,1,no
+Davies Creek,QLD,National Park,500,5.0,-17.0037,145.5809,1,no
+Kamay Botany Bay,NSW,National Park,498,5.0,-34.0309,151.2197,1,no
+Woolooma,NSW,National Park,497,5.0,-32.0415,151.1675,1,no
+Norfolk Island (Mt Pitt),EXT,Commonwealth National Park,493,4.9,-29.0132,167.9399,1,no
+Possession Island,QLD,National Park,488,4.9,-10.7242,142.3974,1,no
+Newry Islands,QLD,National Park,485,4.8,-20.842,148.9025,1,no
+Rocky Glen,NSW,NSW CCA Zone 1 National Park,479,4.8,-31.1717,149.5728,1,no
+Dularcha,QLD,National Park,470,4.7,-26.7865,152.956,1,no
+Teerk Roo Ra,QLD,National Park,448,4.5,-27.4999,153.3513,1,yes
+Cattai,NSW,National Park,428,4.3,-33.5465,150.8997,1,no
+Venman Bushland,QLD,National Park,427,4.3,-27.6291,153.1951,1,no
+Gatton,QLD,National Park,426,4.3,-27.6058,152.3018,1,no
+Hindmarsh Valley,SA,National Park,425,4.2,-35.4546,138.5737,1,no
+Daarrba,QLD,Aboriginal-owned National Park,415,4.2,-15.0679,145.1243,1,yes
+Auburn River,QLD,National Park,410,4.1,-25.7195,151.0552,1,no
+Kalamunda,WA,National Park,397,4.0,-31.9594,116.0779,1,no
+Mogriguy,NSW,NSW CCA Zone 1 National Park,397,4.0,-32.0793,148.6167,1,no
+Sydney Harbour,NSW,National Park,395,4.0,-33.8129,151.2905,1,no
+Esk,QLD,National Park,384,3.8,-27.2948,152.3206,1,no
+Tuchekoi,QLD,National Park,384,3.8,-26.3689,152.8403,1,no
+Dowe,NSW,NSW CCA Zone 1 National Park,379,3.8,-30.7897,150.4962,1,no
+Mount Coolum,QLD,National Park,363,3.6,-26.5861,153.0872,1,no
+Millstream Falls,QLD,National Park,361,3.6,-17.6355,145.4659,1,no
+Couradda,NSW,NSW CCA Zone 1 National Park,360,3.6,-30.0878,149.9278,1,no
+Serpentine Ridge,NSW,NSW CCA Zone 1 National Park,354,3.5,-29.9824,150.6167,1,no
+Mount Hypipamee,QLD,National Park,348,3.5,-17.4245,145.4878,1,no
+Watsons Creek,NSW,NSW CCA Zone 1 National Park,333,3.3,-30.709,151.0885,1,no
+Clump Mountain,QLD,National Park,326,3.3,-17.843,146.0923,1,no
+Gunyerwarildi,NSW,NSW CCA Zone 1 National Park,315,3.2,-29.2658,150.5412,1,no
+Crawney Pass,NSW,NSW CCA Zone 1 National Park,311,3.1,-31.5866,151.0476,1,no
+Fitzroy Island,QLD,National Park,308,3.1,-16.9326,145.9939,1,no
+Fairlies Knob,QLD,National Park,306,3.1,-25.4993,152.2808,1,no
+Horton Falls,NSW,NSW CCA Zone 1 National Park,300,3.0,-30.3332,150.3378,1,no
+Nullamanna,NSW,NSW CCA Zone 1 National Park,293,2.9,-29.5758,151.2196,1,no
+Belford,NSW,National Park,288,2.9,-32.6492,151.3015,1,no
+Churchill,VIC,National Park,272,2.7,-37.9508,145.2622,1,no
+Woocoo,QLD,National Park,244,2.4,-25.6379,152.3292,1,no
+Capricornia Cays,QLD,National Park,234,2.3,-23.2963,151.7078,2,no
+Pulu Keeling,EXT,Commonwealth National Park,213,2.1,-11.8324,96.8234,1,no
+Murrurundi Pass,NSW,NSW CCA Zone 1 National Park,205,2.0,-31.7404,150.8087,1,no
+Benarkin,QLD,National Park,204,2.0,-26.7601,152.1713,1,no
+Curtain Fig,QLD,National Park,203,2.0,-17.2802,145.57,1,no
+Greenmount,WA,National Park,202,2.0,-31.9107,116.0629,1,no
+Arakwal,NSW,National Park,199,2.0,-28.6625,153.6222,1,yes
+Norfolk Island (Phillip Island),EXT,Commonwealth National Park,192,1.9,-29.1231,167.9488,1,no
+Capricorn Coast,QLD,National Park,182,1.8,-23.2858,150.8076,1,no
+Barayamal,NSW,NSW CCA Zone 1 National Park,178,1.8,-29.7901,151.1523,1,no
+Wallarah,NSW,National Park,175,1.7,-33.1288,151.638,1,no
+Sir James Mitchell,WA,National Park,173,1.7,-34.3455,116.1461,1,no
+Freshwater,QLD,National Park,161,1.6,-27.1767,152.9915,1,no
+Pidna,QLD,National Park,153,1.5,-26.8938,151.9737,1,no
+Organ Pipes,VIC,National Park,153,1.5,-37.6672,144.7665,1,no
+Repulse Islands,QLD,National Park,150,1.5,-20.5982,148.8801,1,no
+Arakoon,NSW,National Park,148,1.5,-30.8835,153.0747,1,no
+Wickham,QLD,National Park,146,1.5,-27.8309,153.1596,1,no
+Baga,QLD,National Park,146,1.5,-23.2149,150.6292,1,no
+Tilligerry,NSW,National Park,141,1.4,-32.775,151.9498,1,no
+Unnamed WA17519,WA,National Park,132,1.3,-34.4726,115.9305,1,no
+Wuthathi (Sir Charles Hardy Group),QLD,Aboriginal-owned National Park,131,1.3,-11.9178,143.4808,1,yes
+Turtle Group,QLD,National Park,121,1.2,-14.6546,145.2517,1,no
+Sappa Bulga,NSW,NSW CCA Zone 1 National Park,121,1.2,-32.3086,148.5162,1,no
+Jardine River,QLD,National Park,118,1.2,-10.9209,142.6311,1,no
+Gooseberry Hill,WA,National Park,107,1.1,-31.9448,116.0477,1,no
+Wuthara Island,QLD,Aboriginal-owned National Park,106,1.1,-12.2878,143.4107,1,yes
+Dimalurru,WA,National Park,91,0.9,-17.6107,125.144,1,no
+Howick Group,QLD,Aboriginal-owned National Park,85,0.8,-14.5079,144.9886,1,yes
+Frankland Group,QLD,National Park,84,0.8,-17.1576,146.0102,1,no
+Unnamed WA47688,WA,National Park,81,0.8,-33.2007,116.2704,1,no
+Scone Mountain,NSW,National Park,78,0.8,-32.0402,150.8888,1,no
+Three Islands Group,QLD,National Park,77,0.8,-15.1154,145.4259,1,no
+Malabar Headland,NSW,National Park,76,0.8,-33.9647,151.2615,1,no
+The Palms,QLD,National Park,72,0.7,-26.9259,151.8879,1,no
+Ferntree Creek,QLD,National Park,72,0.7,-26.6095,152.9654,1,no
+St Helena Island,QLD,National Park,71,0.7,-27.3894,153.2333,1,no
+Sea Acres,NSW,National Park,71,0.7,-31.4647,152.9331,1,no
+Yamarrinh Wachangan Islands (Denham Group),QLD,Aboriginal-owned National Park,70,0.7,-11.1697,143.0164,1,yes
+Wuthathi (Saunders Islands),QLD,Aboriginal-owned National Park,67,0.7,-11.7692,143.0931,1,yes
+Hope Islands,QLD,Aboriginal-owned National Park,62,0.6,-16.2985,145.4985,1,yes
+Claremont Isles,QLD,National Park,61,0.6,-13.9362,143.7563,1,no
+Brook Islands,QLD,National Park,59,0.6,-18.1402,146.2822,1,no
+Lesmurdie Falls,WA,National Park,57,0.6,-31.9954,116.031,2,no
+Swain Reefs,QLD,National Park,56,0.6,-21.79,152.4507,1,no
+Hasties Swamp,QLD,National Park,55,0.6,-17.2992,145.4757,1,no
+Brockman,WA,National Park,51,0.5,-34.5114,115.9991,1,no
+Eudlo Creek,QLD,National Park,42,0.4,-26.7048,152.963,1,no
+Amamoor,QLD,National Park,39,0.4,-26.3247,152.6456,1,no
+Topaz Road,QLD,National Park,37,0.4,-17.3988,145.7014,1,no
+Raine Island,QLD,Scientific National Park,36,0.4,-11.5905,144.0347,1,no
+Yuwi Paree Toolkoon,QLD,National Park,36,0.4,-21.1733,149.2658,1,no
+Holbourne Island,QLD,National Park,36,0.4,-19.7261,148.3581,1,no
+Marpa,QLD,Aboriginal-owned National Park,35,0.4,-14.2176,143.7755,1,yes
+Triunia,QLD,National Park,34,0.3,-26.6527,152.9028,1,no
+Saltwater,NSW,National Park,33,0.3,-32.0063,152.5637,1,yes
+Barnard Island Group,QLD,National Park,31,0.3,-17.7379,146.1601,1,no
+Reliance Creek,QLD,National Park,29,0.3,-21.0462,149.1113,1,no
+Nicoll Scrub,QLD,National Park,27,0.3,-28.188,153.4244,1,no
+Coalstoun Lakes,QLD,National Park,26,0.3,-25.5967,151.9102,1,no
+Ma'alpiku Island,QLD,Aboriginal-owned National Park,26,0.3,-12.6159,143.4476,1,yes
+Burleigh Head,QLD,National Park,26,0.3,-28.0949,153.4566,1,no
+Mapleton Falls,QLD,National Park,26,0.3,-26.6291,152.8401,1,no
+Mount Pinbarren,QLD,National Park,23,0.2,-26.3182,152.8553,1,no
+Geham,QLD,National Park,22,0.2,-27.3883,152.0375,1,no
+Pipeclay,QLD,National Park,14,0.1,-25.984,153.0059,1,no
+Fort Lytton,QLD,National Park,13,0.1,-27.4132,153.1507,1,no
+Palmerston Rocks,QLD,National Park,10,0.1,-17.5683,145.8992,1,no
+Ngalba Bulal,QLD,National Park,8,0.1,-15.9232,145.2072,1,no
+Green Island,QLD,National Park,8,0.1,-16.7596,145.9745,1,no
+Sandbanks,QLD,National Park,7,0.1,-13.4379,143.9722,1,no
+Piper Islands,QLD,Aboriginal-owned National Park,7,0.1,-12.2441,143.2267,1,yes
+Wallabadah,NSW,NSW CCA Zone 1 National Park,6,0.1,-31.5462,150.8217,1,no
+Yungaburra,QLD,National Park,5,0.1,-17.288,145.5714,1,no
+Hampton,QLD,National Park,4,0.0,-27.3525,152.0737,1,no
+Black Mountain,QLD,National Park,3,0.0,-15.6514,145.221,1,no
+Michaelmas and Upolu Cays,QLD,National Park,2,0.0,-16.6066,145.9736,1,no
+Mitirinchi Island,QLD,Aboriginal-owned National Park,1,0.0,-12.4041,143.4892,1,yes
+Sarabah,QLD,National Park,1,0.0,-28.0467,153.123,1,no

@@ -1,0 +1,205 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart: total visits to NSW National Parks and Wildlife Service parks in each survey year, 2008 to 2024/25.",
+  "background": "transparent",
+  "width": "container",
+  "height": 300,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "padding": {
+    "left": 8,
+    "right": 28,
+    "top": 24,
+    "bottom": 5
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/nsw_total_visits.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.total / 1000000",
+      "as": "millions"
+    },
+    {
+      "calculate": "format(datum.millions, '.1f') + 'M'",
+      "as": "lbl"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "sort": {
+        "field": "year_num"
+      },
+      "axis": {
+        "title": "Survey year",
+        "labelAngle": 0,
+        "labelPadding": 8,
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "description": "Line",
+      "mark": {
+        "type": "line",
+        "color": "#E07A1F",
+        "strokeWidth": 3.5
+      },
+      "encoding": {
+        "y": {
+          "field": "millions",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              75
+            ],
+            "nice": false
+          },
+          "axis": {
+            "title": "Visits (millions)",
+            "values": [
+              0,
+              20,
+              40,
+              60
+            ]
+          }
+        }
+      }
+    },
+    {
+      "description": "Points",
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "fill": "#E07A1F",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "millions",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Survey year"
+          },
+          {
+            "field": "total",
+            "type": "quantitative",
+            "title": "Total visits",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Value labels",
+      "mark": {
+        "type": "text",
+        "dy": -16,
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#15271F"
+      },
+      "encoding": {
+        "y": {
+          "field": "millions",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "lbl"
+        }
+      }
+    },
+    {
+      "description": "Note on 2020",
+      "transform": [
+        {
+          "filter": "datum.year == '2020'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontStyle": "italic",
+        "color": "#51625A",
+        "dy": 28,
+        "dx": 0,
+        "align": "center"
+      },
+      "encoding": {
+        "y": {
+          "field": "millions",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "COVID-19 year"
+        }
+      }
+    },
+    {
+      "description": "Note on 2024/25",
+      "transform": [
+        {
+          "filter": "datum.year == '2024/25'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontStyle": "italic",
+        "color": "#51625A",
+        "dy": -38,
+        "dx": 14,
+        "align": "right"
+      },
+      "encoding": {
+        "y": {
+          "field": "millions",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Highest in the series"
+        }
+      }
+    }
+  ]
+}

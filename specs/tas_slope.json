@@ -1,0 +1,348 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Slope chart: estimated visits (thousands) to 12 Tasmanian reference sites in 2020-21 and 2025-26. Maria Island, the biggest rise, is highlighted.",
+  "background": "transparent",
+  "width": 340,
+  "height": 560,
+  "padding": {
+    "left": 16,
+    "right": 16,
+    "top": 8,
+    "bottom": 8
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/visits.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.jurisdiction == 'TAS' && (datum.period == '2020-21' || datum.period == '2025-26') && indexof(['Mount Field','Gordon River (interstate and overseas visitors only)'], datum.place) < 0"
+    },
+    {
+      "calculate": "({'Freycinet':'Freycinet','Cradle Mountain (Dove Lake)':'Cradle Mountain','Tasmans Arch (Tasman National Park)':'Tasmans Arch','Lake St Clair (Cynthia Bay)':'Lake St Clair','Maria Island':'Maria Island','Hastings Caves and Thermal Springs':'Hastings Caves','Narawntapu (Western entrance)':'Narawntapu','Tamar Island Wetlands':'Tamar Island Wetlands','Mole Creek Karst (caves)':'Mole Creek Karst','Highfield House (Stanley)':'Highfield House','Three Capes Track':'Three Capes Track','Overland Track':'Overland Track'})[datum.place]",
+      "as": "site"
+    },
+    {
+      "calculate": "toNumber(datum.visits) / 1000",
+      "as": "k"
+    },
+    {
+      "calculate": "datum.site == 'Maria Island' ? 'Biggest rise' : 'Other sites'",
+      "as": "group"
+    },
+    {
+      "calculate": "datum.period == '2020-21' ? ({'Freycinet':0.0,'Cradle Mountain':0.0,'Tasmans Arch':0.0,'Lake St Clair':0.0,'Narawntapu':0.0,'Tamar Island Wetlands':0.0,'Maria Island':0.0,'Hastings Caves':-8.5,'Mole Creek Karst':8.5,'Highfield House':0.0,'Three Capes Track':-0.7,'Overland Track':0.7})[datum.site] : ({'Freycinet':-4.8,'Cradle Mountain':4.8,'Tasmans Arch':0.0,'Maria Island':-7.0,'Lake St Clair':7.0,'Narawntapu':-9.0,'Tamar Island Wetlands':-3.1,'Hastings Caves':6.7,'Mole Creek Karst':5.4,'Highfield House':0.0,'Three Capes Track':0.0,'Overland Track':0.0})[datum.site]",
+      "as": "shift_px"
+    },
+    {
+      "calculate": "datum.k * exp(-datum.shift_px / 131.811)",
+      "as": "k_label"
+    },
+    {
+      "calculate": "datum.site + '  ' + format(datum.k, ',.0f')",
+      "as": "left_label"
+    },
+    {
+      "calculate": "format(datum.k, ',.0f') + '  ' + datum.site + (datum.site == 'Maria Island' ? ' (2.7 times as many)' : '')",
+      "as": "right_label"
+    },
+    {
+      "calculate": "format(datum.k, ',.0f')",
+      "as": "value_only"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "period",
+      "type": "ordinal",
+      "sort": [
+        "2020-21",
+        "2025-26"
+      ],
+      "scale": {
+        "padding": 0.5
+      },
+      "axis": {
+        "orient": "top",
+        "title": null,
+        "labelAngle": 0,
+        "labelFontSize": 15,
+        "labelFontWeight": 700,
+        "labelPadding": 10,
+        "domain": false,
+        "ticks": false,
+        "labels": true
+      }
+    },
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Biggest rise",
+          "Other sites"
+        ],
+        "range": [
+          "#E07A1F",
+          "#9AA8A1"
+        ]
+      },
+      "legend": null
+    }
+  },
+  "layer": [
+    {
+      "description": "Lines",
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.6,
+        "opacity": 0.95
+      },
+      "encoding": {
+        "y": {
+          "field": "k",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              6,
+              420
+            ],
+            "nice": false
+          },
+          "axis": null
+        },
+        "detail": {
+          "field": "site",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "site",
+            "title": "Site"
+          },
+          {
+            "field": "period",
+            "title": "Year"
+          },
+          {
+            "field": "visits",
+            "type": "quantitative",
+            "title": "Visits",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Dots",
+      "mark": {
+        "type": "circle",
+        "size": 85,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "k",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              6,
+              420
+            ],
+            "nice": false
+          },
+          "axis": null
+        },
+        "tooltip": [
+          {
+            "field": "site",
+            "title": "Site"
+          },
+          {
+            "field": "period",
+            "title": "Year"
+          },
+          {
+            "field": "visits",
+            "type": "quantitative",
+            "title": "Visits",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Left labels",
+      "transform": [
+        {
+          "filter": "datum.period == '2020-21' && datum.group == 'Other sites'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -12,
+        "fontSize": 13,
+        "fontWeight": 400
+      },
+      "encoding": {
+        "y": {
+          "field": "k_label",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              6,
+              420
+            ],
+            "nice": false
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "left_label"
+        },
+        "color": {
+          "value": "#15271F"
+        }
+      }
+    },
+    {
+      "description": "Right labels",
+      "transform": [
+        {
+          "filter": "datum.period == '2025-26' && datum.group == 'Other sites'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "fontSize": 13,
+        "fontWeight": 400
+      },
+      "encoding": {
+        "y": {
+          "field": "k_label",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              6,
+              420
+            ],
+            "nice": false
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "right_label"
+        },
+        "color": {
+          "value": "#15271F"
+        }
+      }
+    },
+    {
+      "description": "Left label, highlighted",
+      "transform": [
+        {
+          "filter": "datum.period == '2020-21' && datum.group == 'Biggest rise'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -12,
+        "fontSize": 13,
+        "fontWeight": 700
+      },
+      "encoding": {
+        "y": {
+          "field": "k_label",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              6,
+              420
+            ],
+            "nice": false
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "left_label"
+        },
+        "color": {
+          "value": "#9A4A07"
+        }
+      }
+    },
+    {
+      "description": "Right label, highlighted",
+      "transform": [
+        {
+          "filter": "datum.period == '2025-26' && datum.group == 'Biggest rise'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "fontSize": 13,
+        "fontWeight": 700
+      },
+      "encoding": {
+        "y": {
+          "field": "k_label",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              6,
+              420
+            ],
+            "nice": false
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "right_label"
+        },
+        "color": {
+          "value": "#9A4A07"
+        }
+      }
+    }
+  ]
+}

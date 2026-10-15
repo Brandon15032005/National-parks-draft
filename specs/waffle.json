@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Waffle chart: 200 squares, each 0.5% of Australia's land, showing how much is protected and by what kind of area (CAPAD 2024).",
+  "background": "transparent",
+  "width": {
+    "step": 28
+  },
+  "height": {
+    "step": 28
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": 600,
+      "symbolType": "square",
+      "symbolSize": 260,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/waffle.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.category == 'Indigenous Protected Areas' ? 0 : datum.category == 'National parks' ? 1 : datum.category == 'Other protected areas' ? 2 : 3",
+      "as": "ord"
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "squares",
+          "as": "end"
+        }
+      ],
+      "sort": [
+        {
+          "field": "ord"
+        }
+      ],
+      "frame": [
+        null,
+        0
+      ]
+    },
+    {
+      "calculate": "sequence(datum.end - datum.squares, datum.end)",
+      "as": "idx"
+    },
+    {
+      "flatten": [
+        "idx"
+      ]
+    },
+    {
+      "calculate": "floor(datum.idx / 10)",
+      "as": "col"
+    },
+    {
+      "calculate": "datum.idx % 10",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.category + ': ' + format(datum.pct_of_australia, '.1f') + '%'",
+      "as": "legend_label"
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null,
+      "scale": {
+        "paddingInner": 0.14,
+        "paddingOuter": 0
+      }
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null,
+      "scale": {
+        "paddingInner": 0.14,
+        "paddingOuter": 0
+      }
+    },
+    "color": {
+      "field": "legend_label",
+      "type": "nominal",
+      "sort": {
+        "field": "ord",
+        "op": "min"
+      },
+      "scale": {
+        "range": [
+          "#E4572E",
+          "#F3722C",
+          "#F8961E",
+          "#F9C74F"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "orient": "bottom",
+        "direction": "vertical",
+        "rowPadding": 6,
+        "labelLimit": 480
+      }
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Type of land"
+      },
+      {
+        "field": "pct_of_australia",
+        "title": "Share of Australia (%)",
+        "format": ".2f"
+      }
+    ]
+  }
+}

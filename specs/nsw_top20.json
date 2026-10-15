@@ -1,0 +1,215 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Lollipop chart: the 20 most visited NSW National Parks and Wildlife Service parks in 2024/25. Filled dots are national parks (CAPAD); hollow dots are other kinds of NPWS park.",
+  "background": "transparent",
+  "width": 520,
+  "height": {
+    "step": 27
+  },
+  "padding": {
+    "left": 8,
+    "right": 8,
+    "top": 5,
+    "bottom": 5
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/visits.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.jurisdiction == 'NSW'"
+    },
+    {
+      "calculate": "datum.visits / 1000000",
+      "as": "millions"
+    },
+    {
+      "calculate": "0",
+      "as": "zero"
+    },
+    {
+      "calculate": "datum.capad_match != '' ? 'National park' : 'Other kind of NPWS park'",
+      "as": "kind"
+    },
+    {
+      "calculate": "format(datum.millions, '.2f') + 'M'",
+      "as": "lbl"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "place",
+      "type": "nominal",
+      "sort": {
+        "field": "millions",
+        "op": "max",
+        "order": "descending"
+      },
+      "axis": {
+        "title": null,
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "labelLimit": 240,
+        "labelPadding": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "description": "Stick",
+      "mark": {
+        "type": "rule",
+        "color": "#E9B98A",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "zero",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              9
+            ],
+            "nice": false
+          },
+          "axis": {
+            "title": "Visits in 2024/25 (millions)",
+            "values": [
+              0,
+              2,
+              4,
+              6,
+              8
+            ],
+            "grid": true
+          }
+        },
+        "x2": {
+          "field": "millions"
+        }
+      }
+    },
+    {
+      "description": "Dot",
+      "mark": {
+        "type": "circle",
+        "size": 170,
+        "stroke": "#E07A1F",
+        "strokeWidth": 2.5,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "millions",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              9
+            ],
+            "nice": false
+          }
+        },
+        "fill": {
+          "field": "kind",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "National park",
+              "Other kind of NPWS park"
+            ],
+            "range": [
+              "#E07A1F",
+              "#FFFFFF"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "symbolStrokeColor": "#E07A1F",
+            "symbolStrokeWidth": 2.5,
+            "labelLimit": 320,
+            "columnPadding": 24
+          }
+        },
+        "tooltip": [
+          {
+            "field": "place",
+            "title": "Park"
+          },
+          {
+            "field": "visits",
+            "type": "quantitative",
+            "title": "Visits, 2024/25",
+            "format": ",.0f"
+          },
+          {
+            "field": "rank_in_source",
+            "title": "Rank"
+          },
+          {
+            "field": "kind",
+            "title": "Type"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Value label",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#15271F"
+      },
+      "encoding": {
+        "x": {
+          "field": "millions",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              9
+            ],
+            "nice": false
+          }
+        },
+        "text": {
+          "field": "lbl"
+        }
+      }
+    }
+  ]
+}

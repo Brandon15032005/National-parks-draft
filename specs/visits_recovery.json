@@ -1,0 +1,412 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap: each Tasmanian site's and Parks Australia park's visits in each year as a percentage of its own busiest year in the data. 100 marks the peak. Gordon River and Mount Field are left out.",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/visits.csv"
+  },
+  "transform": [
+    {
+      "filter": "(datum.jurisdiction == 'TAS' || datum.jurisdiction == 'Commonwealth') && indexof(['Mount Field','Gordon River (interstate and overseas visitors only)'], datum.place) < 0"
+    },
+    {
+      "calculate": "({'Freycinet':'Freycinet','Cradle Mountain (Dove Lake)':'Cradle Mountain','Tasmans Arch (Tasman National Park)':'Tasmans Arch','Lake St Clair (Cynthia Bay)':'Lake St Clair','Maria Island':'Maria Island','Hastings Caves and Thermal Springs':'Hastings Caves','Narawntapu (Western entrance)':'Narawntapu','Tamar Island Wetlands':'Tamar Island Wetlands','Mole Creek Karst (caves)':'Mole Creek Karst','Highfield House (Stanley)':'Highfield House','Three Capes Track':'Three Capes Track','Overland Track':'Overland Track','Uluru-Kata Tjuta':'Uluru-Kata Tjuta','Booderee':'Booderee','Kakadu':'Kakadu','Norfolk Island':'Norfolk Island','Christmas Island':'Christmas Island'})[datum.place]",
+      "as": "site"
+    },
+    {
+      "calculate": "toNumber(datum.visits)",
+      "as": "v"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "v",
+          "as": "peak"
+        }
+      ],
+      "groupby": [
+        "site"
+      ]
+    },
+    {
+      "calculate": "datum.v / datum.peak * 100",
+      "as": "pct"
+    },
+    {
+      "filter": "datum.period != '2018-19'"
+    }
+  ],
+  "vconcat": [
+    {
+      "title": {
+        "text": "Tasmania: 12 sites (Parks and Wildlife Service)",
+        "anchor": "start",
+        "offset": 14,
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#15271F"
+      },
+      "width": 372,
+      "height": {
+        "step": 27
+      },
+      "transform": [
+        {
+          "filter": "datum.jurisdiction == 'TAS'"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "site",
+          "type": "nominal",
+          "sort": [
+            "Maria Island",
+            "Hastings Caves",
+            "Mole Creek Karst",
+            "Three Capes Track",
+            "Cradle Mountain",
+            "Tasmans Arch",
+            "Highfield House",
+            "Overland Track",
+            "Tamar Island Wetlands",
+            "Lake St Clair",
+            "Freycinet",
+            "Narawntapu"
+          ],
+          "axis": {
+            "title": null,
+            "domain": false,
+            "ticks": false,
+            "labelFontSize": 13,
+            "labelLimit": 220,
+            "labelPadding": 8
+          }
+        },
+        "x": {
+          "field": "period",
+          "type": "ordinal",
+          "sort": [
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24",
+            "2024-25",
+            "2025-26"
+          ],
+          "axis": {
+            "orient": "top",
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 12.5,
+            "labelPadding": 8,
+            "domain": false,
+            "ticks": false
+          }
+        }
+      },
+      "layer": [
+        {
+          "description": "Cells",
+          "mark": {
+            "type": "rect",
+            "stroke": "#F4F7F5",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "color": {
+              "field": "pct",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "range": [
+                  "#FCEBD9",
+                  "#B85A0C"
+                ],
+                "clamp": true
+              },
+              "legend": {
+                "title": "Visits as a share of the place's busiest year (%)",
+                "orient": "bottom",
+                "gradientLength": 300,
+                "values": [
+                  0,
+                  25,
+                  50,
+                  75,
+                  100
+                ],
+                "titleLimit": 460
+              }
+            },
+            "tooltip": [
+              {
+                "field": "site",
+                "title": "Place"
+              },
+              {
+                "field": "period",
+                "title": "Year"
+              },
+              {
+                "field": "v",
+                "type": "quantitative",
+                "title": "Visits",
+                "format": ",.0f"
+              },
+              {
+                "field": "pct",
+                "type": "quantitative",
+                "title": "Share of busiest year (%)",
+                "format": ".0f"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Numbers in the cells",
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "fontWeight": 600
+          },
+          "encoding": {
+            "text": {
+              "field": "pct",
+              "type": "quantitative",
+              "format": ".0f"
+            },
+            "color": {
+              "condition": {
+                "test": "datum.pct >= 72",
+                "value": "#FFFFFF"
+              },
+              "value": "#15271F"
+            }
+          }
+        },
+        {
+          "description": "Note: Maria Island",
+          "transform": [
+            {
+              "filter": "datum.site == 'Maria Island' && datum.period == '2025-26'"
+            }
+          ],
+          "mark": {
+            "fontSize": 12.5,
+            "fontStyle": "italic",
+            "color": "#51625A",
+            "lineHeight": 16,
+            "type": "text",
+            "align": "left",
+            "dx": 36
+          },
+          "encoding": {
+            "text": {
+              "value": "from 38% to 100%"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Parks Australia: 5 national parks",
+        "anchor": "start",
+        "offset": 14,
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#15271F"
+      },
+      "width": 310,
+      "height": {
+        "step": 27
+      },
+      "transform": [
+        {
+          "filter": "datum.jurisdiction == 'Commonwealth'"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "site",
+          "type": "nominal",
+          "sort": [
+            "Uluru-Kata Tjuta",
+            "Norfolk Island",
+            "Christmas Island",
+            "Kakadu",
+            "Booderee"
+          ],
+          "axis": {
+            "title": null,
+            "domain": false,
+            "ticks": false,
+            "labelFontSize": 13,
+            "labelLimit": 220,
+            "labelPadding": 8
+          }
+        },
+        "x": {
+          "field": "period",
+          "type": "ordinal",
+          "sort": [
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24",
+            "2024-25",
+            "2025-26"
+          ],
+          "axis": {
+            "orient": "top",
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 12.5,
+            "labelPadding": 8,
+            "domain": false,
+            "ticks": false
+          }
+        }
+      },
+      "layer": [
+        {
+          "description": "Cells",
+          "mark": {
+            "type": "rect",
+            "stroke": "#F4F7F5",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "color": {
+              "field": "pct",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "range": [
+                  "#FCEBD9",
+                  "#B85A0C"
+                ],
+                "clamp": true
+              },
+              "legend": {
+                "title": "Visits as a share of the place's busiest year (%)",
+                "orient": "bottom",
+                "gradientLength": 300,
+                "values": [
+                  0,
+                  25,
+                  50,
+                  75,
+                  100
+                ],
+                "titleLimit": 460
+              }
+            },
+            "tooltip": [
+              {
+                "field": "site",
+                "title": "Place"
+              },
+              {
+                "field": "period",
+                "title": "Year"
+              },
+              {
+                "field": "v",
+                "type": "quantitative",
+                "title": "Visits",
+                "format": ",.0f"
+              },
+              {
+                "field": "pct",
+                "type": "quantitative",
+                "title": "Share of busiest year (%)",
+                "format": ".0f"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Numbers in the cells",
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "fontWeight": 600
+          },
+          "encoding": {
+            "text": {
+              "field": "pct",
+              "type": "quantitative",
+              "format": ".0f"
+            },
+            "color": {
+              "condition": {
+                "test": "datum.pct >= 72",
+                "value": "#FFFFFF"
+              },
+              "value": "#15271F"
+            }
+          }
+        },
+        {
+          "description": "Note: Uluru-Kata Tjuta",
+          "transform": [
+            {
+              "filter": "datum.site == 'Uluru-Kata Tjuta' && datum.period == '2024-25'"
+            }
+          ],
+          "mark": {
+            "fontSize": 12.5,
+            "fontStyle": "italic",
+            "color": "#51625A",
+            "lineHeight": 16,
+            "type": "text",
+            "align": "left",
+            "dx": 36
+          },
+          "encoding": {
+            "text": {
+              "value": "68% of its 2018-19 level"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "spacing": 38
+}

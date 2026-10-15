@@ -1,0 +1,307 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 7,
+      "titleFontSize": 7,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "description": "Proportional symbol map of the places with published park-by-park visit counts (NSW 2024/25, Tasmania 2025-26, Parks Australia 2024-25). Symbol shape shows who counted; click a shape in the key to focus on one agency.",
+  "width": 820,
+  "height": 520,
+  "projection": {
+    "type": "albers",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/australia_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "description": "State outlines",
+      "mark": {
+        "type": "geoshape",
+        "fill": "#E6ECE8",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 1.2
+      }
+    },
+    {
+      "description": "Places with published visit counts",
+      "data": {
+        "url": "data/visits.csv"
+      },
+      "transform": [
+        {
+          "filter": "(datum.jurisdiction == 'NSW') || (datum.jurisdiction == 'TAS' && datum.period == '2025-26') || (datum.jurisdiction == 'Commonwealth' && datum.period == '2024-25')"
+        },
+        {
+          "filter": "isValid(datum.lat) && datum.lat !== '' && datum.lon > 112 && datum.lon < 155"
+        },
+        {
+          "calculate": "toNumber(datum.visits)",
+          "as": "v"
+        },
+        {
+          "calculate": "({'NSW':'NSW National Parks and Wildlife Service (survey estimates)','TAS':'Tasmania Parks and Wildlife Service (site counts)','Commonwealth':'Parks Australia (tickets and gate counts)'})[datum.jurisdiction]",
+          "as": "agency"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "stroke": "#8A3F05",
+        "strokeWidth": 1,
+        "color": "#E07A1F"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "v",
+          "type": "quantitative",
+          "scale": {
+            "type": "sqrt",
+            "domain": [
+              0,
+              8000000
+            ],
+            "range": [
+              15,
+              2400
+            ]
+          },
+          "legend": {
+            "title": [
+              "Visits in the",
+              "latest year"
+            ],
+            "values": [
+              10000,
+              100000,
+              1000000,
+              5000000
+            ],
+            "format": ",.0f",
+            "orient": "bottom-left",
+            "symbolFillColor": "#E07A1F",
+            "symbolOpacity": 0.55,
+            "symbolStrokeColor": "#8A3F05",
+            "titleLimit": 200,
+            "labelFontSize": 7,
+            "titleFontSize": 7
+          }
+        },
+        "shape": {
+          "field": "agency",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "NSW National Parks and Wildlife Service (survey estimates)",
+              "Tasmania Parks and Wildlife Service (site counts)",
+              "Parks Australia (tickets and gate counts)"
+            ],
+            "range": [
+              "circle",
+              "square",
+              "diamond"
+            ]
+          },
+          "legend": {
+            "title": [
+              "Who counted",
+              "(methods differ)"
+            ],
+            "orient": "bottom-left",
+            "symbolFillColor": "#E07A1F",
+            "symbolOpacity": 0.55,
+            "symbolStrokeColor": "#8A3F05",
+            "labelLimit": 380,
+            "titleLimit": 300,
+            "symbolSize": 220,
+            "labelFontSize": 7,
+            "titleFontSize": 7
+          }
+        },
+        "order": {
+          "field": "v",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "place",
+            "title": "Place"
+          },
+          {
+            "field": "agency",
+            "title": "Counted by"
+          },
+          {
+            "field": "period",
+            "title": "Year"
+          },
+          {
+            "field": "v",
+            "type": "quantitative",
+            "title": "Visits",
+            "format": ",.0f"
+          }
+        ],
+        "opacity": {
+          "condition": {
+            "param": "agency_pick",
+            "value": 0.9
+          },
+          "value": 0.18
+        }
+      },
+      "params": [
+        {
+          "name": "agency_pick",
+          "select": {
+            "type": "point",
+            "fields": [
+              "agency"
+            ]
+          },
+          "bind": "legend"
+        }
+      ]
+    },
+    {
+      "description": "Frame showing the Sydney zoom",
+      "data": {
+        "values": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      150.25,
+                      -34.4
+                    ],
+                    [
+                      150.25,
+                      -33.4
+                    ],
+                    [
+                      151.55,
+                      -33.4
+                    ],
+                    [
+                      151.55,
+                      -34.4
+                    ],
+                    [
+                      150.25,
+                      -34.4
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        "format": {
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#15271F",
+        "strokeWidth": 1.4,
+        "strokeDash": [
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "description": "Note on states with no counts",
+      "data": {
+        "values": [
+          {
+            "lon": 123.5,
+            "lat": -26.5,
+            "t": [
+              "Other state and territory",
+              "parks: no park-by-park",
+              "counts found"
+            ]
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontStyle": "italic",
+        "color": "#51625A",
+        "lineHeight": 16
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ]
+}

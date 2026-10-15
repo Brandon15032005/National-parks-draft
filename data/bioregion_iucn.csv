@@ -1,0 +1,713 @@
+name,code,iucn,area_ha,pct_of_region,protected_pct,states,land_region,land_rank,display_group
+Arnhem Coast,ARC,Ia,0,0.0,54.23,NT,yes,78,
+Arnhem Coast,ARC,Ib,0,0.0,54.23,NT,yes,78,
+Arnhem Coast,ARC,II,0,0.0,54.23,NT,yes,78,
+Arnhem Coast,ARC,III,0,0.0,54.23,NT,yes,78,
+Arnhem Coast,ARC,IV,0,0.0,54.23,NT,yes,78,
+Arnhem Coast,ARC,V,475481,14.254,54.23,NT,yes,78,
+Arnhem Coast,ARC,VI,1333588,39.98,54.23,NT,yes,78,
+Arnhem Coast,ARC,Other,0,0.0,54.23,NT,yes,78,
+Arnhem Plateau,ARP,Ia,0,0.0,74.96,NT,yes,85,Most protected
+Arnhem Plateau,ARP,Ib,0,0.0,74.96,NT,yes,85,Most protected
+Arnhem Plateau,ARP,II,486385,21.092,74.96,NT,yes,85,Most protected
+Arnhem Plateau,ARP,III,0,0.0,74.96,NT,yes,85,Most protected
+Arnhem Plateau,ARP,IV,0,0.0,74.96,NT,yes,85,Most protected
+Arnhem Plateau,ARP,V,0,0.0,74.96,NT,yes,85,Most protected
+Arnhem Plateau,ARP,VI,1242261,53.87,74.96,NT,yes,85,Most protected
+Arnhem Plateau,ARP,Other,0,0.0,74.96,NT,yes,85,Most protected
+Australian Alps,AUA,Ia,11078,0.898,64.01,"ACT, NSW, VIC",yes,84,Most protected
+Australian Alps,AUA,Ib,27678,2.245,64.01,"ACT, NSW, VIC",yes,84,Most protected
+Australian Alps,AUA,II,738662,59.908,64.01,"ACT, NSW, VIC",yes,84,Most protected
+Australian Alps,AUA,III,10299,0.835,64.01,"ACT, NSW, VIC",yes,84,Most protected
+Australian Alps,AUA,IV,584,0.047,64.01,"ACT, NSW, VIC",yes,84,Most protected
+Australian Alps,AUA,V,0,0.0,64.01,"ACT, NSW, VIC",yes,84,Most protected
+Australian Alps,AUA,VI,886,0.072,64.01,"ACT, NSW, VIC",yes,84,Most protected
+Australian Alps,AUA,Other,0,0.0,64.01,"ACT, NSW, VIC",yes,84,Most protected
+Avon Wheatbelt,AVW,Ia,190436,2.001,4.47,WA,yes,10,Least protected
+Avon Wheatbelt,AVW,Ib,0,0.0,4.47,WA,yes,10,Least protected
+Avon Wheatbelt,AVW,II,223171,2.345,4.47,WA,yes,10,Least protected
+Avon Wheatbelt,AVW,III,0,0.0,4.47,WA,yes,10,Least protected
+Avon Wheatbelt,AVW,IV,6781,0.071,4.47,WA,yes,10,Least protected
+Avon Wheatbelt,AVW,V,0,0.0,4.47,WA,yes,10,Least protected
+Avon Wheatbelt,AVW,VI,5111,0.054,4.47,WA,yes,10,Least protected
+Avon Wheatbelt,AVW,Other,0,0.0,4.47,WA,yes,10,Least protected
+Ben Lomond,BEL,Ia,28,0.004,16.3,TAS,yes,44,
+Ben Lomond,BEL,Ib,0,0.0,16.3,TAS,yes,44,
+Ben Lomond,BEL,II,19950,3.034,16.3,TAS,yes,44,
+Ben Lomond,BEL,III,5820,0.885,16.3,TAS,yes,44,
+Ben Lomond,BEL,IV,61477,9.35,16.3,TAS,yes,44,
+Ben Lomond,BEL,V,601,0.091,16.3,TAS,yes,44,
+Ben Lomond,BEL,VI,19291,2.934,16.3,TAS,yes,44,
+Ben Lomond,BEL,Other,0,0.0,16.3,TAS,yes,44,
+Brigalow Belt North,BBN,Ia,23938,0.175,2.41,QLD,yes,5,Least protected
+Brigalow Belt North,BBN,Ib,0,0.0,2.41,QLD,yes,5,Least protected
+Brigalow Belt North,BBN,II,225151,1.646,2.41,QLD,yes,5,Least protected
+Brigalow Belt North,BBN,III,33906,0.248,2.41,QLD,yes,5,Least protected
+Brigalow Belt North,BBN,IV,593,0.004,2.41,QLD,yes,5,Least protected
+Brigalow Belt North,BBN,V,0,0.0,2.41,QLD,yes,5,Least protected
+Brigalow Belt North,BBN,VI,45526,0.333,2.41,QLD,yes,5,Least protected
+Brigalow Belt North,BBN,Other,0,0.0,2.41,QLD,yes,5,Least protected
+Brigalow Belt South,BBS,Ia,169070,0.621,5.52,"NSW, QLD",yes,14,
+Brigalow Belt South,BBS,Ib,0,0.0,5.52,"NSW, QLD",yes,14,
+Brigalow Belt South,BBS,II,924940,3.398,5.52,"NSW, QLD",yes,14,
+Brigalow Belt South,BBS,III,4880,0.018,5.52,"NSW, QLD",yes,14,
+Brigalow Belt South,BBS,IV,131266,0.482,5.52,"NSW, QLD",yes,14,
+Brigalow Belt South,BBS,V,12202,0.045,5.52,"NSW, QLD",yes,14,
+Brigalow Belt South,BBS,VI,259452,0.953,5.52,"NSW, QLD",yes,14,
+Brigalow Belt South,BBS,Other,0,0.0,5.52,"NSW, QLD",yes,14,
+Broken Hill Complex,BHC,Ia,0,0.0,5.82,"NSW, SA",yes,15,
+Broken Hill Complex,BHC,Ib,0,0.0,5.82,"NSW, SA",yes,15,
+Broken Hill Complex,BHC,II,248090,4.402,5.82,"NSW, SA",yes,15,
+Broken Hill Complex,BHC,III,707,0.013,5.82,"NSW, SA",yes,15,
+Broken Hill Complex,BHC,IV,7236,0.128,5.82,"NSW, SA",yes,15,
+Broken Hill Complex,BHC,V,0,0.0,5.82,"NSW, SA",yes,15,
+Broken Hill Complex,BHC,VI,72077,1.279,5.82,"NSW, SA",yes,15,
+Broken Hill Complex,BHC,Other,0,0.0,5.82,"NSW, SA",yes,15,
+Burt Plain,BRT,Ia,0,0.0,6.68,NT,yes,18,
+Burt Plain,BRT,Ib,0,0.0,6.68,NT,yes,18,
+Burt Plain,BRT,II,0,0.0,6.68,NT,yes,18,
+Burt Plain,BRT,III,85,0.001,6.68,NT,yes,18,
+Burt Plain,BRT,IV,480,0.007,6.68,NT,yes,18,
+Burt Plain,BRT,V,111488,1.511,6.68,NT,yes,18,
+Burt Plain,BRT,VI,381188,5.165,6.68,NT,yes,18,
+Burt Plain,BRT,Other,0,0.0,6.68,NT,yes,18,
+Cape York Peninsula,CYP,Ia,0,0.0,38.77,QLD,yes,69,
+Cape York Peninsula,CYP,Ib,0,0.0,38.77,QLD,yes,69,
+Cape York Peninsula,CYP,II,3158124,25.767,38.77,QLD,yes,69,
+Cape York Peninsula,CYP,III,66,0.001,38.77,QLD,yes,69,
+Cape York Peninsula,CYP,IV,160685,1.311,38.77,QLD,yes,69,
+Cape York Peninsula,CYP,V,182876,1.492,38.77,QLD,yes,69,
+Cape York Peninsula,CYP,VI,1250575,10.203,38.77,QLD,yes,69,
+Cape York Peninsula,CYP,Other,0,0.0,38.77,QLD,yes,69,
+Carnarvon,CAR,Ia,89888,1.066,14.6,WA,yes,34,
+Carnarvon,CAR,Ib,0,0.0,14.6,WA,yes,34,
+Carnarvon,CAR,II,1140570,13.53,14.6,WA,yes,34,
+Carnarvon,CAR,III,396,0.005,14.6,WA,yes,34,
+Carnarvon,CAR,IV,0,0.0,14.6,WA,yes,34,
+Carnarvon,CAR,V,1,0.0,14.6,WA,yes,34,
+Carnarvon,CAR,VI,0,0.0,14.6,WA,yes,34,
+Carnarvon,CAR,Other,0,0.0,14.6,WA,yes,34,
+Central Arnhem,CEA,Ia,0,0.0,34.08,NT,yes,63,
+Central Arnhem,CEA,Ib,0,0.0,34.08,NT,yes,63,
+Central Arnhem,CEA,II,0,0.0,34.08,NT,yes,63,
+Central Arnhem,CEA,III,0,0.0,34.08,NT,yes,63,
+Central Arnhem,CEA,IV,0,0.0,34.08,NT,yes,63,
+Central Arnhem,CEA,V,0,0.0,34.08,NT,yes,63,
+Central Arnhem,CEA,VI,1179902,34.077,34.08,NT,yes,63,
+Central Arnhem,CEA,Other,0,0.0,34.08,NT,yes,63,
+Central Kimberley,CEK,Ia,0,0.0,31.08,WA,yes,60,
+Central Kimberley,CEK,Ib,0,0.0,31.08,WA,yes,60,
+Central Kimberley,CEK,II,1166491,15.197,31.08,WA,yes,60,
+Central Kimberley,CEK,III,0,0.0,31.08,WA,yes,60,
+Central Kimberley,CEK,IV,0,0.0,31.08,WA,yes,60,
+Central Kimberley,CEK,V,495954,6.461,31.08,WA,yes,60,
+Central Kimberley,CEK,VI,722825,9.417,31.08,WA,yes,60,
+Central Kimberley,CEK,Other,0,0.0,31.08,WA,yes,60,
+Central Mackay Coast,CMC,Ia,71,0.005,15.0,QLD,yes,40,
+Central Mackay Coast,CMC,Ib,0,0.0,15.0,QLD,yes,40,
+Central Mackay Coast,CMC,II,191242,13.061,15.0,QLD,yes,40,
+Central Mackay Coast,CMC,III,3054,0.209,15.0,QLD,yes,40,
+Central Mackay Coast,CMC,IV,0,0.0,15.0,QLD,yes,40,
+Central Mackay Coast,CMC,V,0,0.0,15.0,QLD,yes,40,
+Central Mackay Coast,CMC,VI,25303,1.728,15.0,QLD,yes,40,
+Central Mackay Coast,CMC,Other,0,0.0,15.0,QLD,yes,40,
+Central Ranges,CER,Ia,0,0.0,81.32,"NT, SA, WA",yes,86,Most protected
+Central Ranges,CER,Ib,0,0.0,81.32,"NT, SA, WA",yes,86,Most protected
+Central Ranges,CER,II,0,0.0,81.32,"NT, SA, WA",yes,86,Most protected
+Central Ranges,CER,III,0,0.0,81.32,"NT, SA, WA",yes,86,Most protected
+Central Ranges,CER,IV,0,0.0,81.32,"NT, SA, WA",yes,86,Most protected
+Central Ranges,CER,V,0,0.0,81.32,"NT, SA, WA",yes,86,Most protected
+Central Ranges,CER,VI,8265173,81.318,81.32,"NT, SA, WA",yes,86,Most protected
+Central Ranges,CER,Other,0,0.0,81.32,"NT, SA, WA",yes,86,Most protected
+Channel Country,CHC,Ia,0,0.0,11.04,"NSW, NT, QLD, SA",yes,30,
+Channel Country,CHC,Ib,11778,0.039,11.04,"NSW, NT, QLD, SA",yes,30,
+Channel Country,CHC,II,939273,3.089,11.04,"NSW, NT, QLD, SA",yes,30,
+Channel Country,CHC,III,1229,0.004,11.04,"NSW, NT, QLD, SA",yes,30,
+Channel Country,CHC,IV,203044,0.668,11.04,"NSW, NT, QLD, SA",yes,30,
+Channel Country,CHC,V,0,0.0,11.04,"NSW, NT, QLD, SA",yes,30,
+Channel Country,CHC,VI,2202036,7.241,11.04,"NSW, NT, QLD, SA",yes,30,
+Channel Country,CHC,Other,0,0.0,11.04,"NSW, NT, QLD, SA",yes,30,
+Cobar Peneplain,COP,Ia,86967,1.178,3.26,NSW,yes,7,Least protected
+Cobar Peneplain,COP,Ib,0,0.0,3.26,NSW,yes,7,Least protected
+Cobar Peneplain,COP,II,129149,1.749,3.26,NSW,yes,7,Least protected
+Cobar Peneplain,COP,III,0,0.0,3.26,NSW,yes,7,Least protected
+Cobar Peneplain,COP,IV,24412,0.331,3.26,NSW,yes,7,Least protected
+Cobar Peneplain,COP,V,0,0.0,3.26,NSW,yes,7,Least protected
+Cobar Peneplain,COP,VI,0,0.0,3.26,NSW,yes,7,Least protected
+Cobar Peneplain,COP,Other,0,0.0,3.26,NSW,yes,7,Least protected
+Coolgardie,COO,Ia,984437,7.624,37.62,WA,yes,68,
+Coolgardie,COO,Ib,0,0.0,37.62,WA,yes,68,
+Coolgardie,COO,II,564227,4.37,37.62,WA,yes,68,
+Coolgardie,COO,III,0,0.0,37.62,WA,yes,68,
+Coolgardie,COO,IV,0,0.0,37.62,WA,yes,68,
+Coolgardie,COO,V,0,0.0,37.62,WA,yes,68,
+Coolgardie,COO,VI,3308674,25.624,37.62,WA,yes,68,
+Coolgardie,COO,Other,0,0.0,37.62,WA,yes,68,
+Coral Sea,COS,Ia,0,0.0,0.0,EXT,no,,
+Coral Sea,COS,Ib,0,0.0,0.0,EXT,no,,
+Coral Sea,COS,II,0,0.0,0.0,EXT,no,,
+Coral Sea,COS,III,0,0.0,0.0,EXT,no,,
+Coral Sea,COS,IV,0,0.0,0.0,EXT,no,,
+Coral Sea,COS,V,0,0.0,0.0,EXT,no,,
+Coral Sea,COS,VI,0,0.0,0.0,EXT,no,,
+Coral Sea,COS,Other,0,0.0,0.0,EXT,no,,
+Daly Basin,DAB,Ia,0,0.0,10.47,NT,yes,28,
+Daly Basin,DAB,Ib,0,0.0,10.47,NT,yes,28,
+Daly Basin,DAB,II,142640,6.818,10.47,NT,yes,28,
+Daly Basin,DAB,III,1921,0.092,10.47,NT,yes,28,
+Daly Basin,DAB,IV,0,0.0,10.47,NT,yes,28,
+Daly Basin,DAB,V,39065,1.867,10.47,NT,yes,28,
+Daly Basin,DAB,VI,35405,1.692,10.47,NT,yes,28,
+Daly Basin,DAB,Other,0,0.0,10.47,NT,yes,28,
+Dampierland,DAL,Ia,38760,0.464,14.8,WA,yes,37,
+Dampierland,DAL,Ib,0,0.0,14.8,WA,yes,37,
+Dampierland,DAL,II,142818,1.708,14.8,WA,yes,37,
+Dampierland,DAL,III,0,0.0,14.8,WA,yes,37,
+Dampierland,DAL,IV,36727,0.439,14.8,WA,yes,37,
+Dampierland,DAL,V,2649,0.032,14.8,WA,yes,37,
+Dampierland,DAL,VI,1016466,12.157,14.8,WA,yes,37,
+Dampierland,DAL,Other,0,0.0,14.8,WA,yes,37,
+Darling Riverine Plains,DRP,Ia,42085,0.393,3.04,"NSW, QLD",yes,6,Least protected
+Darling Riverine Plains,DRP,Ib,0,0.0,3.04,"NSW, QLD",yes,6,Least protected
+Darling Riverine Plains,DRP,II,250298,2.339,3.04,"NSW, QLD",yes,6,Least protected
+Darling Riverine Plains,DRP,III,0,0.0,3.04,"NSW, QLD",yes,6,Least protected
+Darling Riverine Plains,DRP,IV,28929,0.27,3.04,"NSW, QLD",yes,6,Least protected
+Darling Riverine Plains,DRP,V,4323,0.04,3.04,"NSW, QLD",yes,6,Least protected
+Darling Riverine Plains,DRP,VI,0,0.0,3.04,"NSW, QLD",yes,6,Least protected
+Darling Riverine Plains,DRP,Other,0,0.0,3.04,"NSW, QLD",yes,6,Least protected
+Darwin Coastal,DAC,Ia,0,0.0,30.9,NT,yes,59,
+Darwin Coastal,DAC,Ib,0,0.0,30.9,NT,yes,59,
+Darwin Coastal,DAC,II,619445,21.787,30.9,NT,yes,59,
+Darwin Coastal,DAC,III,0,0.0,30.9,NT,yes,59,
+Darwin Coastal,DAC,IV,67371,2.37,30.9,NT,yes,59,
+Darwin Coastal,DAC,V,179432,6.311,30.9,NT,yes,59,
+Darwin Coastal,DAC,VI,12318,0.433,30.9,NT,yes,59,
+Darwin Coastal,DAC,Other,0,0.0,30.9,NT,yes,59,
+Davenport Murchison Ranges,DMR,Ia,0,0.0,2.24,NT,yes,3,Least protected
+Davenport Murchison Ranges,DMR,Ib,0,0.0,2.24,NT,yes,3,Least protected
+Davenport Murchison Ranges,DMR,II,0,0.0,2.24,NT,yes,3,Least protected
+Davenport Murchison Ranges,DMR,III,0,0.0,2.24,NT,yes,3,Least protected
+Davenport Murchison Ranges,DMR,IV,209,0.004,2.24,NT,yes,3,Least protected
+Davenport Murchison Ranges,DMR,V,129620,2.233,2.24,NT,yes,3,Least protected
+Davenport Murchison Ranges,DMR,VI,0,0.0,2.24,NT,yes,3,Least protected
+Davenport Murchison Ranges,DMR,Other,0,0.0,2.24,NT,yes,3,Least protected
+Desert Uplands,DEU,Ia,0,0.0,3.37,QLD,yes,9,Least protected
+Desert Uplands,DEU,Ib,0,0.0,3.37,QLD,yes,9,Least protected
+Desert Uplands,DEU,II,172072,2.479,3.37,QLD,yes,9,Least protected
+Desert Uplands,DEU,III,0,0.0,3.37,QLD,yes,9,Least protected
+Desert Uplands,DEU,IV,3782,0.054,3.37,QLD,yes,9,Least protected
+Desert Uplands,DEU,V,0,0.0,3.37,QLD,yes,9,Least protected
+Desert Uplands,DEU,VI,57961,0.835,3.37,QLD,yes,9,Least protected
+Desert Uplands,DEU,Other,0,0.0,3.37,QLD,yes,9,Least protected
+Einasleigh Uplands,EIU,Ia,0,0.0,8.06,QLD,yes,22,
+Einasleigh Uplands,EIU,Ib,0,0.0,8.06,QLD,yes,22,
+Einasleigh Uplands,EIU,II,566466,4.873,8.06,QLD,yes,22,
+Einasleigh Uplands,EIU,III,7424,0.064,8.06,QLD,yes,22,
+Einasleigh Uplands,EIU,IV,33206,0.286,8.06,QLD,yes,22,
+Einasleigh Uplands,EIU,V,21055,0.181,8.06,QLD,yes,22,
+Einasleigh Uplands,EIU,VI,308893,2.657,8.06,QLD,yes,22,
+Einasleigh Uplands,EIU,Other,0,0.0,8.06,QLD,yes,22,
+Esperance Plains,ESP,Ia,231857,7.937,29.29,WA,yes,57,
+Esperance Plains,ESP,Ib,0,0.0,29.29,WA,yes,57,
+Esperance Plains,ESP,II,614626,21.039,29.29,WA,yes,57,
+Esperance Plains,ESP,III,0,0.0,29.29,WA,yes,57,
+Esperance Plains,ESP,IV,5472,0.187,29.29,WA,yes,57,
+Esperance Plains,ESP,V,16,0.001,29.29,WA,yes,57,
+Esperance Plains,ESP,VI,3758,0.129,29.29,WA,yes,57,
+Esperance Plains,ESP,Other,0,0.0,29.29,WA,yes,57,
+Eyre Yorke Block,EYB,Ia,23125,0.378,15.17,SA,yes,41,
+Eyre Yorke Block,EYB,Ib,115898,1.894,15.17,SA,yes,41,
+Eyre Yorke Block,EYB,II,75869,1.24,15.17,SA,yes,41,
+Eyre Yorke Block,EYB,III,279772,4.571,15.17,SA,yes,41,
+Eyre Yorke Block,EYB,IV,24,0.0,15.17,SA,yes,41,
+Eyre Yorke Block,EYB,V,3233,0.053,15.17,SA,yes,41,
+Eyre Yorke Block,EYB,VI,430410,7.032,15.17,SA,yes,41,
+Eyre Yorke Block,EYB,Other,5,0.0,15.17,SA,yes,41,
+Finke,FIN,Ia,0,0.0,4.6,"NT, SA",yes,12,Least protected
+Finke,FIN,Ib,0,0.0,4.6,"NT, SA",yes,12,Least protected
+Finke,FIN,II,0,0.0,4.6,"NT, SA",yes,12,Least protected
+Finke,FIN,III,752,0.01,4.6,"NT, SA",yes,12,Least protected
+Finke,FIN,IV,0,0.0,4.6,"NT, SA",yes,12,Least protected
+Finke,FIN,V,1834,0.025,4.6,"NT, SA",yes,12,Least protected
+Finke,FIN,VI,331958,4.568,4.6,"NT, SA",yes,12,Least protected
+Finke,FIN,Other,0,0.0,4.6,"NT, SA",yes,12,Least protected
+Flinders Lofty Block,FLB,Ia,231516,3.499,9.11,SA,yes,25,
+Flinders Lofty Block,FLB,Ib,0,0.0,9.11,SA,yes,25,
+Flinders Lofty Block,FLB,II,227154,3.434,9.11,SA,yes,25,
+Flinders Lofty Block,FLB,III,18990,0.287,9.11,SA,yes,25,
+Flinders Lofty Block,FLB,IV,3352,0.051,9.11,SA,yes,25,
+Flinders Lofty Block,FLB,V,69,0.001,9.11,SA,yes,25,
+Flinders Lofty Block,FLB,VI,121343,1.834,9.11,SA,yes,25,
+Flinders Lofty Block,FLB,Other,20,0.0,9.11,SA,yes,25,
+Furneaux,FUR,Ia,11244,2.092,34.41,"TAS, VIC",yes,65,
+Furneaux,FUR,Ib,9,0.002,34.41,"TAS, VIC",yes,65,
+Furneaux,FUR,II,69825,12.99,34.41,"TAS, VIC",yes,65,
+Furneaux,FUR,III,2559,0.476,34.41,"TAS, VIC",yes,65,
+Furneaux,FUR,IV,11270,2.097,34.41,"TAS, VIC",yes,65,
+Furneaux,FUR,V,16019,2.98,34.41,"TAS, VIC",yes,65,
+Furneaux,FUR,VI,74029,13.772,34.41,"TAS, VIC",yes,65,
+Furneaux,FUR,Other,0,0.0,34.41,"TAS, VIC",yes,65,
+Gascoyne,GAS,Ia,454525,2.515,16.09,WA,yes,43,
+Gascoyne,GAS,Ib,0,0.0,16.09,WA,yes,43,
+Gascoyne,GAS,II,1611608,8.916,16.09,WA,yes,43,
+Gascoyne,GAS,III,52732,0.292,16.09,WA,yes,43,
+Gascoyne,GAS,IV,0,0.0,16.09,WA,yes,43,
+Gascoyne,GAS,V,12,0.0,16.09,WA,yes,43,
+Gascoyne,GAS,VI,790030,4.371,16.09,WA,yes,43,
+Gascoyne,GAS,Other,0,0.0,16.09,WA,yes,43,
+Gawler,GAW,Ia,234062,1.95,16.36,SA,yes,46,
+Gawler,GAW,Ib,9814,0.082,16.36,SA,yes,46,
+Gawler,GAW,II,221044,1.842,16.36,SA,yes,46,
+Gawler,GAW,III,39378,0.328,16.36,SA,yes,46,
+Gawler,GAW,IV,0,0.0,16.36,SA,yes,46,
+Gawler,GAW,V,0,0.0,16.36,SA,yes,46,
+Gawler,GAW,VI,1459578,12.16,16.36,SA,yes,46,
+Gawler,GAW,Other,0,0.0,16.36,SA,yes,46,
+Geraldton Sandplains,GES,Ia,261627,8.326,19.08,WA,yes,50,
+Geraldton Sandplains,GES,Ib,0,0.0,19.08,WA,yes,50,
+Geraldton Sandplains,GES,II,306465,9.753,19.08,WA,yes,50,
+Geraldton Sandplains,GES,III,747,0.024,19.08,WA,yes,50,
+Geraldton Sandplains,GES,IV,29934,0.953,19.08,WA,yes,50,
+Geraldton Sandplains,GES,V,0,0.0,19.08,WA,yes,50,
+Geraldton Sandplains,GES,VI,652,0.021,19.08,WA,yes,50,
+Geraldton Sandplains,GES,Other,0,0.0,19.08,WA,yes,50,
+Gibson Desert,GID,Ia,1845696,11.809,58.4,WA,yes,81,Most protected
+Gibson Desert,GID,Ib,0,0.0,58.4,WA,yes,81,Most protected
+Gibson Desert,GID,II,0,0.0,58.4,WA,yes,81,Most protected
+Gibson Desert,GID,III,127524,0.816,58.4,WA,yes,81,Most protected
+Gibson Desert,GID,IV,0,0.0,58.4,WA,yes,81,Most protected
+Gibson Desert,GID,V,0,0.0,58.4,WA,yes,81,Most protected
+Gibson Desert,GID,VI,7154071,45.775,58.4,WA,yes,81,Most protected
+Gibson Desert,GID,Other,0,0.0,58.4,WA,yes,81,Most protected
+Great Sandy Desert,GSD,Ia,17733,0.045,49.92,"NT, WA",yes,76,
+Great Sandy Desert,GSD,Ib,0,0.0,49.92,"NT, WA",yes,76,
+Great Sandy Desert,GSD,II,1384057,3.505,49.92,"NT, WA",yes,76,
+Great Sandy Desert,GSD,III,594016,1.504,49.92,"NT, WA",yes,76,
+Great Sandy Desert,GSD,IV,1597254,4.045,49.92,"NT, WA",yes,76,
+Great Sandy Desert,GSD,V,16797,0.043,49.92,"NT, WA",yes,76,
+Great Sandy Desert,GSD,VI,16099766,40.773,49.92,"NT, WA",yes,76,
+Great Sandy Desert,GSD,Other,0,0.0,49.92,"NT, WA",yes,76,
+Great Victoria Desert,GVD,Ia,3591100,8.5,42.97,"SA, WA",yes,72,
+Great Victoria Desert,GVD,Ib,493163,1.167,42.97,"SA, WA",yes,72,
+Great Victoria Desert,GVD,II,2203,0.005,42.97,"SA, WA",yes,72,
+Great Victoria Desert,GVD,III,15253,0.036,42.97,"SA, WA",yes,72,
+Great Victoria Desert,GVD,IV,0,0.0,42.97,"SA, WA",yes,72,
+Great Victoria Desert,GVD,V,0,0.0,42.97,"SA, WA",yes,72,
+Great Victoria Desert,GVD,VI,14049961,33.257,42.97,"SA, WA",yes,72,
+Great Victoria Desert,GVD,Other,0,0.0,42.97,"SA, WA",yes,72,
+Gulf Coastal,GUC,Ia,0,0.0,26.45,NT,yes,55,
+Gulf Coastal,GUC,Ib,0,0.0,26.45,NT,yes,55,
+Gulf Coastal,GUC,II,194845,7.185,26.45,NT,yes,55,
+Gulf Coastal,GUC,III,0,0.0,26.45,NT,yes,55,
+Gulf Coastal,GUC,IV,0,0.0,26.45,NT,yes,55,
+Gulf Coastal,GUC,V,297626,10.976,26.45,NT,yes,55,
+Gulf Coastal,GUC,VI,224858,8.292,26.45,NT,yes,55,
+Gulf Coastal,GUC,Other,0,0.0,26.45,NT,yes,55,
+Gulf Fall and Uplands,GFU,Ia,0,0.0,24.4,"NT, QLD",yes,54,
+Gulf Fall and Uplands,GFU,Ib,0,0.0,24.4,"NT, QLD",yes,54,
+Gulf Fall and Uplands,GFU,II,308391,2.603,24.4,"NT, QLD",yes,54,
+Gulf Fall and Uplands,GFU,III,0,0.0,24.4,"NT, QLD",yes,54,
+Gulf Fall and Uplands,GFU,IV,0,0.0,24.4,"NT, QLD",yes,54,
+Gulf Fall and Uplands,GFU,V,670946,5.663,24.4,"NT, QLD",yes,54,
+Gulf Fall and Uplands,GFU,VI,1911190,16.131,24.4,"NT, QLD",yes,54,
+Gulf Fall and Uplands,GFU,Other,0,0.0,24.4,"NT, QLD",yes,54,
+Gulf Plains,GUP,Ia,0,0.0,7.46,"NT, QLD",yes,21,
+Gulf Plains,GUP,Ib,0,0.0,7.46,"NT, QLD",yes,21,
+Gulf Plains,GUP,II,697897,3.166,7.46,"NT, QLD",yes,21,
+Gulf Plains,GUP,III,7828,0.036,7.46,"NT, QLD",yes,21,
+Gulf Plains,GUP,IV,0,0.0,7.46,"NT, QLD",yes,21,
+Gulf Plains,GUP,V,311029,1.411,7.46,"NT, QLD",yes,21,
+Gulf Plains,GUP,VI,627423,2.847,7.46,"NT, QLD",yes,21,
+Gulf Plains,GUP,Other,0,0.0,7.46,"NT, QLD",yes,21,
+Hampton,HAM,Ia,111102,10.21,14.64,"SA, WA",yes,35,
+Hampton,HAM,Ib,44690,4.107,14.64,"SA, WA",yes,35,
+Hampton,HAM,II,3526,0.324,14.64,"SA, WA",yes,35,
+Hampton,HAM,III,0,0.0,14.64,"SA, WA",yes,35,
+Hampton,HAM,IV,0,0.0,14.64,"SA, WA",yes,35,
+Hampton,HAM,V,0,0.0,14.64,"SA, WA",yes,35,
+Hampton,HAM,VI,0,0.0,14.64,"SA, WA",yes,35,
+Hampton,HAM,Other,0,0.0,14.64,"SA, WA",yes,35,
+Indian Tropical Islands,ITI,Ia,7,0.027,31.73,"EXT, WA",yes,61,
+Indian Tropical Islands,ITI,Ib,0,0.0,31.73,"EXT, WA",yes,61,
+Indian Tropical Islands,ITI,II,8663,31.698,31.73,"EXT, WA",yes,61,
+Indian Tropical Islands,ITI,III,0,0.0,31.73,"EXT, WA",yes,61,
+Indian Tropical Islands,ITI,IV,0,0.0,31.73,"EXT, WA",yes,61,
+Indian Tropical Islands,ITI,V,0,0.0,31.73,"EXT, WA",yes,61,
+Indian Tropical Islands,ITI,VI,0,0.0,31.73,"EXT, WA",yes,61,
+Indian Tropical Islands,ITI,Other,0,0.0,31.73,"EXT, WA",yes,61,
+Jarrah Forest,JAF,Ia,122306,2.712,14.95,WA,yes,39,
+Jarrah Forest,JAF,Ib,0,0.0,14.95,WA,yes,39,
+Jarrah Forest,JAF,II,534782,11.86,14.95,WA,yes,39,
+Jarrah Forest,JAF,III,0,0.0,14.95,WA,yes,39,
+Jarrah Forest,JAF,IV,8880,0.197,14.95,WA,yes,39,
+Jarrah Forest,JAF,V,1170,0.026,14.95,WA,yes,39,
+Jarrah Forest,JAF,VI,6467,0.143,14.95,WA,yes,39,
+Jarrah Forest,JAF,Other,373,0.008,14.95,WA,yes,39,
+Kanmantoo,KAN,Ia,11548,1.421,20.55,SA,yes,53,
+Kanmantoo,KAN,Ib,69885,8.602,20.55,SA,yes,53,
+Kanmantoo,KAN,II,40136,4.94,20.55,SA,yes,53,
+Kanmantoo,KAN,III,37130,4.57,20.55,SA,yes,53,
+Kanmantoo,KAN,IV,1009,0.124,20.55,SA,yes,53,
+Kanmantoo,KAN,V,0,0.0,20.55,SA,yes,53,
+Kanmantoo,KAN,VI,7237,0.891,20.55,SA,yes,53,
+Kanmantoo,KAN,Other,20,0.002,20.55,SA,yes,53,
+King,KIN,Ia,493,0.116,19.87,TAS,yes,51,
+King,KIN,Ib,0,0.0,19.87,TAS,yes,51,
+King,KIN,II,18474,4.341,19.87,TAS,yes,51,
+King,KIN,III,3116,0.732,19.87,TAS,yes,51,
+King,KIN,IV,17489,4.11,19.87,TAS,yes,51,
+King,KIN,V,8906,2.093,19.87,TAS,yes,51,
+King,KIN,VI,33950,7.978,19.87,TAS,yes,51,
+King,KIN,Other,2149,0.505,19.87,TAS,yes,51,
+Little Sandy Desert,LSD,Ia,0,0.0,47.34,WA,yes,75,
+Little Sandy Desert,LSD,Ib,0,0.0,47.34,WA,yes,75,
+Little Sandy Desert,LSD,II,514038,4.635,47.34,WA,yes,75,
+Little Sandy Desert,LSD,III,386106,3.482,47.34,WA,yes,75,
+Little Sandy Desert,LSD,IV,0,0.0,47.34,WA,yes,75,
+Little Sandy Desert,LSD,V,0,0.0,47.34,WA,yes,75,
+Little Sandy Desert,LSD,VI,4350000,39.225,47.34,WA,yes,75,
+Little Sandy Desert,LSD,Other,0,0.0,47.34,WA,yes,75,
+MacDonnell Ranges,MAC,Ia,0,0.0,14.75,NT,yes,36,
+MacDonnell Ranges,MAC,Ib,0,0.0,14.75,NT,yes,36,
+MacDonnell Ranges,MAC,II,0,0.0,14.75,NT,yes,36,
+MacDonnell Ranges,MAC,III,4765,0.121,14.75,NT,yes,36,
+MacDonnell Ranges,MAC,IV,0,0.0,14.75,NT,yes,36,
+MacDonnell Ranges,MAC,V,569384,14.49,14.75,NT,yes,36,
+MacDonnell Ranges,MAC,VI,5599,0.142,14.75,NT,yes,36,
+MacDonnell Ranges,MAC,Other,0,0.0,14.75,NT,yes,36,
+Mallee,MAL,Ia,1107574,14.972,31.86,WA,yes,62,
+Mallee,MAL,Ib,0,0.0,31.86,WA,yes,62,
+Mallee,MAL,II,226491,3.062,31.86,WA,yes,62,
+Mallee,MAL,III,0,0.0,31.86,WA,yes,62,
+Mallee,MAL,IV,1264,0.017,31.86,WA,yes,62,
+Mallee,MAL,V,725,0.01,31.86,WA,yes,62,
+Mallee,MAL,VI,1020806,13.799,31.86,WA,yes,62,
+Mallee,MAL,Other,0,0.0,31.86,WA,yes,62,
+Mitchell Grass Downs,MGD,Ia,0,0.0,1.56,"NT, QLD",yes,2,Least protected
+Mitchell Grass Downs,MGD,Ib,0,0.0,1.56,"NT, QLD",yes,2,Least protected
+Mitchell Grass Downs,MGD,II,341187,1.019,1.56,"NT, QLD",yes,2,Least protected
+Mitchell Grass Downs,MGD,III,314,0.001,1.56,"NT, QLD",yes,2,Least protected
+Mitchell Grass Downs,MGD,IV,169379,0.506,1.56,"NT, QLD",yes,2,Least protected
+Mitchell Grass Downs,MGD,V,0,0.0,1.56,"NT, QLD",yes,2,Least protected
+Mitchell Grass Downs,MGD,VI,11838,0.035,1.56,"NT, QLD",yes,2,Least protected
+Mitchell Grass Downs,MGD,Other,0,0.0,1.56,"NT, QLD",yes,2,Least protected
+Mount Isa Inlier,MII,Ia,0,0.0,6.45,"NT, QLD",yes,16,
+Mount Isa Inlier,MII,Ib,0,0.0,6.45,"NT, QLD",yes,16,
+Mount Isa Inlier,MII,II,175818,2.594,6.45,"NT, QLD",yes,16,
+Mount Isa Inlier,MII,III,0,0.0,6.45,"NT, QLD",yes,16,
+Mount Isa Inlier,MII,IV,0,0.0,6.45,"NT, QLD",yes,16,
+Mount Isa Inlier,MII,V,0,0.0,6.45,"NT, QLD",yes,16,
+Mount Isa Inlier,MII,VI,261592,3.859,6.45,"NT, QLD",yes,16,
+Mount Isa Inlier,MII,Other,0,0.0,6.45,"NT, QLD",yes,16,
+Mulga Lands,MUL,Ia,122355,0.486,4.97,"NSW, QLD",yes,13,
+Mulga Lands,MUL,Ib,0,0.0,4.97,"NSW, QLD",yes,13,
+Mulga Lands,MUL,II,908987,3.609,4.97,"NSW, QLD",yes,13,
+Mulga Lands,MUL,III,0,0.0,4.97,"NSW, QLD",yes,13,
+Mulga Lands,MUL,IV,31524,0.125,4.97,"NSW, QLD",yes,13,
+Mulga Lands,MUL,V,38306,0.152,4.97,"NSW, QLD",yes,13,
+Mulga Lands,MUL,VI,151292,0.601,4.97,"NSW, QLD",yes,13,
+Mulga Lands,MUL,Other,0,0.0,4.97,"NSW, QLD",yes,13,
+Murchison,MUR,Ia,286448,1.019,7.0,WA,yes,20,
+Murchison,MUR,Ib,0,0.0,7.0,WA,yes,20,
+Murchison,MUR,II,1663718,5.916,7.0,WA,yes,20,
+Murchison,MUR,III,0,0.0,7.0,WA,yes,20,
+Murchison,MUR,IV,0,0.0,7.0,WA,yes,20,
+Murchison,MUR,V,4221,0.015,7.0,WA,yes,20,
+Murchison,MUR,VI,13230,0.047,7.0,WA,yes,20,
+Murchison,MUR,Other,0,0.0,7.0,WA,yes,20,
+Murray Darling Depression,MDD,Ia,680998,3.412,17.4,"NSW, SA, VIC",yes,47,
+Murray Darling Depression,MDD,Ib,404689,2.028,17.4,"NSW, SA, VIC",yes,47,
+Murray Darling Depression,MDD,II,1510097,7.566,17.4,"NSW, SA, VIC",yes,47,
+Murray Darling Depression,MDD,III,548744,2.749,17.4,"NSW, SA, VIC",yes,47,
+Murray Darling Depression,MDD,IV,188277,0.943,17.4,"NSW, SA, VIC",yes,47,
+Murray Darling Depression,MDD,V,30720,0.154,17.4,"NSW, SA, VIC",yes,47,
+Murray Darling Depression,MDD,VI,109561,0.549,17.4,"NSW, SA, VIC",yes,47,
+Murray Darling Depression,MDD,Other,0,0.0,17.4,"NSW, SA, VIC",yes,47,
+NSW North Coast,NNC,Ia,61293,1.534,26.54,NSW,yes,56,
+NSW North Coast,NNC,Ib,508075,12.713,26.54,NSW,yes,56,
+NSW North Coast,NNC,II,448946,11.234,26.54,NSW,yes,56,
+NSW North Coast,NNC,III,16,0.0,26.54,NSW,yes,56,
+NSW North Coast,NNC,IV,38998,0.976,26.54,NSW,yes,56,
+NSW North Coast,NNC,V,3393,0.085,26.54,NSW,yes,56,
+NSW North Coast,NNC,VI,85,0.002,26.54,NSW,yes,56,
+NSW North Coast,NNC,Other,0,0.0,26.54,NSW,yes,56,
+NSW South Western Slopes,NSS,Ia,54407,0.627,3.34,"NSW, VIC",yes,8,Least protected
+NSW South Western Slopes,NSS,Ib,1446,0.017,3.34,"NSW, VIC",yes,8,Least protected
+NSW South Western Slopes,NSS,II,193005,2.223,3.34,"NSW, VIC",yes,8,Least protected
+NSW South Western Slopes,NSS,III,1682,0.019,3.34,"NSW, VIC",yes,8,Least protected
+NSW South Western Slopes,NSS,IV,37987,0.438,3.34,"NSW, VIC",yes,8,Least protected
+NSW South Western Slopes,NSS,V,3,0.0,3.34,"NSW, VIC",yes,8,Least protected
+NSW South Western Slopes,NSS,VI,1161,0.013,3.34,"NSW, VIC",yes,8,Least protected
+NSW South Western Slopes,NSS,Other,0,0.0,3.34,"NSW, VIC",yes,8,Least protected
+Nandewar,NAN,Ia,7768,0.288,4.59,"NSW, QLD",yes,11,Least protected
+Nandewar,NAN,Ib,0,0.0,4.59,"NSW, QLD",yes,11,Least protected
+Nandewar,NAN,II,80971,2.997,4.59,"NSW, QLD",yes,11,Least protected
+Nandewar,NAN,III,35,0.001,4.59,"NSW, QLD",yes,11,Least protected
+Nandewar,NAN,IV,22483,0.832,4.59,"NSW, QLD",yes,11,Least protected
+Nandewar,NAN,V,5299,0.196,4.59,"NSW, QLD",yes,11,Least protected
+Nandewar,NAN,VI,7388,0.273,4.59,"NSW, QLD",yes,11,Least protected
+Nandewar,NAN,Other,0,0.0,4.59,"NSW, QLD",yes,11,Least protected
+Naracoorte Coastal Plain,NCP,Ia,42168,1.715,9.67,"SA, VIC",yes,27,
+Naracoorte Coastal Plain,NCP,Ib,0,0.0,9.67,"SA, VIC",yes,27,
+Naracoorte Coastal Plain,NCP,II,48899,1.989,9.67,"SA, VIC",yes,27,
+Naracoorte Coastal Plain,NCP,III,91087,3.705,9.67,"SA, VIC",yes,27,
+Naracoorte Coastal Plain,NCP,IV,11853,0.482,9.67,"SA, VIC",yes,27,
+Naracoorte Coastal Plain,NCP,V,366,0.015,9.67,"SA, VIC",yes,27,
+Naracoorte Coastal Plain,NCP,VI,43298,1.761,9.67,"SA, VIC",yes,27,
+Naracoorte Coastal Plain,NCP,Other,6,0.0,9.67,"SA, VIC",yes,27,
+New England Tablelands,NET,Ia,26928,0.897,10.73,"NSW, QLD",yes,29,
+New England Tablelands,NET,Ib,138735,4.621,10.73,"NSW, QLD",yes,29,
+New England Tablelands,NET,II,127248,4.238,10.73,"NSW, QLD",yes,29,
+New England Tablelands,NET,III,586,0.02,10.73,"NSW, QLD",yes,29,
+New England Tablelands,NET,IV,21657,0.721,10.73,"NSW, QLD",yes,29,
+New England Tablelands,NET,V,645,0.021,10.73,"NSW, QLD",yes,29,
+New England Tablelands,NET,VI,6309,0.21,10.73,"NSW, QLD",yes,29,
+New England Tablelands,NET,Other,0,0.0,10.73,"NSW, QLD",yes,29,
+Northern Kimberley,NOK,Ia,4520,0.054,61.75,WA,yes,83,Most protected
+Northern Kimberley,NOK,Ib,0,0.0,61.75,WA,yes,83,Most protected
+Northern Kimberley,NOK,II,1517386,18.021,61.75,WA,yes,83,Most protected
+Northern Kimberley,NOK,III,0,0.0,61.75,WA,yes,83,Most protected
+Northern Kimberley,NOK,IV,0,0.0,61.75,WA,yes,83,Most protected
+Northern Kimberley,NOK,V,1176270,13.97,61.75,WA,yes,83,Most protected
+Northern Kimberley,NOK,VI,2501001,29.703,61.75,WA,yes,83,Most protected
+Northern Kimberley,NOK,Other,0,0.0,61.75,WA,yes,83,Most protected
+Nullarbor,NUL,Ia,2521332,12.784,54.93,"SA, WA",yes,80,Most protected
+Nullarbor,NUL,Ib,852033,4.32,54.93,"SA, WA",yes,80,Most protected
+Nullarbor,NUL,II,0,0.0,54.93,"SA, WA",yes,80,Most protected
+Nullarbor,NUL,III,19965,0.101,54.93,"SA, WA",yes,80,Most protected
+Nullarbor,NUL,IV,0,0.0,54.93,"SA, WA",yes,80,Most protected
+Nullarbor,NUL,V,462621,2.346,54.93,"SA, WA",yes,80,Most protected
+Nullarbor,NUL,VI,6978581,35.383,54.93,"SA, WA",yes,80,Most protected
+Nullarbor,NUL,Other,0,0.0,54.93,"SA, WA",yes,80,Most protected
+Ord Victoria Plain,OVP,Ia,0,0.0,11.86,"NT, WA",yes,33,
+Ord Victoria Plain,OVP,Ib,0,0.0,11.86,"NT, WA",yes,33,
+Ord Victoria Plain,OVP,II,324143,2.585,11.86,"NT, WA",yes,33,
+Ord Victoria Plain,OVP,III,1455,0.012,11.86,"NT, WA",yes,33,
+Ord Victoria Plain,OVP,IV,568289,4.532,11.86,"NT, WA",yes,33,
+Ord Victoria Plain,OVP,V,577600,4.606,11.86,"NT, WA",yes,33,
+Ord Victoria Plain,OVP,VI,16333,0.13,11.86,"NT, WA",yes,33,
+Ord Victoria Plain,OVP,Other,0,0.0,11.86,"NT, WA",yes,33,
+Pacific Subtropical Islands,PSI,Ia,0,0.0,34.1,"EXT, NSW",yes,64,
+Pacific Subtropical Islands,PSI,Ib,0,0.0,34.1,"EXT, NSW",yes,64,
+Pacific Subtropical Islands,PSI,II,1977,33.997,34.1,"EXT, NSW",yes,64,
+Pacific Subtropical Islands,PSI,III,0,0.0,34.1,"EXT, NSW",yes,64,
+Pacific Subtropical Islands,PSI,IV,6,0.1,34.1,"EXT, NSW",yes,64,
+Pacific Subtropical Islands,PSI,V,0,0.0,34.1,"EXT, NSW",yes,64,
+Pacific Subtropical Islands,PSI,VI,0,0.0,34.1,"EXT, NSW",yes,64,
+Pacific Subtropical Islands,PSI,Other,0,0.0,34.1,"EXT, NSW",yes,64,
+Pilbara,PIL,Ia,177724,0.997,8.78,WA,yes,23,
+Pilbara,PIL,Ib,0,0.0,8.78,WA,yes,23,
+Pilbara,PIL,II,1382405,7.756,8.78,WA,yes,23,
+Pilbara,PIL,III,0,0.0,8.78,WA,yes,23,
+Pilbara,PIL,IV,0,0.0,8.78,WA,yes,23,
+Pilbara,PIL,V,1,0.0,8.78,WA,yes,23,
+Pilbara,PIL,VI,5083,0.029,8.78,WA,yes,23,
+Pilbara,PIL,Other,0,0.0,8.78,WA,yes,23,
+Pine Creek,PCK,Ia,0,0.0,42.68,NT,yes,70,
+Pine Creek,PCK,Ib,0,0.0,42.68,NT,yes,70,
+Pine Creek,PCK,II,790722,27.727,42.68,NT,yes,70,
+Pine Creek,PCK,III,0,0.0,42.68,NT,yes,70,
+Pine Creek,PCK,IV,0,0.0,42.68,NT,yes,70,
+Pine Creek,PCK,V,425996,14.938,42.68,NT,yes,70,
+Pine Creek,PCK,VI,341,0.012,42.68,NT,yes,70,
+Pine Creek,PCK,Other,0,0.0,42.68,NT,yes,70,
+Riverina,RIV,Ia,56048,0.578,6.47,"NSW, SA, VIC",yes,17,
+Riverina,RIV,Ib,0,0.0,6.47,"NSW, SA, VIC",yes,17,
+Riverina,RIV,II,373454,3.848,6.47,"NSW, SA, VIC",yes,17,
+Riverina,RIV,III,21444,0.221,6.47,"NSW, SA, VIC",yes,17,
+Riverina,RIV,IV,85551,0.882,6.47,"NSW, SA, VIC",yes,17,
+Riverina,RIV,V,22951,0.236,6.47,"NSW, SA, VIC",yes,17,
+Riverina,RIV,VI,68263,0.703,6.47,"NSW, SA, VIC",yes,17,
+Riverina,RIV,Other,0,0.0,6.47,"NSW, SA, VIC",yes,17,
+Simpson Strzelecki Dunefields,SSD,Ia,753139,2.691,30.88,"NSW, NT, QLD, SA",yes,58,
+Simpson Strzelecki Dunefields,SSD,Ib,0,0.0,30.88,"NSW, NT, QLD, SA",yes,58,
+Simpson Strzelecki Dunefields,SSD,II,1817513,6.495,30.88,"NSW, NT, QLD, SA",yes,58,
+Simpson Strzelecki Dunefields,SSD,III,396,0.001,30.88,"NSW, NT, QLD, SA",yes,58,
+Simpson Strzelecki Dunefields,SSD,IV,302901,1.082,30.88,"NSW, NT, QLD, SA",yes,58,
+Simpson Strzelecki Dunefields,SSD,V,0,0.0,30.88,"NSW, NT, QLD, SA",yes,58,
+Simpson Strzelecki Dunefields,SSD,VI,5766952,20.608,30.88,"NSW, NT, QLD, SA",yes,58,
+Simpson Strzelecki Dunefields,SSD,Other,0,0.0,30.88,"NSW, NT, QLD, SA",yes,58,
+South East Coastal Plain,SCP,Ia,24644,1.409,9.29,VIC,yes,26,
+South East Coastal Plain,SCP,Ib,0,0.0,9.29,VIC,yes,26,
+South East Coastal Plain,SCP,II,76066,4.349,9.29,VIC,yes,26,
+South East Coastal Plain,SCP,III,3546,0.203,9.29,VIC,yes,26,
+South East Coastal Plain,SCP,IV,10416,0.595,9.29,VIC,yes,26,
+South East Coastal Plain,SCP,V,1041,0.06,9.29,VIC,yes,26,
+South East Coastal Plain,SCP,VI,46740,2.672,9.29,VIC,yes,26,
+South East Coastal Plain,SCP,Other,0,0.0,9.29,VIC,yes,26,
+South East Corner,SEC,Ia,64255,2.538,36.84,"NSW, VIC",yes,67,
+South East Corner,SEC,Ib,206793,8.167,36.84,"NSW, VIC",yes,67,
+South East Corner,SEC,II,620009,24.486,36.84,"NSW, VIC",yes,67,
+South East Corner,SEC,III,18048,0.713,36.84,"NSW, VIC",yes,67,
+South East Corner,SEC,IV,7947,0.314,36.84,"NSW, VIC",yes,67,
+South East Corner,SEC,V,7032,0.278,36.84,"NSW, VIC",yes,67,
+South East Corner,SEC,VI,8771,0.346,36.84,"NSW, VIC",yes,67,
+South East Corner,SEC,Other,0,0.0,36.84,"NSW, VIC",yes,67,
+South Eastern Highlands,SEH,Ia,143079,1.708,18.91,"ACT, NSW, VIC",yes,49,
+South Eastern Highlands,SEH,Ib,192329,2.296,18.91,"ACT, NSW, VIC",yes,49,
+South Eastern Highlands,SEH,II,1137806,13.584,18.91,"ACT, NSW, VIC",yes,49,
+South Eastern Highlands,SEH,III,23173,0.277,18.91,"ACT, NSW, VIC",yes,49,
+South Eastern Highlands,SEH,IV,62381,0.745,18.91,"ACT, NSW, VIC",yes,49,
+South Eastern Highlands,SEH,V,8822,0.105,18.91,"ACT, NSW, VIC",yes,49,
+South Eastern Highlands,SEH,VI,16494,0.197,18.91,"ACT, NSW, VIC",yes,49,
+South Eastern Highlands,SEH,Other,0,0.0,18.91,"ACT, NSW, VIC",yes,49,
+South Eastern Queensland,SEQ,Ia,39468,0.506,14.81,"NSW, QLD",yes,38,
+South Eastern Queensland,SEQ,Ib,64769,0.83,14.81,"NSW, QLD",yes,38,
+South Eastern Queensland,SEQ,II,952512,12.204,14.81,"NSW, QLD",yes,38,
+South Eastern Queensland,SEQ,III,29127,0.373,14.81,"NSW, QLD",yes,38,
+South Eastern Queensland,SEQ,IV,19713,0.253,14.81,"NSW, QLD",yes,38,
+South Eastern Queensland,SEQ,V,2157,0.028,14.81,"NSW, QLD",yes,38,
+South Eastern Queensland,SEQ,VI,48080,0.616,14.81,"NSW, QLD",yes,38,
+South Eastern Queensland,SEQ,Other,0,0.0,14.81,"NSW, QLD",yes,38,
+Southern Volcanic Plain,SVP,Ia,8951,0.367,2.29,"SA, VIC",yes,4,Least protected
+Southern Volcanic Plain,SVP,Ib,0,0.0,2.29,"SA, VIC",yes,4,Least protected
+Southern Volcanic Plain,SVP,II,26794,1.098,2.29,"SA, VIC",yes,4,Least protected
+Southern Volcanic Plain,SVP,III,976,0.04,2.29,"SA, VIC",yes,4,Least protected
+Southern Volcanic Plain,SVP,IV,8698,0.356,2.29,"SA, VIC",yes,4,Least protected
+Southern Volcanic Plain,SVP,V,0,0.0,2.29,"SA, VIC",yes,4,Least protected
+Southern Volcanic Plain,SVP,VI,10510,0.431,2.29,"SA, VIC",yes,4,Least protected
+Southern Volcanic Plain,SVP,Other,0,0.0,2.29,"SA, VIC",yes,4,Least protected
+Stony Plains,STP,Ia,29076,0.221,8.93,"NT, SA",yes,24,
+Stony Plains,STP,Ib,0,0.0,8.93,"NT, SA",yes,24,
+Stony Plains,STP,II,350222,2.66,8.93,"NT, SA",yes,24,
+Stony Plains,STP,III,23049,0.175,8.93,"NT, SA",yes,24,
+Stony Plains,STP,IV,0,0.0,8.93,"NT, SA",yes,24,
+Stony Plains,STP,V,0,0.0,8.93,"NT, SA",yes,24,
+Stony Plains,STP,VI,773632,5.876,8.93,"NT, SA",yes,24,
+Stony Plains,STP,Other,0,0.0,8.93,"NT, SA",yes,24,
+Sturt Plateau,STU,Ia,11538,0.117,0.7,NT,yes,1,Least protected
+Sturt Plateau,STU,Ib,0,0.0,0.7,NT,yes,1,Least protected
+Sturt Plateau,STU,II,0,0.0,0.7,NT,yes,1,Least protected
+Sturt Plateau,STU,III,0,0.0,0.7,NT,yes,1,Least protected
+Sturt Plateau,STU,IV,178,0.002,0.7,NT,yes,1,Least protected
+Sturt Plateau,STU,V,8734,0.089,0.7,NT,yes,1,Least protected
+Sturt Plateau,STU,VI,48420,0.491,0.7,NT,yes,1,Least protected
+Sturt Plateau,STU,Other,0,0.0,0.7,NT,yes,1,Least protected
+Subantarctic Islands,SAI,Ia,0,0.0,0.0,EXT,no,,
+Subantarctic Islands,SAI,Ib,0,0.0,0.0,EXT,no,,
+Subantarctic Islands,SAI,II,0,0.0,0.0,EXT,no,,
+Subantarctic Islands,SAI,III,0,0.0,0.0,EXT,no,,
+Subantarctic Islands,SAI,IV,0,0.0,0.0,EXT,no,,
+Subantarctic Islands,SAI,V,0,0.0,0.0,EXT,no,,
+Subantarctic Islands,SAI,VI,0,0.0,0.0,EXT,no,,
+Subantarctic Islands,SAI,Other,0,0.0,0.0,EXT,no,,
+Swan Coastal Plain,SWA,Ia,84802,5.558,11.56,WA,yes,31,
+Swan Coastal Plain,SWA,Ib,0,0.0,11.56,WA,yes,31,
+Swan Coastal Plain,SWA,II,84187,5.518,11.56,WA,yes,31,
+Swan Coastal Plain,SWA,III,11,0.001,11.56,WA,yes,31,
+Swan Coastal Plain,SWA,IV,1048,0.069,11.56,WA,yes,31,
+Swan Coastal Plain,SWA,V,32,0.002,11.56,WA,yes,31,
+Swan Coastal Plain,SWA,VI,85,0.006,11.56,WA,yes,31,
+Swan Coastal Plain,SWA,Other,6227,0.408,11.56,WA,yes,31,
+Sydney Basin,SYB,Ia,78952,2.175,42.68,"JBT, NSW",yes,71,
+Sydney Basin,SYB,Ib,718691,19.801,42.68,"JBT, NSW",yes,71,
+Sydney Basin,SYB,II,706927,19.477,42.68,"JBT, NSW",yes,71,
+Sydney Basin,SYB,III,165,0.005,42.68,"JBT, NSW",yes,71,
+Sydney Basin,SYB,IV,38146,1.051,42.68,"JBT, NSW",yes,71,
+Sydney Basin,SYB,V,6304,0.174,42.68,"JBT, NSW",yes,71,
+Sydney Basin,SYB,VI,0,0.0,42.68,"JBT, NSW",yes,71,
+Sydney Basin,SYB,Other,0,0.0,42.68,"JBT, NSW",yes,71,
+Tanami,TAN,Ia,0,0.0,44.65,"NT, WA",yes,73,
+Tanami,TAN,Ib,0,0.0,44.65,"NT, WA",yes,73,
+Tanami,TAN,II,54403,0.209,44.65,"NT, WA",yes,73,
+Tanami,TAN,III,0,0.0,44.65,"NT, WA",yes,73,
+Tanami,TAN,IV,0,0.0,44.65,"NT, WA",yes,73,
+Tanami,TAN,V,0,0.0,44.65,"NT, WA",yes,73,
+Tanami,TAN,VI,11554505,44.445,44.65,"NT, WA",yes,73,
+Tanami,TAN,Other,0,0.0,44.65,"NT, WA",yes,73,
+Tasmanian Central Highlands,TCH,Ia,405,0.053,60.88,TAS,yes,82,Most protected
+Tasmanian Central Highlands,TCH,Ib,0,0.0,60.88,TAS,yes,82,Most protected
+Tasmanian Central Highlands,TCH,II,220099,28.664,60.88,TAS,yes,82,Most protected
+Tasmanian Central Highlands,TCH,III,386,0.05,60.88,TAS,yes,82,Most protected
+Tasmanian Central Highlands,TCH,IV,30531,3.976,60.88,TAS,yes,82,Most protected
+Tasmanian Central Highlands,TCH,V,21964,2.86,60.88,TAS,yes,82,Most protected
+Tasmanian Central Highlands,TCH,VI,193223,25.164,60.88,TAS,yes,82,Most protected
+Tasmanian Central Highlands,TCH,Other,873,0.114,60.88,TAS,yes,82,Most protected
+Tasmanian Northern Midlands,TNM,Ia,269,0.065,6.74,TAS,yes,19,
+Tasmanian Northern Midlands,TNM,Ib,0,0.0,6.74,TAS,yes,19,
+Tasmanian Northern Midlands,TNM,II,0,0.0,6.74,TAS,yes,19,
+Tasmanian Northern Midlands,TNM,III,509,0.123,6.74,TAS,yes,19,
+Tasmanian Northern Midlands,TNM,IV,17906,4.31,6.74,TAS,yes,19,
+Tasmanian Northern Midlands,TNM,V,1814,0.437,6.74,TAS,yes,19,
+Tasmanian Northern Midlands,TNM,VI,7261,1.748,6.74,TAS,yes,19,
+Tasmanian Northern Midlands,TNM,Other,245,0.059,6.74,TAS,yes,19,
+Tasmanian Northern Slopes,TNS,Ia,500,0.08,16.36,TAS,yes,45,
+Tasmanian Northern Slopes,TNS,Ib,260,0.042,16.36,TAS,yes,45,
+Tasmanian Northern Slopes,TNS,II,27985,4.491,16.36,TAS,yes,45,
+Tasmanian Northern Slopes,TNS,III,1317,0.211,16.36,TAS,yes,45,
+Tasmanian Northern Slopes,TNS,IV,42117,6.759,16.36,TAS,yes,45,
+Tasmanian Northern Slopes,TNS,V,4220,0.677,16.36,TAS,yes,45,
+Tasmanian Northern Slopes,TNS,VI,25358,4.07,16.36,TAS,yes,45,
+Tasmanian Northern Slopes,TNS,Other,192,0.031,16.36,TAS,yes,45,
+Tasmanian South East,TSE,Ia,9327,0.843,15.92,TAS,yes,42,
+Tasmanian South East,TSE,Ib,7,0.001,15.92,TAS,yes,42,
+Tasmanian South East,TSE,II,63312,5.72,15.92,TAS,yes,42,
+Tasmanian South East,TSE,III,5793,0.523,15.92,TAS,yes,42,
+Tasmanian South East,TSE,IV,69821,6.308,15.92,TAS,yes,42,
+Tasmanian South East,TSE,V,5833,0.527,15.92,TAS,yes,42,
+Tasmanian South East,TSE,VI,22111,1.998,15.92,TAS,yes,42,
+Tasmanian South East,TSE,Other,0,0.0,15.92,TAS,yes,42,
+Tasmanian Southern Ranges,TSR,Ia,30,0.004,54.36,TAS,yes,79,
+Tasmanian Southern Ranges,TSR,Ib,4617,0.59,54.36,TAS,yes,79,
+Tasmanian Southern Ranges,TSR,II,339485,43.406,54.36,TAS,yes,79,
+Tasmanian Southern Ranges,TSR,III,1230,0.157,54.36,TAS,yes,79,
+Tasmanian Southern Ranges,TSR,IV,24611,3.147,54.36,TAS,yes,79,
+Tasmanian Southern Ranges,TSR,V,26115,3.339,54.36,TAS,yes,79,
+Tasmanian Southern Ranges,TSR,VI,29106,3.721,54.36,TAS,yes,79,
+Tasmanian Southern Ranges,TSR,Other,0,0.0,54.36,TAS,yes,79,
+Tasmanian West,TWE,Ia,0,0.0,86.29,TAS,yes,87,Most protected
+Tasmanian West,TWE,Ib,0,0.0,86.29,TAS,yes,87,Most protected
+Tasmanian West,TWE,II,816824,52.191,86.29,TAS,yes,87,Most protected
+Tasmanian West,TWE,III,8730,0.558,86.29,TAS,yes,87,Most protected
+Tasmanian West,TWE,IV,41526,2.653,86.29,TAS,yes,87,Most protected
+Tasmanian West,TWE,V,44231,2.826,86.29,TAS,yes,87,Most protected
+Tasmanian West,TWE,VI,439242,28.065,86.29,TAS,yes,87,Most protected
+Tasmanian West,TWE,Other,0,0.0,86.29,TAS,yes,87,Most protected
+Tiwi Cobourg,TIW,Ia,0,0.0,20.22,NT,yes,52,
+Tiwi Cobourg,TIW,Ib,0,0.0,20.22,NT,yes,52,
+Tiwi Cobourg,TIW,II,204361,20.222,20.22,NT,yes,52,
+Tiwi Cobourg,TIW,III,0,0.0,20.22,NT,yes,52,
+Tiwi Cobourg,TIW,IV,0,0.0,20.22,NT,yes,52,
+Tiwi Cobourg,TIW,V,0,0.0,20.22,NT,yes,52,
+Tiwi Cobourg,TIW,VI,0,0.0,20.22,NT,yes,52,
+Tiwi Cobourg,TIW,Other,0,0.0,20.22,NT,yes,52,
+Victoria Bonaparte,VIB,Ia,113114,1.549,17.47,"NT, WA",yes,48,
+Victoria Bonaparte,VIB,Ib,0,0.0,17.47,"NT, WA",yes,48,
+Victoria Bonaparte,VIB,II,176665,2.42,17.47,"NT, WA",yes,48,
+Victoria Bonaparte,VIB,III,2,0.0,17.47,"NT, WA",yes,48,
+Victoria Bonaparte,VIB,IV,16586,0.227,17.47,"NT, WA",yes,48,
+Victoria Bonaparte,VIB,V,781551,10.704,17.47,"NT, WA",yes,48,
+Victoria Bonaparte,VIB,VI,187470,2.568,17.47,"NT, WA",yes,48,
+Victoria Bonaparte,VIB,Other,0,0.0,17.47,"NT, WA",yes,48,
+Victorian Midlands,VIM,Ia,72368,2.086,11.64,VIC,yes,32,
+Victorian Midlands,VIM,Ib,0,0.0,11.64,VIC,yes,32,
+Victorian Midlands,VIM,II,295483,8.516,11.64,VIC,yes,32,
+Victorian Midlands,VIM,III,6023,0.174,11.64,VIC,yes,32,
+Victorian Midlands,VIM,IV,25330,0.73,11.64,VIC,yes,32,
+Victorian Midlands,VIM,V,2667,0.077,11.64,VIC,yes,32,
+Victorian Midlands,VIM,VI,2042,0.059,11.64,VIC,yes,32,
+Victorian Midlands,VIM,Other,0,0.0,11.64,VIC,yes,32,
+Warren,WAR,Ia,12411,1.469,46.94,WA,yes,74,
+Warren,WAR,Ib,0,0.0,46.94,WA,yes,74,
+Warren,WAR,II,382891,45.325,46.94,WA,yes,74,
+Warren,WAR,III,0,0.0,46.94,WA,yes,74,
+Warren,WAR,IV,1022,0.121,46.94,WA,yes,74,
+Warren,WAR,V,75,0.009,46.94,WA,yes,74,
+Warren,WAR,VI,142,0.017,46.94,WA,yes,74,
+Warren,WAR,Other,0,0.0,46.94,WA,yes,74,
+Wet Tropics,WET,Ia,8,0.0,53.54,QLD,yes,77,
+Wet Tropics,WET,Ib,0,0.0,53.54,QLD,yes,77,
+Wet Tropics,WET,II,979665,49.251,53.54,QLD,yes,77,
+Wet Tropics,WET,III,4252,0.214,53.54,QLD,yes,77,
+Wet Tropics,WET,IV,21867,1.099,53.54,QLD,yes,77,
+Wet Tropics,WET,V,18251,0.918,53.54,QLD,yes,77,
+Wet Tropics,WET,VI,40388,2.03,53.54,QLD,yes,77,
+Wet Tropics,WET,Other,514,0.026,53.54,QLD,yes,77,
+Yalgoo,YAL,Ia,610731,12.004,35.56,WA,yes,66,
+Yalgoo,YAL,Ib,0,0.0,35.56,WA,yes,66,
+Yalgoo,YAL,II,1146639,22.538,35.56,WA,yes,66,
+Yalgoo,YAL,III,609,0.012,35.56,WA,yes,66,
+Yalgoo,YAL,IV,9554,0.188,35.56,WA,yes,66,
+Yalgoo,YAL,V,0,0.0,35.56,WA,yes,66,
+Yalgoo,YAL,VI,41475,0.815,35.56,WA,yes,66,
+Yalgoo,YAL,Other,0,0.0,35.56,WA,yes,66,

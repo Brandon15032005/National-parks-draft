@@ -1,0 +1,401 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Proportional symbol map: every national park (796 in CAPAD 2024, minus 4 on distant islands) as a circle at its location, sized by area.",
+  "background": "transparent",
+  "width": "container",
+  "height": 560,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 7,
+      "titleFontSize": 7,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "projection": {
+    "type": "albers",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ]
+  },
+  "layer": [
+    {
+      "description": "State outlines for context",
+      "data": {
+        "url": "data/australia_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#E6ECE8",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 1.2
+      }
+    },
+    {
+      "description": "One circle per national park",
+      "data": {
+        "url": "data/parks.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.state != 'EXT'"
+        },
+        {
+          "calculate": "({'QLD':'Queensland','NSW':'New South Wales','WA':'Western Australia','VIC':'Victoria','SA':'South Australia','NT':'Northern Territory','TAS':'Tasmania','ACT':'ACT','JBT':'New South Wales'})[datum.state]",
+          "as": "state_name"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "fill": "#0E7C7B",
+        "fillOpacity": 0.45,
+        "stroke": "#07494B",
+        "strokeWidth": 0.7
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "area_km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "sqrt",
+            "domain": [
+              0,
+              36500
+            ],
+            "range": [
+              10,
+              2100
+            ]
+          },
+          "legend": {
+            "title": [
+              "Park size",
+              "(square kilometres)"
+            ],
+            "values": [
+              10,
+              100,
+              1000,
+              10000,
+              30000
+            ],
+            "format": ",.0f",
+            "orient": "top-left",
+            "symbolFillColor": "#0E7C7B",
+            "symbolOpacity": 0.45,
+            "symbolStrokeColor": "#07494B",
+            "titleLimit": 240,
+            "labelFontSize": 7,
+            "titleFontSize": 7
+          }
+        },
+        "order": {
+          "field": "area_km2",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Park"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "area_km2",
+            "type": "quantitative",
+            "title": "Area (km²)",
+            "format": ",.0f"
+          },
+          {
+            "field": "type_group",
+            "title": "Type"
+          }
+        ],
+        "fillOpacity": {
+          "condition": {
+            "test": "pick_state == 'All states' || datum.state_name == pick_state",
+            "value": 0.5
+          },
+          "value": 0.04
+        },
+        "strokeOpacity": {
+          "condition": {
+            "test": "pick_state == 'All states' || datum.state_name == pick_state",
+            "value": 1
+          },
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "description": "Label: Munga-Thirri (Simpson Desert)",
+      "data": {
+        "values": [
+          {
+            "key": "Munga-Thirri—Simpson Desert",
+            "label": "Munga-Thirri (Simpson Desert)"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "key",
+          "from": {
+            "data": {
+              "url": "data/parks.csv"
+            },
+            "key": "name",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": 0,
+        "dy": -36,
+        "align": "center",
+        "stroke": "#F4F7F5",
+        "strokeWidth": 0.0
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "description": "Label: Kakadu",
+      "data": {
+        "values": [
+          {
+            "key": "Kakadu",
+            "label": "Kakadu"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "key",
+          "from": {
+            "data": {
+              "url": "data/parks.csv"
+            },
+            "key": "name",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": 32,
+        "dy": -12,
+        "align": "left",
+        "stroke": "#F4F7F5",
+        "strokeWidth": 0.0
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "description": "Label: Karlamilyi",
+      "data": {
+        "values": [
+          {
+            "key": "Karlamilyi",
+            "label": "Karlamilyi"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "key",
+          "from": {
+            "data": {
+              "url": "data/parks.csv"
+            },
+            "key": "name",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": -26,
+        "dy": -4,
+        "align": "right",
+        "stroke": "#F4F7F5",
+        "strokeWidth": 0.0
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "description": "Label: Lake Eyre",
+      "data": {
+        "values": [
+          {
+            "key": "Kati Thanda-Lake Eyre",
+            "label": "Lake Eyre"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "key",
+          "from": {
+            "data": {
+              "url": "data/parks.csv"
+            },
+            "key": "name",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": 34,
+        "dy": 16,
+        "align": "left",
+        "stroke": "#F4F7F5",
+        "strokeWidth": 0.0
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "pick_state",
+      "value": "All states",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All states",
+          "Queensland",
+          "New South Wales",
+          "Western Australia",
+          "Victoria",
+          "South Australia",
+          "Northern Territory",
+          "Tasmania",
+          "ACT"
+        ],
+        "name": "Show parks in: "
+      }
+    }
+  ]
+}

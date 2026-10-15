@@ -1,0 +1,508 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "description": "Zoom on Greater Sydney: the NSW parks in the busiest part of the national map, sized by visits in 2024/25.",
+  "width": 560,
+  "height": 400,
+  "title": {
+    "text": "Zoom: Greater Sydney",
+    "anchor": "start",
+    "offset": 10,
+    "fontSize": 15,
+    "fontWeight": 700,
+    "color": "#15271F"
+  },
+  "projection": {
+    "type": "mercator",
+    "scale": 18000,
+    "center": [
+      150.9,
+      -33.9
+    ],
+    "translate": [
+      220,
+      200
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/australia_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "description": "NSW outline",
+      "transform": [
+        {
+          "filter": "datum.properties.STATE_NAME == 'New South Wales'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#E6ECE8",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 1.2
+      }
+    },
+    {
+      "description": "Places with published visit counts",
+      "data": {
+        "url": "data/visits.csv"
+      },
+      "transform": [
+        {
+          "filter": "(datum.jurisdiction == 'NSW') || (datum.jurisdiction == 'TAS' && datum.period == '2025-26') || (datum.jurisdiction == 'Commonwealth' && datum.period == '2024-25')"
+        },
+        {
+          "filter": "isValid(datum.lat) && datum.lat !== '' && datum.lon > 112 && datum.lon < 155"
+        },
+        {
+          "calculate": "toNumber(datum.visits)",
+          "as": "v"
+        },
+        {
+          "calculate": "({'NSW':'NSW National Parks and Wildlife Service (survey estimates)','TAS':'Tasmania Parks and Wildlife Service (site counts)','Commonwealth':'Parks Australia (tickets and gate counts)'})[datum.jurisdiction]",
+          "as": "agency"
+        },
+        {
+          "filter": "datum.jurisdiction == 'NSW' && datum.lon > 150.2 && datum.lon < 151.6 && datum.lat > -34.5 && datum.lat < -33.3"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "fillOpacity": 0.55,
+        "stroke": "#8A3F05",
+        "strokeWidth": 1,
+        "color": "#E07A1F"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "v",
+          "type": "quantitative",
+          "scale": {
+            "type": "sqrt",
+            "domain": [
+              0,
+              8000000
+            ],
+            "range": [
+              15,
+              2400
+            ]
+          },
+          "legend": null
+        },
+        "shape": {
+          "field": "agency",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "NSW National Parks and Wildlife Service (survey estimates)",
+              "Tasmania Parks and Wildlife Service (site counts)",
+              "Parks Australia (tickets and gate counts)"
+            ],
+            "range": [
+              "circle",
+              "square",
+              "diamond"
+            ]
+          },
+          "legend": null
+        },
+        "order": {
+          "field": "v",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "place",
+            "title": "Place"
+          },
+          {
+            "field": "agency",
+            "title": "Counted by"
+          },
+          {
+            "field": "period",
+            "title": "Year"
+          },
+          {
+            "field": "v",
+            "type": "quantitative",
+            "title": "Visits",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Label: Blue Mountains",
+      "data": {
+        "values": [
+          {
+            "p": "Blue Mountains"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "p",
+          "from": {
+            "data": {
+              "url": "data/visits.csv"
+            },
+            "key": "place",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": 0,
+        "dy": 38,
+        "align": "center"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "p"
+        }
+      }
+    },
+    {
+      "description": "Label: Royal",
+      "data": {
+        "values": [
+          {
+            "p": "Royal"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "p",
+          "from": {
+            "data": {
+              "url": "data/visits.csv"
+            },
+            "key": "place",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": 30,
+        "dy": 10,
+        "align": "left"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "p"
+        }
+      }
+    },
+    {
+      "description": "Label: Ku-ring-gai Chase",
+      "data": {
+        "values": [
+          {
+            "p": "Ku-ring-gai Chase"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "p",
+          "from": {
+            "data": {
+              "url": "data/visits.csv"
+            },
+            "key": "place",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": -30,
+        "dy": -26,
+        "align": "right"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "p"
+        }
+      }
+    },
+    {
+      "description": "Label: Lane Cove",
+      "data": {
+        "values": [
+          {
+            "p": "Lane Cove"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "p",
+          "from": {
+            "data": {
+              "url": "data/visits.csv"
+            },
+            "key": "place",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": -28,
+        "dy": 12,
+        "align": "right"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "p"
+        }
+      }
+    },
+    {
+      "description": "Label: Sydney Harbour",
+      "data": {
+        "values": [
+          {
+            "p": "Sydney Harbour"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "p",
+          "from": {
+            "data": {
+              "url": "data/visits.csv"
+            },
+            "key": "place",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": 28,
+        "dy": 0,
+        "align": "left"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "p"
+        }
+      }
+    },
+    {
+      "description": "Label: Brisbane Water",
+      "data": {
+        "values": [
+          {
+            "p": "Brisbane Water"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "p",
+          "from": {
+            "data": {
+              "url": "data/visits.csv"
+            },
+            "key": "place",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": 30,
+        "dy": -12,
+        "align": "left"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "p"
+        }
+      }
+    },
+    {
+      "description": "Label: Kamay Botany Bay",
+      "data": {
+        "values": [
+          {
+            "p": "Kamay Botany Bay"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "p",
+          "from": {
+            "data": {
+              "url": "data/visits.csv"
+            },
+            "key": "place",
+            "fields": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dx": 28,
+        "dy": 10,
+        "align": "left"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "p"
+        }
+      }
+    }
+  ]
+}

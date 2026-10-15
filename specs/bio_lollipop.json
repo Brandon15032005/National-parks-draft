@@ -1,0 +1,271 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Lollipop chart: the 12 least and 8 most protected of Australia's 87 land bioregions (CAPAD 2024). The dashed line marks 30%.",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/bioregions.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.display_group != ''"
+    },
+    {
+      "calculate": "0",
+      "as": "zero"
+    }
+  ],
+  "facet": {
+    "row": {
+      "field": "display_group",
+      "type": "nominal",
+      "sort": [
+        "Least protected",
+        "Most protected"
+      ],
+      "header": {
+        "title": null,
+        "labelOrient": "top",
+        "labelAnchor": "start",
+        "labelAngle": 0,
+        "labelFontSize": 16,
+        "labelFontWeight": 700,
+        "labelPadding": 8,
+        "labelColor": "#15271F"
+      }
+    }
+  },
+  "spec": {
+    "width": 520,
+    "height": {
+      "step": 28
+    },
+    "encoding": {
+      "y": {
+        "field": "name",
+        "type": "nominal",
+        "sort": {
+          "field": "protected_pct",
+          "order": "ascending"
+        },
+        "axis": {
+          "title": null,
+          "domain": false,
+          "ticks": false,
+          "labelFontSize": 13,
+          "labelLimit": 260,
+          "labelPadding": 8
+        }
+      }
+    },
+    "layer": [
+      {
+        "description": "Dashed line at 30%",
+        "data": {
+          "values": [
+            {
+              "x": 30
+            }
+          ]
+        },
+        "mark": {
+          "type": "rule",
+          "strokeDash": [
+            4,
+            4
+          ],
+          "color": "#51625A",
+          "opacity": 0.7
+        },
+        "encoding": {
+          "x": {
+            "field": "x",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                100
+              ],
+              "nice": false
+            }
+          },
+          "y": null
+        }
+      },
+      {
+        "description": "Stick",
+        "mark": {
+          "type": "rule",
+          "color": "#9AA8A1",
+          "strokeWidth": 2.5
+        },
+        "encoding": {
+          "x": {
+            "field": "zero",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                100
+              ],
+              "nice": false
+            },
+            "axis": {
+              "title": "Share of the region that is protected (%)",
+              "values": [
+                0,
+                20,
+                40,
+                60,
+                80,
+                100
+              ],
+              "labelExpr": "datum.label + '%'"
+            }
+          },
+          "x2": {
+            "field": "protected_pct"
+          }
+        }
+      },
+      {
+        "description": "Dot",
+        "mark": {
+          "type": "circle",
+          "size": 150,
+          "fill": "#0E7C7B",
+          "opacity": 1
+        },
+        "encoding": {
+          "x": {
+            "field": "protected_pct",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                100
+              ],
+              "nice": false
+            }
+          },
+          "tooltip": [
+            {
+              "field": "name",
+              "title": "Region"
+            },
+            {
+              "field": "states",
+              "title": "State(s)"
+            },
+            {
+              "field": "protected_pct",
+              "type": "quantitative",
+              "title": "Protected (%)",
+              "format": ".1f"
+            },
+            {
+              "field": "area_ha",
+              "type": "quantitative",
+              "title": "Region size (hectares)",
+              "format": ",.0f"
+            }
+          ]
+        }
+      },
+      {
+        "description": "Value label",
+        "transform": [
+          {
+            "calculate": "format(datum.protected_pct, '.1f') + '%'",
+            "as": "lbl"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 11,
+          "fontSize": 13,
+          "fontWeight": 700,
+          "color": "#15271F"
+        },
+        "encoding": {
+          "x": {
+            "field": "protected_pct",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                100
+              ],
+              "nice": false
+            }
+          },
+          "text": {
+            "field": "lbl"
+          }
+        }
+      },
+      {
+        "description": "Note: under 5%",
+        "transform": [
+          {
+            "filter": "datum.name == 'Cobar Peneplain'"
+          }
+        ],
+        "mark": {
+          "fontSize": 12.5,
+          "fontStyle": "italic",
+          "color": "#51625A",
+          "lineHeight": 16,
+          "type": "text",
+          "align": "left"
+        },
+        "encoding": {
+          "x": {
+            "value": 235
+          },
+          "text": {
+            "value": [
+              "All 12 have under 5% protected.",
+              "27 of the 87 land regions",
+              "have under 10%."
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "spacing": 30,
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

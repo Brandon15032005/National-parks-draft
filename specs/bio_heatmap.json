@@ -1,0 +1,350 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap: for the 12 least and 8 most protected bioregions, the share of each region's land in each IUCN protected-area category (CAPAD 2024).",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/bioregion_iucn.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.iucn != 'Other'"
+    }
+  ],
+  "vconcat": [
+    {
+      "title": {
+        "text": "Least protected",
+        "anchor": "start",
+        "offset": 14,
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#15271F"
+      },
+      "width": 420,
+      "height": {
+        "step": 27
+      },
+      "transform": [
+        {
+          "filter": "datum.display_group == 'Least protected'"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "name",
+          "type": "nominal",
+          "sort": {
+            "field": "protected_pct",
+            "op": "max",
+            "order": "ascending"
+          },
+          "axis": {
+            "title": null,
+            "domain": false,
+            "ticks": false,
+            "labelFontSize": 13,
+            "labelLimit": 260,
+            "labelPadding": 8
+          }
+        },
+        "x": {
+          "field": "iucn",
+          "type": "ordinal",
+          "sort": [
+            "Ia",
+            "Ib",
+            "II",
+            "III",
+            "IV",
+            "V",
+            "VI"
+          ],
+          "axis": {
+            "orient": "top",
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "labelPadding": 34,
+            "domain": false,
+            "ticks": false,
+            "labelExpr": "({'Ia':['Ia','Strict','reserve'],'Ib':['Ib','Wilder-','ness'],'II':['II','National','park'],'III':['III','Natural','feature'],'IV':['IV','Habitat','mgmt'],'V':['V','Protected','landscape'],'VI':['VI','Sustain-','able use']})[datum.value]",
+            "labelLineHeight": 13
+          }
+        }
+      },
+      "layer": [
+        {
+          "description": "Cells",
+          "mark": {
+            "type": "rect",
+            "stroke": "#F4F7F5",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "color": {
+              "field": "pct_of_region",
+              "type": "quantitative",
+              "scale": {
+                "type": "sqrt",
+                "domain": [
+                  0,
+                  85
+                ],
+                "range": [
+                  "#EBF1EE",
+                  "#07494B"
+                ],
+                "clamp": true
+              },
+              "legend": {
+                "title": "Share of the region (%)",
+                "orient": "bottom",
+                "gradientLength": 300,
+                "values": [
+                  0,
+                  1,
+                  5,
+                  10,
+                  25,
+                  50,
+                  80
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "name",
+                "title": "Region"
+              },
+              {
+                "field": "states",
+                "title": "State(s)"
+              },
+              {
+                "field": "iucn",
+                "title": "IUCN category"
+              },
+              {
+                "field": "pct_of_region",
+                "type": "quantitative",
+                "title": "Share of region (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Numbers in the cells",
+          "transform": [
+            {
+              "filter": "datum.pct_of_region >= 0.5"
+            },
+            {
+              "calculate": "datum.pct_of_region >= 10 ? format(datum.pct_of_region, '.0f') : format(datum.pct_of_region, '.1f')",
+              "as": "lbl"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 11.5,
+            "fontWeight": 600
+          },
+          "encoding": {
+            "text": {
+              "field": "lbl"
+            },
+            "color": {
+              "condition": {
+                "test": "datum.pct_of_region > 30",
+                "value": "#FFFFFF"
+              },
+              "value": "#15271F"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Most protected",
+        "anchor": "start",
+        "offset": 14,
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#15271F"
+      },
+      "width": 420,
+      "height": {
+        "step": 27
+      },
+      "transform": [
+        {
+          "filter": "datum.display_group == 'Most protected'"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "name",
+          "type": "nominal",
+          "sort": {
+            "field": "protected_pct",
+            "op": "max",
+            "order": "ascending"
+          },
+          "axis": {
+            "title": null,
+            "domain": false,
+            "ticks": false,
+            "labelFontSize": 13,
+            "labelLimit": 260,
+            "labelPadding": 8
+          }
+        },
+        "x": {
+          "field": "iucn",
+          "type": "ordinal",
+          "sort": [
+            "Ia",
+            "Ib",
+            "II",
+            "III",
+            "IV",
+            "V",
+            "VI"
+          ],
+          "axis": {
+            "orient": "top",
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "labelPadding": 34,
+            "domain": false,
+            "ticks": false,
+            "labelExpr": "({'Ia':['Ia','Strict','reserve'],'Ib':['Ib','Wilder-','ness'],'II':['II','National','park'],'III':['III','Natural','feature'],'IV':['IV','Habitat','mgmt'],'V':['V','Protected','landscape'],'VI':['VI','Sustain-','able use']})[datum.value]",
+            "labelLineHeight": 13
+          }
+        }
+      },
+      "layer": [
+        {
+          "description": "Cells",
+          "mark": {
+            "type": "rect",
+            "stroke": "#F4F7F5",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "color": {
+              "field": "pct_of_region",
+              "type": "quantitative",
+              "scale": {
+                "type": "sqrt",
+                "domain": [
+                  0,
+                  85
+                ],
+                "range": [
+                  "#EBF1EE",
+                  "#07494B"
+                ],
+                "clamp": true
+              },
+              "legend": {
+                "title": "Share of the region (%)",
+                "orient": "bottom",
+                "gradientLength": 300,
+                "values": [
+                  0,
+                  1,
+                  5,
+                  10,
+                  25,
+                  50,
+                  80
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "name",
+                "title": "Region"
+              },
+              {
+                "field": "states",
+                "title": "State(s)"
+              },
+              {
+                "field": "iucn",
+                "title": "IUCN category"
+              },
+              {
+                "field": "pct_of_region",
+                "type": "quantitative",
+                "title": "Share of region (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "description": "Numbers in the cells",
+          "transform": [
+            {
+              "filter": "datum.pct_of_region >= 0.5"
+            },
+            {
+              "calculate": "datum.pct_of_region >= 10 ? format(datum.pct_of_region, '.0f') : format(datum.pct_of_region, '.1f')",
+              "as": "lbl"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 11.5,
+            "fontWeight": 600
+          },
+          "encoding": {
+            "text": {
+              "field": "lbl"
+            },
+            "color": {
+              "condition": {
+                "test": "datum.pct_of_region > 30",
+                "value": "#FFFFFF"
+              },
+              "value": "#15271F"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "spacing": 36
+}

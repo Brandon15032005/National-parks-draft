@@ -1,0 +1,317 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Connected dot plot: each state's share of land protected (June 2024) against the 30% goal for 2030. The gap is shown in percentage points.",
+  "background": "transparent",
+  "width": 600,
+  "height": {
+    "step": 36
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": 600,
+      "symbolType": "square",
+      "symbolSize": 260,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/states.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.code == 'ACT' ? 'ACT' : datum.name",
+      "as": "state"
+    },
+    {
+      "calculate": "datum.protected_pct",
+      "as": "now"
+    },
+    {
+      "calculate": "30",
+      "as": "goal"
+    },
+    {
+      "calculate": "min(datum.now, 30)",
+      "as": "lo"
+    },
+    {
+      "calculate": "max(datum.now, 30)",
+      "as": "hi"
+    },
+    {
+      "calculate": "(datum.now >= 30 ? '+' : '−') + format(abs(datum.now - 30), '.1f') + ' points'",
+      "as": "gap_label"
+    },
+    {
+      "calculate": "(datum.now >= 30 ? '+' : '−') + format(abs(datum.now - 30), '.1f')",
+      "as": "gap_short"
+    },
+    {
+      "fold": [
+        "now",
+        "goal"
+      ],
+      "as": [
+        "measure",
+        "value"
+      ]
+    },
+    {
+      "calculate": "datum.measure == 'now' ? 'Share protected, June 2024' : 'The 30% goal for 2030'",
+      "as": "series"
+    },
+    {
+      "calculate": "datum.measure == 'goal' ? 0 : 1",
+      "as": "zorder"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "sort": [
+        "ACT",
+        "Tasmania",
+        "Western Australia",
+        "South Australia",
+        "Northern Territory",
+        "Victoria",
+        "New South Wales",
+        "Queensland"
+      ],
+      "axis": null
+    }
+  },
+  "layer": [
+    {
+      "description": "Dashed line at the 30% goal",
+      "data": {
+        "values": [
+          {
+            "x": 30
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          4
+        ],
+        "color": "#51625A",
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": null
+      }
+    },
+    {
+      "description": "Line joining today's value to the goal",
+      "transform": [
+        {
+          "filter": "datum.measure == 'goal'"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "color": "#9AA8A1",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "x": {
+          "field": "lo",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              75
+            ],
+            "nice": false
+          },
+          "axis": {
+            "title": "Share of the state's land that is protected (%)",
+            "values": [
+              0,
+              10,
+              20,
+              30,
+              40,
+              50,
+              60,
+              70
+            ],
+            "labelExpr": "datum.label + '%'"
+          }
+        },
+        "x2": {
+          "field": "hi"
+        }
+      }
+    },
+    {
+      "description": "Dots: today and the goal",
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 230,
+        "strokeWidth": 2.5,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              75
+            ],
+            "nice": false
+          }
+        },
+        "fill": {
+          "field": "series",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Share protected, June 2024",
+              "The 30% goal for 2030"
+            ],
+            "range": [
+              "#0E7C7B",
+              "#FFFFFF"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "symbolStrokeWidth": 2.5,
+            "labelLimit": 320,
+            "columnPadding": 28
+          }
+        },
+        "stroke": {
+          "field": "series",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Share protected, June 2024",
+              "The 30% goal for 2030"
+            ],
+            "range": [
+              "#0E7C7B",
+              "#51625A"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "State"
+          },
+          {
+            "field": "protected_pct",
+            "title": "Land protected (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "gap_label",
+            "title": "Compared with the goal"
+          }
+        ],
+        "order": {
+          "field": "zorder",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "description": "Gap label",
+      "transform": [
+        {
+          "filter": "datum.measure == 'goal'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "fontSize": 13,
+        "fontWeight": 600,
+        "color": "#15271F"
+      },
+      "encoding": {
+        "x": {
+          "field": "hi",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              75
+            ],
+            "nice": false
+          }
+        },
+        "text": {
+          "field": "gap_label"
+        }
+      }
+    },
+    {
+      "description": "State names, drawn in the reserved left padding",
+      "transform": [
+        {
+          "filter": "datum.measure == 'goal'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "fontSize": 14,
+        "color": "#15271F"
+      },
+      "encoding": {
+        "x": {
+          "value": -10
+        },
+        "text": {
+          "field": "state"
+        }
+      }
+    }
+  ],
+  "padding": {
+    "left": 24,
+    "right": 8,
+    "top": 5,
+    "bottom": 5
+  }
+}

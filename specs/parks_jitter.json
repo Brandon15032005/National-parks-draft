@@ -1,0 +1,312 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Jitter plot: every national park as a dot, by state, on a log scale of area. Dark ticks mark the typical (median) park in each state.",
+  "background": "transparent",
+  "width": 600,
+  "height": {
+    "step": 46
+  },
+  "padding": {
+    "left": 8,
+    "right": 8,
+    "top": 5,
+    "bottom": 5
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 7,
+      "titleFontSize": 7,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/parks.csv"
+  },
+  "transform": [
+    {
+      "filter": "indexof(['QLD','NSW','WA','VIC','SA','NT','TAS','ACT'], datum.state) >= 0"
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "idx"
+        }
+      ]
+    },
+    {
+      "calculate": "(abs(sin(datum.idx * 12.9898) * 43758.5453) % 1) - 0.5",
+      "as": "jitter"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "count",
+          "as": "n"
+        }
+      ],
+      "groupby": [
+        "state"
+      ]
+    },
+    {
+      "calculate": "({'QLD':'Queensland','NSW':'New South Wales','WA':'Western Australia','VIC':'Victoria','SA':'South Australia','NT':'Northern Territory','TAS':'Tasmania','ACT':'ACT'})[datum.state] + ' (' + datum.n + ')'",
+      "as": "row_label"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "row_label",
+      "type": "nominal",
+      "sort": {
+        "field": "n",
+        "op": "max",
+        "order": "descending"
+      },
+      "axis": {
+        "title": null,
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 14,
+        "labelPadding": 8,
+        "labelLimit": 260
+      }
+    }
+  },
+  "layer": [
+    {
+      "description": "Every park",
+      "mark": {
+        "type": "circle",
+        "size": 38,
+        "fill": "#0E7C7B",
+        "fillOpacity": 0.45,
+        "stroke": "#07494B",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "area_km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              0.01,
+              50000
+            ],
+            "clamp": true
+          },
+          "axis": {
+            "title": "Park size (square kilometres). Each step to the right is ten times bigger.",
+            "values": [
+              0.1,
+              1,
+              10,
+              100,
+              1000,
+              10000
+            ],
+            "labelExpr": "format(datum.value, ',')",
+            "grid": true
+          }
+        },
+        "yOffset": {
+          "field": "jitter",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -0.5,
+              0.5
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Park"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "area_km2",
+            "type": "quantitative",
+            "title": "Area (km²)",
+            "format": ",.1f"
+          }
+        ],
+        "fillOpacity": {
+          "condition": {
+            "param": "hover_state",
+            "empty": true,
+            "value": 0.75
+          },
+          "value": 0.12
+        },
+        "strokeOpacity": {
+          "condition": {
+            "param": "hover_state",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.15
+        }
+      },
+      "params": [
+        {
+          "name": "hover_state",
+          "select": {
+            "type": "point",
+            "fields": [
+              "state"
+            ],
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Typical (median) park in each state",
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "median",
+              "field": "area_km2",
+              "as": "median_km2"
+            }
+          ],
+          "groupby": [
+            "row_label",
+            "n"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "tick",
+        "color": "#15271F",
+        "thickness": 3.5,
+        "size": 34
+      },
+      "encoding": {
+        "x": {
+          "field": "median_km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              0.01,
+              50000
+            ],
+            "clamp": true
+          }
+        },
+        "tooltip": [
+          {
+            "field": "row_label",
+            "title": "State (number of parks)"
+          },
+          {
+            "field": "median_km2",
+            "type": "quantitative",
+            "title": "Typical (median) park, km²",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Halo behind labels",
+      "transform": [
+        {
+          "filter": "indexof(['Munga-Thirri—Simpson Desert','Kakadu','Karlamilyi'], datum.name) >= 0"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -9,
+        "fontSize": 13,
+        "fontWeight": 700,
+        "stroke": "#F4F7F5",
+        "strokeWidth": 4,
+        "color": "#F4F7F5",
+        "dy": -15
+      },
+      "encoding": {
+        "x": {
+          "field": "area_km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              0.01,
+              50000
+            ],
+            "clamp": true
+          }
+        },
+        "text": {
+          "field": "name"
+        }
+      }
+    },
+    {
+      "description": "Labels for the biggest parks",
+      "transform": [
+        {
+          "filter": "indexof(['Munga-Thirri—Simpson Desert','Kakadu','Karlamilyi'], datum.name) >= 0"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -9,
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#15271F",
+        "dy": -15
+      },
+      "encoding": {
+        "x": {
+          "field": "area_km2",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              0.01,
+              50000
+            ],
+            "clamp": true
+          }
+        },
+        "text": {
+          "field": "name"
+        }
+      }
+    }
+  ]
+}

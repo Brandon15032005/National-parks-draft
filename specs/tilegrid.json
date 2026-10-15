@@ -1,0 +1,184 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Tile grid map: one equal-sized tile per state or territory, placed roughly where it sits on the map and coloured by the number of people for every square kilometre of protected land (ABS population, March 2026; CAPAD 2024).",
+  "background": "transparent",
+  "width": {
+    "step": 110
+  },
+  "height": {
+    "step": 110
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelFontSize": 13,
+      "titleFontSize": 13,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F",
+      "titleColor": "#51625A",
+      "gridColor": "#D3DDD8",
+      "domainColor": "#9AA8A1",
+      "tickColor": "#9AA8A1"
+    },
+    "legend": {
+      "labelFontSize": 7,
+      "titleFontSize": 7,
+      "titleFontWeight": 600,
+      "labelColor": "#15271F"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#15271F",
+      "font": "'Source Sans 3', Helvetica, Arial, sans-serif"
+    }
+  },
+  "data": {
+    "url": "data/states.csv"
+  },
+  "transform": [
+    {
+      "calculate": "'c' + datum.tile_col",
+      "as": "col_s"
+    },
+    {
+      "calculate": "'r' + datum.tile_row",
+      "as": "row_s"
+    },
+    {
+      "calculate": "datum.people_per_km2_protected < 10 ? 'Under 10' : datum.people_per_km2_protected < 50 ? '10 to 50' : datum.people_per_km2_protected < 150 ? '50 to 150' : datum.people_per_km2_protected < 300 ? '150 to 300' : '300 or more'",
+      "as": "band"
+    },
+    {
+      "calculate": "datum.people_per_km2_protected >= 10 ? format(datum.people_per_km2_protected, '.0f') : format(datum.people_per_km2_protected, '.1f')",
+      "as": "num"
+    },
+    {
+      "calculate": "[datum.code, datum.num]",
+      "as": "label"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "col_s",
+      "type": "ordinal",
+      "axis": null,
+      "scale": {
+        "domain": [
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ],
+        "paddingInner": 0.06,
+        "paddingOuter": 0
+      }
+    },
+    "y": {
+      "field": "row_s",
+      "type": "ordinal",
+      "axis": null,
+      "scale": {
+        "domain": [
+          "r0",
+          "r1",
+          "r2",
+          "r3"
+        ],
+        "paddingInner": 0.06,
+        "paddingOuter": 0
+      }
+    }
+  },
+  "layer": [
+    {
+      "description": "Tiles",
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "color": {
+          "field": "band",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Under 10",
+              "10 to 50",
+              "50 to 150",
+              "150 to 300",
+              "300 or more"
+            ],
+            "range": [
+              "#EFE9F5",
+              "#CDBFE3",
+              "#A58BCB",
+              "#6A4C93",
+              "#3E2A66"
+            ]
+          },
+          "legend": {
+            "title": [
+              "People for every square",
+              "kilometre of protected land"
+            ],
+            "orient": "right",
+            "titleLimit": 260,
+            "symbolType": "square",
+            "symbolSize": 300,
+            "labelFontSize": 7,
+            "titleFontSize": 7
+          }
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "State"
+          },
+          {
+            "field": "people_per_km2_protected",
+            "type": "quantitative",
+            "title": "People per km² of protected land",
+            "format": ",.1f"
+          },
+          {
+            "field": "population_thousands",
+            "type": "quantitative",
+            "title": "Population (thousands)",
+            "format": ",.1f"
+          },
+          {
+            "field": "protected_km2",
+            "type": "quantitative",
+            "title": "Protected land (km²)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Labels",
+      "mark": {
+        "type": "text",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "lineHeight": 19
+      },
+      "encoding": {
+        "text": {
+          "field": "label"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.people_per_km2_protected >= 150",
+            "value": "#FFFFFF"
+          },
+          "value": "#15271F"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+code,name,area_km2,protected_km2,protected_pct,share_of_protected_land_pct,population_thousands,population_share_pct,people_per_km2_protected,tile_col,tile_row
+ACT,Australian Capital Territory,2358,1319,55.93,0.08,489.7,1.75,371.3,4,1
+NSW,New South Wales,801150,83651,10.44,4.82,8670.1,31.06,103.6,3,1
+NT,Northern Territory,1347792,332087,24.64,19.14,268.9,0.96,0.8,2,0
+QLD,Queensland,1729742,161832,9.36,9.33,5739.5,20.56,35.5,3,0
+SA,South Australia,984322,299635,30.44,17.27,1916.8,6.87,6.4,2,1
+TAS,Tasmania,68401,29281,42.81,1.69,580.7,2.08,19.8,3,3
+VIC,Victoria,227444,40235,17.69,2.32,7154.2,25.63,177.8,3,2
+WA,Western Australia,2527013,786742,31.13,45.34,3096.2,11.09,3.9,1,1

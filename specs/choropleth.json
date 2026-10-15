@@ -1,0 +1,255 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth map: share of each state's land that is protected (CAPAD 2024, 30 June 2024).",
+  "background": "transparent",
+  "width": "container",
+  "height": 520,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "'Source Sans 3', Helvetica, Arial, sans-serif",
+    "legend": {
+      "titleFontSize": 7,
+      "labelFontSize": 7,
+      "titleFontWeight": 600,
+      "symbolType": "square",
+      "symbolSize": 260
+    }
+  },
+  "projection": {
+    "type": "albers",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ]
+  },
+  "layer": [
+    {
+      "description": "State shapes coloured by the percentage of land protected",
+      "data": {
+        "url": "data/australia_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.STATE_NAME",
+          "from": {
+            "data": {
+              "url": "data/states.csv"
+            },
+            "key": "name",
+            "fields": [
+              "code",
+              "protected_pct",
+              "protected_km2",
+              "area_km2"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.protected_pct < 10 ? 'Under 10%' : datum.protected_pct < 20 ? '10 to 20%' : datum.protected_pct < 30 ? '20 to 30%' : datum.protected_pct < 40 ? '30 to 40%' : datum.protected_pct < 50 ? '40 to 50%' : '50% or more'",
+          "as": "band"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "color": {
+          "field": "band",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Under 10%",
+              "10 to 20%",
+              "20 to 30%",
+              "30 to 40%",
+              "40 to 50%",
+              "50% or more"
+            ],
+            "range": [
+              "#E3F0ED",
+              "#BBDDD7",
+              "#82C1B9",
+              "#3E9C97",
+              "#0E7C7B",
+              "#07494B"
+            ]
+          },
+          "legend": {
+            "title": "Share of land protected",
+            "titleLimit": 260,
+            "orient": "bottom-left",
+            "offset": -6,
+            "labelFontSize": 7,
+            "titleFontSize": 7
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.STATE_NAME",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "protected_pct",
+            "type": "quantitative",
+            "title": "Land protected (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "protected_km2",
+            "type": "quantitative",
+            "title": "Protected area (km²)",
+            "format": ",.0f"
+          },
+          {
+            "field": "area_km2",
+            "type": "quantitative",
+            "title": "State area (km²)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Leader line from the ACT (too small to label on the map) out to sea",
+      "data": {
+        "values": [
+          {
+            "lon": 149.0,
+            "lat": -35.5,
+            "lon2": 152.2,
+            "lat2": -36.9
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#15271F",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "lon2"
+        },
+        "latitude2": {
+          "field": "lat2"
+        }
+      }
+    },
+    {
+      "description": "State labels: code and percentage protected",
+      "data": {
+        "values": [
+          {
+            "name": "Western Australia",
+            "lon": 122.0,
+            "lat": -25.5
+          },
+          {
+            "name": "Northern Territory",
+            "lon": 133.4,
+            "lat": -19.5
+          },
+          {
+            "name": "Queensland",
+            "lon": 144.5,
+            "lat": -22.5
+          },
+          {
+            "name": "South Australia",
+            "lon": 135.0,
+            "lat": -30.2
+          },
+          {
+            "name": "New South Wales",
+            "lon": 146.7,
+            "lat": -32.0
+          },
+          {
+            "name": "Victoria",
+            "lon": 143.7,
+            "lat": -36.9
+          },
+          {
+            "name": "Tasmania",
+            "lon": 150.4,
+            "lat": -41.9
+          },
+          {
+            "name": "Australian Capital Territory",
+            "lon": 153.3,
+            "lat": -37.5
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "name",
+          "from": {
+            "data": {
+              "url": "data/states.csv"
+            },
+            "key": "name",
+            "fields": [
+              "code",
+              "protected_pct"
+            ]
+          }
+        },
+        {
+          "calculate": "[datum.code, format(datum.protected_pct, '.0f') + '%']",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 16,
+        "color": "#15271F"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

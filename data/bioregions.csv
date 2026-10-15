@@ -1,0 +1,90 @@
+name,code,states,area_ha,protected_ha,protected_pct,land_region,land_rank,display_group
+Arnhem Coast,ARC,NT,3335669,1809069,54.23,yes,78,
+Arnhem Plateau,ARP,NT,2306023,1728647,74.96,yes,85,Most protected
+Australian Alps,AUA,"ACT, NSW, VIC",1232986,789187,64.01,yes,84,Most protected
+Avon Wheatbelt,AVW,WA,9517104,425499,4.47,yes,10,Least protected
+Ben Lomond,BEL,TAS,657500,107168,16.3,yes,44,
+Brigalow Belt North,BBN,QLD,13674533,329113,2.41,yes,5,Least protected
+Brigalow Belt South,BBS,"NSW, QLD",27219895,1501809,5.52,yes,14,
+Broken Hill Complex,BHC,"NSW, SA",5635422,328110,5.82,yes,15,
+Burt Plain,BRT,NT,7379719,493241,6.68,yes,18,
+Cape York Peninsula,CYP,QLD,12256457,4752326,38.77,yes,69,
+Carnarvon,CAR,WA,8430172,1230855,14.6,yes,34,
+Central Arnhem,CEA,NT,3462433,1179902,34.08,yes,63,
+Central Kimberley,CEK,WA,7675587,2385270,31.08,yes,60,
+Central Mackay Coast,CMC,QLD,1464208,219670,15.0,yes,40,
+Central Ranges,CER,"NT, SA, WA",10164044,8265173,81.32,yes,86,Most protected
+Channel Country,CHC,"NSW, NT, QLD, SA",30409437,3357359,11.04,yes,30,
+Cobar Peneplain,COP,NSW,7385346,240527,3.26,yes,7,Least protected
+Coolgardie,COO,WA,12912209,4857338,37.62,yes,68,
+Coral Sea,COS,EXT,17167,0,0.0,no,,
+Daly Basin,DAB,NT,2092229,219031,10.47,yes,28,
+Dampierland,DAL,WA,8360871,1237419,14.8,yes,37,
+Darling Riverine Plains,DRP,"NSW, QLD",10699768,325635,3.04,yes,6,Least protected
+Darwin Coastal,DAC,NT,2843199,878566,30.9,yes,59,
+Davenport Murchison Ranges,DMR,NT,5805108,129829,2.24,yes,3,Least protected
+Desert Uplands,DEU,QLD,6941095,233815,3.37,yes,9,Least protected
+Einasleigh Uplands,EIU,QLD,11625726,937043,8.06,yes,22,
+Esperance Plains,ESP,WA,2921327,855729,29.29,yes,57,
+Eyre Yorke Block,EYB,SA,6120409,928335,15.17,yes,41,
+Finke,FIN,"NT, SA",7267416,334544,4.6,yes,12,Least protected
+Flinders Lofty Block,FLB,SA,6615765,602444,9.11,yes,25,
+Furneaux,FUR,"TAS, VIC",537543,184954,34.41,yes,65,
+Gascoyne,GAS,WA,18075257,2908908,16.09,yes,43,
+Gawler,GAW,SA,12002883,1963876,16.36,yes,46,
+Geraldton Sandplains,GES,WA,3142149,599426,19.08,yes,50,
+Gibson Desert,GID,WA,15628918,9127292,58.4,yes,81,Most protected
+Great Sandy Desert,GSD,"NT, WA",39486135,19709622,49.92,yes,76,
+Great Victoria Desert,GVD,"SA, WA",42246564,18151680,42.97,yes,72,
+Gulf Coastal,GUC,NT,2711718,717329,26.45,yes,55,
+Gulf Fall and Uplands,GFU,"NT, QLD",11847909,2890528,24.4,yes,54,
+Gulf Plains,GUP,"NT, QLD",22041825,1644177,7.46,yes,21,
+Hampton,HAM,"SA, WA",1088198,159317,14.64,yes,35,
+Indian Tropical Islands,ITI,"EXT, WA",27329,8670,31.73,yes,61,
+Jarrah Forest,JAF,WA,4509074,673978,14.95,yes,39,
+Kanmantoo,KAN,SA,812415,166965,20.55,yes,53,
+King,KIN,TAS,425567,84577,19.87,yes,51,
+Little Sandy Desert,LSD,WA,11089857,5250145,47.34,yes,75,
+MacDonnell Ranges,MAC,NT,3929444,579748,14.75,yes,36,
+Mallee,MAL,WA,7397559,2356861,31.86,yes,62,
+Mitchell Grass Downs,MGD,"NT, QLD",33468762,522718,1.56,yes,2,Least protected
+Mount Isa Inlier,MII,"NT, QLD",6778261,437410,6.45,yes,16,
+Mulga Lands,MUL,"NSW, QLD",25188333,1252464,4.97,yes,13,
+Murchison,MUR,WA,28120554,1967618,7.0,yes,20,
+Murray Darling Depression,MDD,"NSW, SA, VIC",19958367,3473088,17.4,yes,47,
+NSW North Coast,NNC,NSW,3996473,1060807,26.54,yes,56,
+NSW South Western Slopes,NSS,"NSW, VIC",8681088,289691,3.34,yes,8,Least protected
+Nandewar,NAN,"NSW, QLD",2701961,123945,4.59,yes,11,Least protected
+Naracoorte Coastal Plain,NCP,"SA, VIC",2458215,237677,9.67,yes,27,
+New England Tablelands,NET,"NSW, QLD",3002229,322109,10.73,yes,29,
+Northern Kimberley,NOK,WA,8420100,5199178,61.75,yes,83,Most protected
+Nullarbor,NUL,"SA, WA",19722774,10834532,54.93,yes,80,Most protected
+Ord Victoria Plain,OVP,"NT, WA",12540703,1487820,11.86,yes,33,
+Pacific Subtropical Islands,PSI,"EXT, NSW",5817,1983,34.1,yes,64,
+Pilbara,PIL,WA,17823126,1565213,8.78,yes,23,
+Pine Creek,PCK,NT,2851777,1217059,42.68,yes,70,
+Riverina,RIV,"NSW, SA, VIC",9704503,627711,6.47,yes,17,
+Simpson Strzelecki Dunefields,SSD,"NSW, NT, QLD, SA",27984283,8640902,30.88,yes,58,
+South East Coastal Plain,SCP,VIC,1749237,162453,9.29,yes,26,
+South East Corner,SEC,"NSW, VIC",2532053,932855,36.84,yes,67,
+South Eastern Highlands,SEH,"ACT, NSW, VIC",8375943,1584083,18.91,yes,49,
+South Eastern Queensland,SEQ,"NSW, QLD",7804921,1155827,14.81,yes,38,
+Southern Volcanic Plain,SVP,"SA, VIC",2440340,55928,2.29,yes,4,Least protected
+Stony Plains,STP,"NT, SA",13166372,1175979,8.93,yes,24,
+Sturt Plateau,STU,NT,9857531,68872,0.7,yes,1,Least protected
+Subantarctic Islands,SAI,EXT,49164,0,0.0,no,,
+Swan Coastal Plain,SWA,WA,1525798,176391,11.56,yes,31,
+Sydney Basin,SYB,"JBT, NSW",3629597,1549185,42.68,yes,71,
+Tanami,TAN,"NT, WA",25997277,11608908,44.65,yes,73,
+Tasmanian Central Highlands,TCH,TAS,767849,467482,60.88,yes,82,Most protected
+Tasmanian Northern Midlands,TNM,TAS,415445,28004,6.74,yes,19,
+Tasmanian Northern Slopes,TNS,TAS,623103,101950,16.36,yes,45,
+Tasmanian South East,TSE,TAS,1106928,176205,15.92,yes,42,
+Tasmanian Southern Ranges,TSR,TAS,782121,425195,54.36,yes,79,
+Tasmanian West,TWE,TAS,1565077,1350554,86.29,yes,87,Most protected
+Tiwi Cobourg,TIW,NT,1010580,204361,20.22,yes,52,
+Victoria Bonaparte,VIB,"NT, WA",7301242,1275389,17.47,yes,48,
+Victorian Midlands,VIM,VIC,3469789,403912,11.64,yes,32,
+Warren,WAR,WA,844771,396540,46.94,yes,74,
+Wet Tropics,WET,QLD,1989107,1064944,53.54,yes,77,
+Yalgoo,YAL,WA,5087577,1809007,35.56,yes,66,
